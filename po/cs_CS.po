@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.johnfactotum.Foliate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-07 18:58+0800\n"
+"POT-Creation-Date: 2020-06-19 01:42+0800\n"
 "PO-Revision-Date: 2020-06-13 11:47+0200\n"
 "Last-Translator: Pavel Fric <pavelfric@seznam.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 19.04.0\n"
 
-#: data/com.github.johnfactotum.Foliate.desktop.in:3 src/library.js:1225
-#: src/library.js:1543 src/main.js:181 src/window.js:1003
+#: data/com.github.johnfactotum.Foliate.desktop.in:3 src/library.js:786
+#: src/main.js:190 src/window.js:989
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:6
 msgid "Foliate"
 msgstr "Foliate"
@@ -37,7 +37,7 @@ msgid "Ebook;Book;EPUB;Viewer;Reader;"
 msgstr "Elektronická kniha;Kniha;EPUB;Prohlížeč;Čtečka;"
 
 #: data/com.github.johnfactotum.Foliate.desktop.in:17
-#: src/ui/libraryWindow.ui:451 src/ui/mainMenu.ui:304 src/ui/opdsWindow.ui:7
+#: src/ui/libraryWindow.ui:612 src/ui/mainMenu.ui:304
 msgid "Library"
 msgstr "Knihovna"
 
@@ -66,19 +66,19 @@ msgstr[2] "%d výsledků"
 msgid "Searching…"
 msgstr "Hledá se..."
 
-#: src/epubView.js:1015
+#: src/epubView.js:1016
 msgid "File not found."
 msgstr "Soubor nenalezen."
 
-#: src/epubView.js:1026
+#: src/epubView.js:1027
 msgid "Failed to load remote file."
 msgstr "Nepodařilo se nahrát vzdálený soubor."
 
-#: src/epubView.js:1062
+#: src/epubView.js:1063
 msgid "Could not unpack Kindle file."
 msgstr "Nepodařilo se rozbalit soubor Kindle."
 
-#: src/epubView.js:1078
+#: src/epubView.js:1079
 msgid "File type not supported."
 msgstr "Typ souboru nepodporován."
 
@@ -129,40 +129,48 @@ msgstr "Citace: "
 msgid " Note: "
 msgstr " Poznámka: "
 
-#: src/export.js:113
+#: src/export.js:104 src/export.js:186 src/ui/contentsStack.ui:80
+msgid "No annotations"
+msgstr "Žádné poznámky"
+
+#: src/export.js:105
+msgid "You don't have any annotations for this book."
+msgstr "Pro tuto knihu nemáte žádné poznámky."
+
+#: src/export.js:106
+msgid "Highlight some text to add annotations."
+msgstr "Zvýrazněte text pro přidání poznámek."
+
+#: src/export.js:128
 msgid "Save File"
 msgstr "Uložit soubor"
 
-#: src/export.js:120
+#: src/export.js:135
 #, javascript-format
 msgid "Annotations for “%s”"
 msgstr "Poznámky pro “%s”"
 
-#: src/export.js:153 src/utils.js:123
+#: src/export.js:166 src/utils.js:252
 msgid "All Files"
 msgstr "Všechny soubory"
 
-#: src/export.js:157
+#: src/export.js:170
 msgid "JSON Files"
 msgstr "Soubory JSON"
 
-#: src/export.js:160 src/ui/importWindow.ui:6
+#: src/export.js:173 src/ui/importWindow.ui:6
 msgid "Import Annotations"
 msgstr "Zavést poznámky"
 
-#: src/export.js:173 src/window.js:674 src/ui/contentsStack.ui:80
-msgid "No annotations"
-msgstr "Žádné poznámky"
-
-#: src/export.js:174
+#: src/export.js:187
 msgid "There’s nothing to import."
 msgstr "Není co zavádět."
 
-#: src/export.js:215
+#: src/export.js:228
 msgid "Identifier mismatch"
 msgstr "Záměna identifikátoru"
 
-#: src/export.js:216
+#: src/export.js:229
 msgid ""
 "The identifier of the imported file does not match the book’s. This might "
 "indicate that the annotations do not belong to this book."
@@ -170,47 +178,48 @@ msgstr ""
 "Identifikátor zavedeného souboru neodpovídá identifikátoru knihy. To může "
 "znamenat, že poznámky nepatří k této knize."
 
-#: src/export.js:221 src/library.js:492 src/main.js:141 src/window.js:563
-#: src/ui/bookEditDialog.ui:10 src/ui/catalogWindow.ui:10
-#: src/ui/exportWindow.ui:38 src/ui/importWindow.ui:10
-#: src/ui/libraryWindow.ui:440 src/ui/themeWindow.ui:10 src/ui/ttsDialog.ui:10
+#: src/export.js:234 src/library.js:507 src/main.js:145 src/opds.js:159
+#: src/opds.js:875 src/window.js:563 src/ui/bookEditDialog.ui:10
+#: src/ui/catalogWindow.ui:10 src/ui/exportWindow.ui:38
+#: src/ui/importWindow.ui:10 src/ui/libraryWindow.ui:601
+#: src/ui/themeWindow.ui:10 src/ui/ttsDialog.ui:10
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: src/export.js:222
+#: src/export.js:235
 msgid "Import Anyway"
 msgstr "Přesto zavést"
 
-#: src/export.js:232 src/library.js:1741 src/window.js:1031
+#: src/export.js:245 src/opds.js:1000 src/opds.js:1068 src/window.js:1024
 msgid "Error"
 msgstr "Chyba"
 
-#: src/export.js:233
+#: src/export.js:246
 msgid "Could not import annotations."
 msgstr "Nepodařilo se zavést poznámky"
 
-#: src/library.js:145 src/window.js:642 src/ui/bookBoxMenu.ui:13
+#: src/library.js:151 src/window.js:642 src/ui/bookBoxMenu.ui:13
 #: src/ui/mainMenu.ui:613
 msgid "About This Book"
 msgstr "O této knize"
 
-#: src/library.js:169
+#: src/library.js:184
 msgid "Choose File"
 msgstr "Vybrat soubor"
 
-#: src/library.js:302 src/library.js:320
+#: src/library.js:317 src/library.js:335
 msgid "Load more"
 msgstr "Nahrát více"
 
-#: src/library.js:464
+#: src/library.js:479
 msgid "File location unkown"
 msgstr "Umístění souboru neznámé"
 
-#: src/library.js:465
+#: src/library.js:480
 msgid "Choose the location of this file to open it."
 msgstr "Vyberte umístění tohoto souboru pro jeho otevření."
 
-#: src/library.js:485
+#: src/library.js:500
 #, javascript-format
 msgid "Are you sure you want to remove this book?"
 msgid_plural "Are you sure you want to remove the %d selected books?"
@@ -218,59 +227,17 @@ msgstr[0] "Opravdu chcete odstranit tuto knihu?"
 msgstr[1] "Opravdu chcete odstranit %d vybrané knihy?"
 msgstr[2] "Opravdu chcete odstranit %d vybraných knih?"
 
-#: src/library.js:487
+#: src/library.js:502
 msgid "Reading progress, annotations, and bookmarks will be permanently lost."
 msgstr "Postup čtení, poznámky a záložky budou trvale ztraceny."
 
-#: src/library.js:493 src/ui/annotationBox.ui:63 src/ui/annotationRow.ui:53
-#: src/ui/bookBoxMenu.ui:27 src/ui/bookmarkRow.ui:44
-#: src/ui/libraryWindow.ui:420
+#: src/library.js:508 src/ui/annotationBox.ui:63 src/ui/annotationRow.ui:53
+#: src/ui/bookBoxMenu.ui:44 src/ui/bookmarkRow.ui:44
+#: src/ui/libraryWindow.ui:581
 msgid "Remove"
 msgstr "Odstranit"
 
-#. Translators: this is the punctuation used to join together a list of
-#. authors or categories
-#: src/library.js:638
-msgid ", "
-msgstr ", "
-
-#: src/library.js:663
-msgid "Unable to load OPDS feed"
-msgstr "Nelze nahrát kanál OPDS"
-
-#: src/library.js:708
-msgid "Download"
-msgstr "Stáhnout"
-
-#: src/library.js:710
-msgid "Buy"
-msgstr "Koupit"
-
-#: src/library.js:711
-msgid "Free"
-msgstr "Zdarma"
-
-#: src/library.js:712
-msgid "Sample"
-msgstr "Ukázka"
-
-#: src/library.js:713
-msgid "Borrow"
-msgstr "Půjčit"
-
-#: src/library.js:714
-msgid "Subscribe"
-msgstr "Odebírat"
-
-#: src/library.js:731
-msgid "Protected by DRM"
-msgstr "Chráněno DRM"
-
-#: src/library.js:749
-msgid " (DRM)"
-msgstr " (DRM)"
-
-#: src/library.js:1247
+#: src/library.js:626
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
@@ -278,103 +245,51 @@ msgstr[0] "%d vybrána"
 msgstr[1] "%d vybrány"
 msgstr[2] "%d vybráno"
 
-#: src/library.js:1333
+#: src/library.js:744
 msgid "Failed to add book"
 msgid_plural "Failed to add books"
 msgstr[0] "Nepodařilo se přidat knihu"
 msgstr[1] "Nepodařilo se přidat knihy"
 msgstr[2] "Nepodařilo se přidat knihy"
 
-#: src/library.js:1335
+#: src/library.js:746
 msgid "Could not add the following file:"
 msgid_plural "Could not add the following files:"
 msgstr[0] "Nepodařilo se přidat následující soubor:"
 msgstr[1] "Nepodařilo se přidat následující soubory:"
 msgstr[2] "Nepodařilo se přidat následující soubory:"
 
-#: src/library.js:1397
+#: src/library.js:819
 msgid "All"
 msgstr "Vše"
 
-#: src/library.js:1400 src/ui/catalogWindow.ui:39
+#: src/library.js:822 src/ui/catalogWindow.ui:39
 msgid "Title"
 msgstr "Název"
 
-#: src/library.js:1401
+#: src/library.js:823
 msgid "Author"
 msgstr "Autor"
 
-#: src/library.js:1402 src/properties.js:75
+#: src/library.js:824 src/properties.js:77
 msgid "Tags"
 msgstr "Značky"
 
-#: src/library.js:1403
+#: src/library.js:825
 msgid "Description"
 msgstr "Popis"
 
-#: src/library.js:1404 src/properties.js:79
+#: src/library.js:826 src/properties.js:81
 msgid "Publisher"
 msgstr "Vydavatel"
 
-#: src/library.js:1405 src/properties.js:91 src/ui/ttsDialog.ui:284
+#: src/library.js:827 src/properties.js:101 src/ui/ttsDialog.ui:284
 msgid "Language"
 msgstr "Jazyk"
 
-#: src/library.js:1442
+#: src/library.js:864
 msgid "Add Files"
 msgstr "Přidat soubory"
-
-#: src/library.js:1662 src/window.js:1308 src/ui/libraryWindow.ui:191
-msgid "Loading…"
-msgstr "Nahrává se..."
-
-#: src/library.js:1703
-msgid "First"
-msgstr "První"
-
-#: src/library.js:1704
-msgid "Previous"
-msgstr "Předchozí"
-
-#: src/library.js:1705
-msgid "Next"
-msgstr "Další"
-
-#: src/library.js:1706
-msgid "Last"
-msgstr "Poslední"
-
-#: src/library.js:1755
-msgid "Related"
-msgstr "Související"
-
-#: src/library.js:1756
-msgid "Section"
-msgstr "Část"
-
-#: src/library.js:1757
-msgid "Subsection"
-msgstr "Podčást"
-
-#: src/library.js:1758
-msgid "New"
-msgstr "Nové"
-
-#: src/library.js:1759
-msgid "Popular"
-msgstr "Oblíbené"
-
-#: src/library.js:1760
-msgid "Featured"
-msgstr "Mimořádné přitažlivé"
-
-#: src/library.js:1761
-msgid "Recommended"
-msgstr "Doporučeno"
-
-#: src/library.js:1792
-msgid "Filter"
-msgstr "Filtr"
 
 #: src/lookup.js:106
 msgid "Search on Wikipedia"
@@ -392,116 +307,256 @@ msgstr "Wikislovník"
 msgid "Wiktionary (English)"
 msgstr "Wiktionary (angličtina)"
 
-#: src/lookup.js:385
+#: src/lookup.js:386
 msgid "Search on Wiktionary"
 msgstr "Hledat ve Wikislovníku"
 
-#: src/lookup.js:408
+#: src/lookup.js:409
 msgid "Translation by Google Translate"
 msgstr "Překlad pomocí Google Translate"
 
-#: src/main.js:115 src/window.js:657
+#: src/main.js:119 src/window.js:657
 msgid "Open File"
 msgstr "Otevřít soubor"
 
-#: src/main.js:136
+#: src/main.js:140
 msgid "Open Catalog"
 msgstr "Otevřít soupis"
 
-#: src/main.js:142 src/ui/catalogRow.ui:50
+#: src/main.js:146 src/ui/catalogRow.ui:50
 msgid "Open"
 msgstr "Otevřít"
 
-#: src/main.js:146
+#: src/main.js:150
 msgid "OPDS Catalog URL:"
 msgstr "Adresa (URL) soupisu OPDS:"
 
 #. Translators: put your names here, one name per line
 #. they will be shown in the "About" dialog
-#: src/main.js:180
+#: src/main.js:189
 msgid "translator-credits"
 msgstr "Pavel Fric"
 
-#: src/main.js:182 data/com.github.johnfactotum.Foliate.appdata.xml.in:7
+#: src/main.js:191 data/com.github.johnfactotum.Foliate.appdata.xml.in:7
 msgid "A simple and modern eBook viewer"
 msgstr "Jednoduchý a současný prohlížeč elektronických knih"
 
-#: src/main.js:207
+#: src/main.js:216
 msgid "Open library window"
 msgstr "Otevřít okno s knihovnou"
 
-#: src/main.js:211
+#: src/main.js:220
 msgid "Add files to the library"
 msgstr "Přidat soubory do knihovny"
 
-#: src/main.js:215
+#: src/main.js:224
 msgid "Show version"
 msgstr "Ukázat verzi"
 
-#: src/main.js:219
+#: src/main.js:228
 msgid "Show verbose debugging information"
 msgstr "Ukázat podrobné ladicí informace"
 
-#: src/properties.js:76
+#: src/opds.js:144
+msgid "Authentication Required"
+msgstr ""
+
+#: src/opds.js:146
+#, javascript-format
+msgid "Authentication required by %s"
+msgstr ""
+
+#: src/opds.js:149
+#, javascript-format
+msgid "The site says: “%s”"
+msgstr ""
+
+#: src/opds.js:160
+msgid "Authenticate"
+msgstr ""
+
+#: src/opds.js:171
+#, fuzzy
+msgid "Username"
+msgstr "Název kapitoly"
+
+#: src/opds.js:175
+msgid "Password"
+msgstr ""
+
+#. Translators: this is the punctuation used to join together a list of
+#. authors or categories
+#: src/opds.js:216
+msgid ", "
+msgstr ", "
+
+#: src/opds.js:255
+msgid "Download"
+msgstr "Stáhnout"
+
+#: src/opds.js:257
+msgid "Buy"
+msgstr "Koupit"
+
+#: src/opds.js:258
+msgid "Free"
+msgstr "Zdarma"
+
+#: src/opds.js:259
+msgid "Sample"
+msgstr "Ukázka"
+
+#: src/opds.js:260
+msgid "Borrow"
+msgstr "Půjčit"
+
+#: src/opds.js:261
+msgid "Subscribe"
+msgstr "Odebírat"
+
+#: src/opds.js:278
+msgid "Protected by DRM"
+msgstr "Chráněno DRM"
+
+#: src/opds.js:296
+msgid " (DRM)"
+msgstr " (DRM)"
+
+#: src/opds.js:362
+msgid "Unable to load OPDS feed"
+msgstr "Nelze nahrát kanál OPDS"
+
+#: src/opds.js:367 src/ui/libraryWindow.ui:69 src/ui/mainMenu.ui:632
+#: src/ui/menuBar.ui:18 src/ui/shortcutsWindow.ui:93
+msgid "Reload"
+msgstr "Nahrát znovu"
+
+#: src/opds.js:771 src/ui/catalogWindow.ui:6
+msgid "OPDS Catalog"
+msgstr "Soupis OPDS"
+
+#: src/opds.js:869 src/ui/catalogWindow.ui:53
+msgid "OPDS URL"
+msgstr "Adresa (URL) OPDS"
+
+#: src/opds.js:876
+#, fuzzy
+msgid "Go"
+msgstr "_Jít"
+
+#: src/opds.js:896 src/opds.js:921 src/window.js:1303
+#: src/ui/libraryWindow.ui:359
+msgid "Loading…"
+msgstr "Nahrává se..."
+
+#: src/opds.js:964
+msgid "First"
+msgstr "První"
+
+#: src/opds.js:965
+msgid "Previous"
+msgstr "Předchozí"
+
+#: src/opds.js:966
+msgid "Next"
+msgstr "Další"
+
+#: src/opds.js:967
+msgid "Last"
+msgstr "Poslední"
+
+#: src/opds.js:1015
+msgid "Related"
+msgstr "Související"
+
+#: src/opds.js:1016
+msgid "Section"
+msgstr "Část"
+
+#: src/opds.js:1017
+msgid "Subsection"
+msgstr "Podčást"
+
+#: src/opds.js:1018
+msgid "New"
+msgstr "Nové"
+
+#: src/opds.js:1019
+msgid "Popular"
+msgstr "Oblíbené"
+
+#: src/opds.js:1020
+msgid "Featured"
+msgstr "Mimořádné přitažlivé"
+
+#: src/opds.js:1021
+msgid "Recommended"
+msgstr "Doporučeno"
+
+#: src/opds.js:1055
+msgid "Filter"
+msgstr "Filtr"
+
+#: src/properties.js:78
 msgid " • "
 msgstr " • "
 
-#: src/properties.js:83
+#: src/properties.js:87
 msgid "Publication Date"
 msgstr "Datum vydání"
 
-#: src/properties.js:87
+#: src/properties.js:94
 msgid "Modified Date"
 msgstr "Datum změny"
 
-#: src/properties.js:95
+#: src/properties.js:106
 msgid "File Size"
 msgstr "Velikost souboru"
 
-#: src/properties.js:99
+#: src/properties.js:110
 msgid "Format"
 msgstr "Formát"
 
-#: src/properties.js:105
+#: src/properties.js:116
 msgid "Identifier"
 msgstr "Identifikátor"
 
-#: src/properties.js:119
+#: src/properties.js:130
 msgid ""
 "This book has no identifier. This is the MD5 hash generated from the file."
 msgstr ""
-"Tato kniha nemá identifikátor. Toto je MD5 hash (suma identifikující data)"
-" vytvořený ze souboru."
+"Tato kniha nemá identifikátor. Toto je MD5 hash (suma identifikující data) "
+"vytvořený ze souboru."
 
-#: src/properties.js:130
+#: src/properties.js:141
 msgid "Copyright"
 msgstr "Právo ke kopírování"
 
-#: src/properties.js:144
+#: src/properties.js:155
 msgid "Amazon"
 msgstr "Amazon"
 
-#: src/properties.js:148
+#: src/properties.js:159
 msgid "Goodreads"
 msgstr "Goodreads"
 
-#: src/properties.js:152
+#: src/properties.js:163
 msgid "Google Books"
 msgstr "Google Books"
 
-#: src/properties.js:156
+#: src/properties.js:167
 msgid "LibraryThing"
 msgstr "LibraryThing"
 
-#: src/properties.js:160
+#: src/properties.js:171
 msgid "Open Library"
 msgstr "Open Library"
 
-#: src/properties.js:164
+#: src/properties.js:175
 msgid "WorldCat"
 msgstr "WorldCat"
 
-#: src/properties.js:203
+#: src/properties.js:214
 msgid "Find on…"
 msgstr "Najít v..."
 
@@ -560,9 +615,20 @@ msgstr "když kolem šel cestovatel zahalený v teplém plášti."
 #. Translators: this is the language code of the test sentences
 #: src/tts.js:228
 msgid "en"
-msgstr "en"
+msgstr "cs"
 
-#: src/utils.js:87
+#: src/utils.js:150
+#, javascript-format
+msgid "%s (%s)"
+msgstr ""
+
+#. Translators: here "BCE" is for "before common era"
+#: src/utils.js:175
+#, javascript-format
+msgid "%s BCE"
+msgstr ""
+
+#: src/utils.js:216
 #, javascript-format
 msgid "%d minute"
 msgid_plural "%d minutes"
@@ -570,7 +636,7 @@ msgstr[0] "%d minuta"
 msgstr[1] "%d minuty"
 msgstr[2] "%d minut"
 
-#: src/utils.js:90
+#: src/utils.js:219
 #, javascript-format
 msgid "%d hour"
 msgid_plural "%d hours"
@@ -578,11 +644,11 @@ msgstr[0] "%d hodina"
 msgstr[1] "%d hodiny"
 msgstr[2] "%d hodin"
 
-#: src/utils.js:125
+#: src/utils.js:254
 msgid "E-book Files"
 msgstr "Soubory elektronických knih"
 
-#: src/window.js:123 src/window.js:821
+#: src/window.js:123 src/window.js:807
 msgid "Leave fullscreen"
 msgstr "Opustit celou obrazovku"
 
@@ -613,36 +679,28 @@ msgstr "Vaše poznámky mohou kdykoli přestat pracovat."
 msgid "Continue Anyway"
 msgstr "Přesto pokračovat"
 
-#: src/window.js:675
-msgid "You don't have any annotations for this book."
-msgstr "Pro tuto knihu nemáte žádné poznámky."
-
-#: src/window.js:676
-msgid "Highlight some text to add annotations."
-msgstr "Zvýrazněte text pro přidání poznámek."
-
-#: src/window.js:800
+#: src/window.js:786
 msgid "Contents"
 msgstr "Obsah"
 
-#: src/window.js:804 data/com.github.johnfactotum.Foliate.gschema.xml:240
+#: src/window.js:790 data/com.github.johnfactotum.Foliate.gschema.xml:240
 msgid "Show sidebar"
 msgstr "Ukázat postranní pruh"
 
-#: src/window.js:815 src/ui/selectionPopover.ui:47
+#: src/window.js:801 src/ui/selectionPopover.ui:47
 msgid "Find"
 msgstr "Najít"
 
-#: src/window.js:816 src/ui/libraryWindow.ui:111 src/ui/opdsWindow.ui:69
+#: src/window.js:802 src/ui/libraryWindow.ui:205 src/ui/libraryWindow.ui:300
 msgid "Menu"
 msgstr "Nabídka"
 
-#: src/window.js:1095
+#: src/window.js:1089
 #, javascript-format
 msgid "Image from “%s”"
 msgstr "Obrázek z “%s”"
 
-#: src/window.js:1095
+#: src/window.js:1089
 msgid "Image"
 msgstr "Obrázek"
 
@@ -658,7 +716,11 @@ msgstr "Vybrat vlastní barvu"
 msgid "Remote file"
 msgstr "Vzdálený soubor"
 
-#: src/ui/bookBoxMenu.ui:20 src/ui/bookEditDialog.ui:6 src/ui/catalogRow.ui:60
+#: src/ui/bookBoxMenu.ui:25 src/ui/mainMenu.ui:651 src/ui/menuBar.ui:34
+msgid "Export Annotations…"
+msgstr "Vyvést poznámky…"
+
+#: src/ui/bookBoxMenu.ui:37 src/ui/bookEditDialog.ui:6 src/ui/catalogRow.ui:60
 #: src/ui/themeRow.ui:26
 msgid "Edit"
 msgstr "Upravit"
@@ -679,14 +741,6 @@ msgstr "Procházet..."
 #: src/ui/bookEditDialog.ui:72
 msgid "Remove Book"
 msgstr "Odstranit knihu"
-
-#: src/ui/catalogWindow.ui:6
-msgid "OPDS Catalog"
-msgstr "Soupis OPDS"
-
-#: src/ui/catalogWindow.ui:53
-msgid "OPDS URL"
-msgstr "Adresa (URL) OPDS"
 
 #: src/ui/catalogWindow.ui:68
 msgid "Preview URL"
@@ -713,7 +767,7 @@ msgid "Select some text to add annotations."
 msgstr "Vyberte text pro přidání poznámek."
 
 #: src/ui/contentsStack.ui:124
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:87
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:109
 msgid "Annotations"
 msgstr "Poznámky"
 
@@ -734,24 +788,24 @@ msgid "No definitions found"
 msgstr "Nenalezena žádná vymezení"
 
 #: src/ui/exportWindow.ui:11
-msgid "HTML"
-msgstr "HTML"
-
-#: src/ui/exportWindow.ui:15
-msgid "Markdown"
-msgstr "Markdown"
-
-#: src/ui/exportWindow.ui:19
-msgid "Plain Text"
-msgstr "Prostý text"
-
-#: src/ui/exportWindow.ui:23
 msgid "BibTeX"
 msgstr "BibTeX"
 
-#: src/ui/exportWindow.ui:27
+#: src/ui/exportWindow.ui:15
+msgid "HTML"
+msgstr "HTML"
+
+#: src/ui/exportWindow.ui:19
 msgid "JSON"
 msgstr "JSON"
+
+#: src/ui/exportWindow.ui:23
+msgid "Markdown"
+msgstr "Markdown"
+
+#: src/ui/exportWindow.ui:27
+msgid "Plain Text"
+msgstr "Prostý text"
 
 #: src/ui/exportWindow.ui:34
 msgid "Export Annotations"
@@ -847,12 +901,12 @@ msgstr "Otevřít soupis..."
 msgid "Add Books…"
 msgstr "Přidat knihy..."
 
-#: src/ui/libraryWindow.ui:21 src/ui/libraryWindow.ui:522
+#: src/ui/libraryWindow.ui:21 src/ui/libraryWindow.ui:683
 msgid "Add Catalog…"
 msgstr "Přidat soupis..."
 
 #: src/ui/libraryWindow.ui:26 src/ui/mainMenu.ui:316 src/ui/menuBar.ui:78
-#: src/ui/opdsWindow.ui:22 src/ui/preferenceWindow.ui:118
+#: src/ui/preferenceWindow.ui:118
 msgid "Preferences"
 msgstr "Nastavení"
 
@@ -861,68 +915,95 @@ msgid "Keyboard Shortcuts"
 msgstr "Klávesové zkratky"
 
 #: src/ui/libraryWindow.ui:34 src/ui/mainMenu.ui:330 src/ui/menuBar.ui:227
-#: src/ui/opdsWindow.ui:26
 msgid "About Foliate"
 msgstr "O programu Foliate"
 
 #: src/ui/libraryWindow.ui:55
+#, fuzzy
+msgid "Go to start page"
+msgstr "Jít na začátek"
+
+#: src/ui/libraryWindow.ui:83
+#, fuzzy
+msgid "Add this feed to catalogs"
+msgstr "Přidat soupis"
+
+#: src/ui/libraryWindow.ui:104
+#, fuzzy
+msgid "Location…"
+msgstr "Poloha"
+
+#: src/ui/libraryWindow.ui:116
+msgid "Go Back to Library"
+msgstr ""
+
+#: src/ui/libraryWindow.ui:123
+#, fuzzy
+msgid "Go Back to Catalog"
+msgstr "Žádné soupisy"
+
+#: src/ui/libraryWindow.ui:149
 msgid "Add books"
 msgstr "Přidat knihy"
 
-#: src/ui/libraryWindow.ui:72
+#: src/ui/libraryWindow.ui:166
 msgid "Add catalog"
 msgstr "Přidat soupis"
 
-#: src/ui/libraryWindow.ui:135 src/ui/opdsWindow.ui:84
+#: src/ui/libraryWindow.ui:229 src/ui/libraryWindow.ui:316
 #: src/ui/shortcutsWindow.ui:17
 msgid "Search"
 msgstr "Hledat"
 
-#: src/ui/libraryWindow.ui:149
+#: src/ui/libraryWindow.ui:243
 msgid "Toggle view"
 msgstr "Přepnout zobrazení"
 
-#: src/ui/libraryWindow.ui:210
+#: src/ui/libraryWindow.ui:286
+msgid "Go back"
+msgstr "Jít zpět"
+
+#: src/ui/libraryWindow.ui:378
 msgid "Stop"
 msgstr "Zastavit"
 
-#: src/ui/libraryWindow.ui:320
+#: src/ui/libraryWindow.ui:481
 msgid "No books yet"
 msgstr "Dosud žádné knihy"
 
-#: src/ui/libraryWindow.ui:332 src/ui/mainOverlay.ui:60
+#: src/ui/libraryWindow.ui:493 src/ui/mainOverlay.ui:60
 msgid "Open a book to start reading."
 msgstr "Otevřete knihu a začněte číst."
 
-#: src/ui/libraryWindow.ui:346 src/ui/mainOverlay.ui:73
+#: src/ui/libraryWindow.ui:507 src/ui/mainOverlay.ui:73
 msgid "Open File…"
 msgstr "Otevřít soubor..."
 
-#: src/ui/libraryWindow.ui:354
+#: src/ui/libraryWindow.ui:515
 msgid "Browse Catalogs"
 msgstr "Procházet soupisy"
 
-#: src/ui/libraryWindow.ui:386
+#: src/ui/libraryWindow.ui:547
 msgid "No results found"
 msgstr "Nenalezeny žádné výsledky"
 
-#: src/ui/libraryWindow.ui:398
+#: src/ui/libraryWindow.ui:559
 msgid "Try a different search."
 msgstr "Vyzkoušejte různé hledání."
 
-#: src/ui/libraryWindow.ui:495
+#: src/ui/libraryWindow.ui:656
 msgid "No catalogs"
 msgstr "Žádné soupisy"
 
-#: src/ui/libraryWindow.ui:507
+#: src/ui/libraryWindow.ui:668
 msgid "You can browse, search, and download content from OPDS catalogs."
 msgstr "Můžete procházet, vyhledávat a stahovat obsah ze soupisů OPDS."
 
-#: src/ui/libraryWindow.ui:531
+#: src/ui/libraryWindow.ui:692
 msgid "Learn More"
 msgstr "Dozvědět se více"
 
-#: src/ui/libraryWindow.ui:547
+#: src/ui/libraryWindow.ui:708
 msgid "Catalogs"
 msgstr "Soupisy"
 
@@ -963,7 +1044,7 @@ msgstr "Pokročilé"
 msgid "Book"
 msgstr "Kniha"
 
-#: src/ui/mainMenu.ui:297 src/ui/menuBar.ui:8 src/ui/opdsWindow.ui:13
+#: src/ui/mainMenu.ui:297 src/ui/menuBar.ui:8
 msgid "Open…"
 msgstr "Otevřít..."
 
@@ -1005,7 +1086,7 @@ msgid "Full Justification"
 msgstr "Plné zarovnání"
 
 #: src/ui/mainMenu.ui:519 src/ui/menuBar.ui:143
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:284
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:306
 msgid "Auto-hyphenation"
 msgstr "Automatické dělení slov"
 
@@ -1037,17 +1118,9 @@ msgstr "Povolit vývojářské nástroje"
 msgid "Open a Copy"
 msgstr "Otevřít kopii"
 
-#: src/ui/mainMenu.ui:632 src/ui/menuBar.ui:18 src/ui/shortcutsWindow.ui:93
-msgid "Reload"
-msgstr "Nahrát znovu"
-
 #: src/ui/mainMenu.ui:639 src/ui/menuBar.ui:22
 msgid "Clear Cache"
 msgstr "Vyprázdnit vyrovnávací paměť"
-
-#: src/ui/mainMenu.ui:651 src/ui/menuBar.ui:34
-msgid "Export Annotations…"
-msgstr "Vyvést poznámky…"
 
 #: src/ui/mainMenu.ui:658 src/ui/menuBar.ui:40
 msgid "Import Annotations…"
@@ -1212,18 +1285,6 @@ msgstr "Jít na další stranu"
 #: src/ui/navBar.ui:402
 msgid "Text-to-speech"
 msgstr "Text na řeč"
-
-#: src/ui/opdsWindow.ui:17
-msgid "Open a Catalog…"
-msgstr "Otevřít soupis…"
-
-#: src/ui/opdsWindow.ui:43
-msgid "Go back"
-msgstr "Jít zpět"
-
-#: src/ui/opdsWindow.ui:56
-msgid "Go to start"
-msgstr "Jít na začátek"
 
 #: src/ui/preferenceWindow.ui:11
 msgid "Nothing"
@@ -1516,422 +1577,6 @@ msgstr "Odstranit vzhled"
 msgid "Cannot retrieve translation"
 msgstr "Nelze získat překlad"
 
-#: src/ui/translationBox.ui:127
-msgid "Afrikaans"
-msgstr "Afrikánština"
-
-#: src/ui/translationBox.ui:131
-msgid "Albanian"
-msgstr "Albánština"
-
-#: src/ui/translationBox.ui:135
-msgid "Amharic"
-msgstr "Amharština"
-
-#: src/ui/translationBox.ui:139
-msgid "Arabic"
-msgstr "Arabština"
-
-#: src/ui/translationBox.ui:143
-msgid "Armenian"
-msgstr "Arménština"
-
-#: src/ui/translationBox.ui:147
-msgid "Azerbaijani"
-msgstr "Ázerbájdžánština"
-
-#: src/ui/translationBox.ui:151
-msgid "Basque"
-msgstr "Baskičtina"
-
-#: src/ui/translationBox.ui:155
-msgid "Belarusian"
-msgstr "Běloruština"
-
-#: src/ui/translationBox.ui:159
-msgid "Bengali"
-msgstr "Bengálština"
-
-#: src/ui/translationBox.ui:163
-msgid "Bosnian"
-msgstr "Bosenština"
-
-#: src/ui/translationBox.ui:167
-msgid "Bulgarian"
-msgstr "Bulharština"
-
-#: src/ui/translationBox.ui:171
-msgid "Catalan"
-msgstr "Katalánština"
-
-#: src/ui/translationBox.ui:175
-msgid "Cebuano"
-msgstr "Cebuánština"
-
-#: src/ui/translationBox.ui:179
-msgid "Chinese (Simplified)"
-msgstr "Čínština (zjednodušená)"
-
-#: src/ui/translationBox.ui:183
-msgid "Chinese (Traditional)"
-msgstr "Čínština (tradiční)"
-
-#: src/ui/translationBox.ui:187
-msgid "Corsican"
-msgstr "Korsičtina"
-
-#: src/ui/translationBox.ui:191
-msgid "Croatian"
-msgstr "Chorvatština"
-
-#: src/ui/translationBox.ui:195
-msgid "Czech"
-msgstr "Čeština"
-
-#: src/ui/translationBox.ui:199
-msgid "Danish"
-msgstr "Dánština"
-
-#: src/ui/translationBox.ui:203
-msgid "Dutch"
-msgstr "Nizozemština"
-
-#: src/ui/translationBox.ui:207
-msgid "English"
-msgstr "Angličtina"
-
-#: src/ui/translationBox.ui:211
-msgid "Esperanto"
-msgstr "Esperantština"
-
-#: src/ui/translationBox.ui:215
-msgid "Estonian"
-msgstr "Estonština"
-
-#: src/ui/translationBox.ui:219
-msgid "Finnish"
-msgstr "Finština"
-
-#: src/ui/translationBox.ui:223
-msgid "French"
-msgstr "Francouzština"
-
-#: src/ui/translationBox.ui:227
-msgid "Frisian"
-msgstr "Frísština"
-
-#: src/ui/translationBox.ui:231
-msgid "Galician"
-msgstr "Galicijština"
-
-#: src/ui/translationBox.ui:235
-msgid "Georgian"
-msgstr "Grizínština"
-
-#: src/ui/translationBox.ui:239
-msgid "German"
-msgstr "Němčina"
-
-#: src/ui/translationBox.ui:243
-msgid "Greek"
-msgstr "Řečtina"
-
-#: src/ui/translationBox.ui:247
-msgid "Gujarati"
-msgstr "Gujarátština"
-
-#: src/ui/translationBox.ui:251
-msgid "Haitian Creole"
-msgstr "Hajtská kreolština"
-
-#: src/ui/translationBox.ui:255
-msgid "Hausa"
-msgstr "Hausština"
-
-#: src/ui/translationBox.ui:259
-msgid "Hawaiian"
-msgstr "Havajština"
-
-#: src/ui/translationBox.ui:263
-msgid "Hebrew"
-msgstr "Hebrejština"
-
-#: src/ui/translationBox.ui:267
-msgid "Hindi"
-msgstr "Hindština"
-
-#: src/ui/translationBox.ui:271
-msgid "Hmong"
-msgstr "Hmongština"
-
-#: src/ui/translationBox.ui:275
-msgid "Hungarian"
-msgstr "Maďarština"
-
-#: src/ui/translationBox.ui:279
-msgid "Icelandic"
-msgstr "Islandština"
-
-#: src/ui/translationBox.ui:283
-msgid "Igbo"
-msgstr "Igboština"
-
-#: src/ui/translationBox.ui:287
-msgid "Indonesian"
-msgstr "Indonésština"
-
-#: src/ui/translationBox.ui:291
-msgid "Irish"
-msgstr "Irština"
-
-#: src/ui/translationBox.ui:295
-msgid "Italian"
-msgstr "Italština"
-
-#: src/ui/translationBox.ui:299
-msgid "Japanese"
-msgstr "Japonština"
-
-#: src/ui/translationBox.ui:303
-msgid "Javanese"
-msgstr "Jávanština"
-
-#: src/ui/translationBox.ui:307
-msgid "Kannada"
-msgstr "Kannadština"
-
-#: src/ui/translationBox.ui:311
-msgid "Kazakh"
-msgstr "Kazaština"
-
-#: src/ui/translationBox.ui:315
-msgid "Khmer"
-msgstr "Khmérština"
-
-#: src/ui/translationBox.ui:319
-msgid "Korean"
-msgstr "Korejština"
-
-#: src/ui/translationBox.ui:323
-msgid "Kurdish"
-msgstr "Kurdština"
-
-#: src/ui/translationBox.ui:327
-msgid "Kyrgyz"
-msgstr "Kyrgyzština"
-
-#: src/ui/translationBox.ui:331
-msgid "Lao"
-msgstr "Laosština"
-
-#: src/ui/translationBox.ui:335
-msgid "Latin"
-msgstr "Latina"
-
-#: src/ui/translationBox.ui:339
-msgid "Latvian"
-msgstr "Lotyština"
-
-#: src/ui/translationBox.ui:343
-msgid "Lithuanian"
-msgstr "Litevština"
-
-#: src/ui/translationBox.ui:347
-msgid "Luxembourgish"
-msgstr "Lucemburština"
-
-#: src/ui/translationBox.ui:351
-msgid "Macedonian"
-msgstr "Makedonština"
-
-#: src/ui/translationBox.ui:355
-msgid "Malagasy"
-msgstr "Malgaština"
-
-#: src/ui/translationBox.ui:359
-msgid "Malay"
-msgstr "Malajština"
-
-#: src/ui/translationBox.ui:363
-msgid "Malayalam"
-msgstr "Malajlamština"
-
-#: src/ui/translationBox.ui:367
-msgid "Maltese"
-msgstr "Maltština"
-
-#: src/ui/translationBox.ui:371
-msgid "Maori"
-msgstr "Maorština"
-
-#: src/ui/translationBox.ui:375
-msgid "Marathi"
-msgstr "Maráthština"
-
-#: src/ui/translationBox.ui:379
-msgid "Mongolian"
-msgstr "Mongolština"
-
-#: src/ui/translationBox.ui:383
-msgid "Myanmar (Burmese)"
-msgstr "Barmština"
-
-#: src/ui/translationBox.ui:387
-msgid "Nepali"
-msgstr "Nepálština"
-
-#: src/ui/translationBox.ui:391
-msgid "Norwegian"
-msgstr "Norština"
-
-#: src/ui/translationBox.ui:395
-msgid "Nyanja (Chichewa)"
-msgstr "Nyanjaština (Chichewa)"
-
-#: src/ui/translationBox.ui:399
-msgid "Pashto"
-msgstr "Paštština (paštunština)"
-
-#: src/ui/translationBox.ui:403
-msgid "Persian"
-msgstr "Perština"
-
-#: src/ui/translationBox.ui:407
-msgid "Polish"
-msgstr "Polština"
-
-#: src/ui/translationBox.ui:411
-msgid "Portuguese (Portugal, Brazil)"
-msgstr "Portugalština (Portugalsko, Brazílie)"
-
-#: src/ui/translationBox.ui:415
-msgid "Punjabi"
-msgstr "Pandžábština"
-
-#: src/ui/translationBox.ui:419
-msgid "Romanian"
-msgstr "Rumunština"
-
-#: src/ui/translationBox.ui:423
-msgid "Russian"
-msgstr "Ruština"
-
-#: src/ui/translationBox.ui:427
-msgid "Samoan"
-msgstr "Samojština"
-
-#: src/ui/translationBox.ui:431
-msgid "Scots Gaelic"
-msgstr "Skotská gaelština"
-
-#: src/ui/translationBox.ui:435
-msgid "Serbian"
-msgstr "Srbština"
-
-#: src/ui/translationBox.ui:439
-msgid "Sesotho"
-msgstr "Sesothština"
-
-#: src/ui/translationBox.ui:443
-msgid "Shona"
-msgstr "Šonština"
-
-#: src/ui/translationBox.ui:447
-msgid "Sindhi"
-msgstr "Sindhština"
-
-#: src/ui/translationBox.ui:451
-msgid "Sinhala (Sinhalese)"
-msgstr "Sinhálština"
-
-#: src/ui/translationBox.ui:455
-msgid "Slovak"
-msgstr "Slovenština"
-
-#: src/ui/translationBox.ui:459
-msgid "Slovenian"
-msgstr "Slovinština"
-
-#: src/ui/translationBox.ui:463
-msgid "Somali"
-msgstr "Somálština"
-
-#: src/ui/translationBox.ui:467
-msgid "Spanish"
-msgstr "Španělština"
-
-#: src/ui/translationBox.ui:471
-msgid "Sundanese"
-msgstr "Sundština"
-
-#: src/ui/translationBox.ui:475
-msgid "Swahili"
-msgstr "Svahilština"
-
-#: src/ui/translationBox.ui:479
-msgid "Swedish"
-msgstr "Švédština"
-
-#: src/ui/translationBox.ui:483
-msgid "Tagalog (Filipino)"
-msgstr "Tagalština"
-
-#: src/ui/translationBox.ui:487
-msgid "Tajik"
-msgstr "Tádžičtina"
-
-#: src/ui/translationBox.ui:491
-msgid "Tamil"
-msgstr "Tamilština"
-
-#: src/ui/translationBox.ui:495
-msgid "Telugu"
-msgstr "Telugština"
-
-#: src/ui/translationBox.ui:499
-msgid "Thai"
-msgstr "Thajština"
-
-#: src/ui/translationBox.ui:503
-msgid "Turkish"
-msgstr "Turečtina"
-
-#: src/ui/translationBox.ui:507
-msgid "Ukrainian"
-msgstr "Ukrajinština"
-
-#: src/ui/translationBox.ui:511
-msgid "Urdu"
-msgstr "Urdština"
-
-#: src/ui/translationBox.ui:515
-msgid "Uzbek"
-msgstr "Uzbečtina"
-
-#: src/ui/translationBox.ui:519
-msgid "Vietnamese"
-msgstr "Větnamština"
-
-#: src/ui/translationBox.ui:523
-msgid "Welsh"
-msgstr "Velština"
-
-#: src/ui/translationBox.ui:527
-msgid "Xhosa"
-msgstr "Xhoština"
-
-#: src/ui/translationBox.ui:531
-msgid "Yiddish"
-msgstr "Jidiš"
-
-#: src/ui/translationBox.ui:535
-msgid "Yoruba"
-msgstr "Jorubština"
-
-#: src/ui/translationBox.ui:539
-msgid "Zulu"
-msgstr "Zulština"
-
 #: src/ui/ttsDialog.ui:17
 msgid "OK"
 msgstr "OK"
@@ -2028,238 +1673,302 @@ msgid "John Factotum"
 msgstr "John Factotum"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:49
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:195
+#, fuzzy
+msgid "OPDS catalogs:"
+msgstr "Soupis OPDS"
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:51
+msgid "Catalogs are now opened in the main library window"
+msgstr ""
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:52
+#, fuzzy
+msgid "View current location"
+msgstr "Odstranit nynější polohu"
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:53
+#, fuzzy
+msgid "Go to catalog start page"
+msgstr "Jít na začátek"
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:54
+#, fuzzy
+msgid "Reload catalog"
+msgstr "Přidat soupis"
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:55
+#, fuzzy
+msgid "Add current feed to catalogs"
+msgstr "Přidat soupis"
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:56
+msgid "HTTP authentication support"
+msgstr ""
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:58
+#, fuzzy
+msgid "Other changes:"
+msgstr "Kritické změny:"
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:60
+msgid ""
+"Fixed unique identifier extraction for FictionBook (.fb2, .fb2.zip) files"
+msgstr ""
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:61
+msgid "Fixed newlines being ignored when copying text"
+msgstr ""
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:62
+msgid "“Turn page on tap” is now disabled in non-paginated layouts"
+msgstr ""
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:63
+msgid "Opening a book from the library view now closes the library window"
+msgstr ""
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:64
+msgid "Language and publication dates in metadata are now parsed and formatted"
+msgstr ""
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:65
+#, fuzzy
+msgid "Export annotations from the library view"
+msgstr "Vyvést poznámky do Markdown"
+
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:71
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:217
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:226
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:237
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:252
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:261
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:296
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:239
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:248
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:259
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:274
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:283
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:318
 msgid "Changes:"
 msgstr "Změny:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:51
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:73
 msgid "Fixed blurry book covers on HiDPI"
 msgstr "Opraveny rozmazané obaly knih na HiDPI"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:52
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:74
 msgid "Fixed OPDS links to Standard Ebooks and Project Gutenberg"
 msgstr ""
 "Opraveny odkazy OPDS na standardní elektronické knihy a Projekt Gutenberg"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:53
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:75
 msgid "Fixed wrong view icon on startup"
 msgstr "Opraveno nesprávné zobrazení ikony při spuštění"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:59
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:81
 msgid "Library:"
 msgstr "Knihovna:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:61
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:83
 msgid "A library view showing recent books and reading progress"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:62
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:84
 msgid "Search books by metadata"
 msgstr "Prohledávat knihy podle popisných dat"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:63
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:85
 msgid "E-book discovery with OPDS"
 msgstr "Zpřístupnění elektronických knih s OPDS"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:65
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:87
 msgid "New supported formats:"
 msgstr "Nově podporované formáty:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:67
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:89
 msgid "FictionBook (.fb2, .fb2.zip)"
 msgstr "FictionBook (.fb2, .fb2.zip)"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:68
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:90
 msgid "Comic book archive (.cbr, .cbz, .cbt, .cb7)"
 msgstr "Archiv knihy komiksů (.cbr, .cbz, .cbt, .cb7)"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:69
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:91
 msgid "Plain text (.txt)"
 msgstr "Prostý text (.txt)"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:70
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:92
 msgid "Unpacked EPUB files"
 msgstr "Nezabalené soubory EPUB"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:72
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:94
 msgid "Layout:"
 msgstr "Rozvržení:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:74
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:96
 msgid "Option to set maximum page width"
 msgstr "Volba pro nastavení největší šířky strany"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:75
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:97
 msgid ""
 "The \"Automatic\" layout will now show four columns when the page width is "
 "wide"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:77
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:99
 msgid "Image viewer:"
 msgstr "Prohlížeč obrázků:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:79
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:101
 msgid ""
 "Improved image viewer, with new shortcuts and the ability to rotate and "
 "invert images"
 msgstr ""
-"Vylepšený prohlížeč obrázků, nové klávesové zkratky a schopnost otáčet a"
-" obrátit barvu obrázků"
+"Vylepšený prohlížeč obrázků, nové klávesové zkratky a schopnost otáčet a "
+"obrátit barvu obrázků"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:80
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:102
 msgid ""
 "Option to disable image viewer, or to open images on double, middle, or "
 "right click"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:82
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:104
 msgid "Text-to-speech:"
 msgstr "Text na řeč:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:84
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:106
 msgid "Improved text-to-speech configuration UI"
 msgstr "Vylepšené nastavení rozhraní textu na řeč"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:85
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:107
 msgid "Ability to set text-to-speech voice based on book language"
 msgstr "Schopnost nastavení hlasu textu na řeč podle jazyka knihy"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:89
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:111
 msgid "Import annotations from JSON"
 msgstr "Zavést poznámky z JSON"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:90
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:112
 msgid "Search in annotations"
 msgstr "Hledat v poznámkách"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:91
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:113
 msgid "Annotations are now sorted in the same order as they appear in the book"
 msgstr "Poznámky jsou nyní řazeny ve stejném pořadí, jak se objevují v knize"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:93
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:115
 msgid "Security:"
 msgstr "Bezpečnost:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:95
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:117
 msgid ""
 "\"Allow Unsafe Content\" now only enables JavaScript; external content will "
 "no longer be loaded"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:96
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:118
 msgid "WebKit processes are now sandboxed"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:98
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:120
 msgid "Other featues and fixes:"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:100
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:122
 msgid "Improved support for vertical and right-to-left books"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:101
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:123
 msgid "Support for StarDict dictionaries"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:102
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:124
 msgid "Fixed current location not preserved when resizing"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:103
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:125
 msgid "Fixed auto-hiding header bar under some themes"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:104
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:126
 msgid "Command-line options for showing version and adding books to library"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:105
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:127
 #, fuzzy
 msgid "Option to clear or disable cache"
 msgstr "Volba pro zakázání slovníku"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:106
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:128
 msgid ""
 "When an HTML page contains invalid self-closing anchor tags, it is now "
 "parsed as XHTML"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:112
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:128
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:206
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:273
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:313
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:134
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:150
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:228
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:295
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:335
 msgid "Fixes:"
 msgstr "Opravy:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:114
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:136
 msgid "Fixed wrong version number"
 msgstr "Opraveno nesprávné číslo verze"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:115
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:137
 msgid ""
 "Fixed dictionary, translation, and Wikipedia not working in the Snap package"
 msgstr "Opraven slovník, překlad a Wikipedie nepracující v balíčku Snap"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:121
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:282
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:305
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:143
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:304
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:327
 msgid "New features:"
 msgstr "Nové vlastnosti:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:123
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:145
 msgid "New and improved icon"
 msgstr "Nová a lepší ikona"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:124
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:146
 msgid "Option to disable turn page on tap"
 msgstr "Volba pro zakázání obrácení strany při ťuknutí"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:125
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:147
 msgid "A menu on the welcome screen for opening recent files"
 msgstr "Nabídka na uvítací obrazovce pro otevření nedávných souborů"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:126
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:148
 msgid "Restored shortcuts for showing ToC, annotations, and bookmarks"
 msgstr "Obnoveny zkratky pro ukázání obsahu, poznámek a záložek"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:130
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:152
 msgid "Fixed application not translated"
 msgstr "Opraven program, nepřeloženo"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:136
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:158
 msgid "Interface:"
 msgstr "Rozhraní:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:138
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:160
 msgid "A redesigned interface that works better for smaller screens"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:139
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:161
 msgid "Improved fullscreen mode with an overlaid headerbar"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:140
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:162
 msgid ""
 "The headerbar and the progress bar now auto-hide, for a distraction-free "
 "reading experience"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:141
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:163
 msgid ""
 "Various location information, as well as a clock, can now be displayed in "
 "the footer"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:142
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:164
 msgid ""
 "A new location popover (Ctrl + L) that shows reading time estimates and "
 "allows skipping to locations"
@@ -2267,343 +1976,343 @@ msgstr ""
 "Nový vysunovací panel s polohami (Ctrl+L), který ukáže odhad pro dobu čtení "
 "a umožní přeskočit na polohu"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:143
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:165
 msgid ""
 "E-reader style navigation: go to the previous or next page by tapping on the "
 "left or right part of the view; tap on the middle to toggle header bar and "
 "progress bar"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:144
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:166
 msgid "Annotations, bookmarks, and find results now show chapter titles"
 msgstr "Poznámky, záložky a výsledky hledání nyní ukazují názvy kapitol"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:145
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:167
 msgid "When looking up words in dictionaries, the query can now be edited"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:146
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:168
 msgid "New shortcut for viewing metadata (Ctrl + I) and preferences (Ctrl + ,)"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:147
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:169
 msgid ""
 "A new traditional menubar, which may be displayed depending on the desktop "
 "environment"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:148
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:170
 msgid ""
 "Option to use a traditional titlebar and menubar instead of a headerbar "
 "(experimental)"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:150
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:172
 msgid "Reading:"
 msgstr "Čtení:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:152
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:174
 msgid "Continuous scrolling layout"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:153
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:175
 msgid ""
 "Option to show decorative shadows that mimic the appearance of a real book"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:154
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:176
 msgid "Ability to zoom in and zoom out"
 msgstr "Schopnost přibližovat a oddalovat"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:155
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:177
 msgid "Improved image viewer with \"save as\" option"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:156
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:178
 msgid "Open copies of a book in new windows (Ctrl + N)"
 msgstr "Otevřít kopie knihy v nových oknech (Ctrl + N)"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:157
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:179
 msgid "Reload book (Ctrl + R)"
 msgstr "Nahrát knihu znovu  (Ctrl + R)"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:158
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:180
 msgid "New built-in themes: Gray, Solarized, Gruvbox, Nord"
 msgstr "Nová vestavěná témata: šedé, osluněné, Gruvbox, Nord"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:160
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:182
 msgid "Text selection:"
 msgstr "Výběr textu:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:162
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:184
 msgid "Ability to select text across pages"
 msgstr "Schopnost vybrat text přes stránky"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:163
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:185
 msgid "Find selected text in book"
 msgstr "Najít vybraný text v knize"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:164
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:186
 msgid "Speak selected text or from the selected locatio"
 msgstr "Říct vybraný text nebo od vybrané polohy"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:166
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:188
 msgid "Annotations:"
 msgstr "Poznámky:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:168
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:190
 msgid "Spellcheck notes"
 msgstr "Zkontrolovat pravopis poznámek"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:169
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:191
 msgid "Export annotations to Markdown"
 msgstr "Vyvést poznámky do Markdown"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:170
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:192
 msgid "Options to use custom colors for highlights"
 msgstr "Volbyk použití vlastních barev pro zvýraznění"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:172
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:194
 msgid "For publishers and developers:"
 msgstr "Pro vydavatele a vývojáře:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:174
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:196
 msgid ""
 "Support for Apple Books theme attribute, which allows books to detect themes "
 "without JavaScript"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:175
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:197
 msgid "WebKit's developer tools can be enabled"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:177
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:199
 msgid "Breaking changes:"
 msgstr "Kritické změny:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:179
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:201
 msgid "The settings schemas has been reorganized"
 msgstr "Schéma nastavení bylo změněno"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:180
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:202
 msgid "The format for custom themes has changed"
 msgstr "Formát pro vlastní vzhled byl změněn"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:181
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:203
 msgid "Locations are now 1024 characters in size"
 msgstr "Polohy nyní mají velikost 1024 znaků"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:183
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:205
 msgid "Bug fixes:"
 msgstr "Opravy chyb:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:185
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:207
 msgid "Fixed not restoring exact last location"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:186
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:208
 #, fuzzy
 msgid "Fixed navigation not working with scrolled layout"
 msgstr "Opravený pohyb v obsahu u některých knih nepracuje"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:187
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:209
 msgid "Fixed font size not changing when the book uses absolute-size keywords"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:188
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:210
 msgid "Fixed text cut off at margin edge"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:189
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:211
 #, fuzzy
 msgid "Fixed unable to open books with \"#\" or \"?\" in the file name"
 msgstr ""
 "Opraven stav, kdy nebylo možno otevírat knihy se souborovou příponou .epub3"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:197
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:219
 msgid ""
 "Fixed Flatpak version not being able to open .mobi, .azw, and .azw3 files"
 msgstr "Opravená verze Flatpak neumí otevřít soubory .mobi, .azw, and .azw3"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:198
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:220
 msgid "Improved Wiktionary lookup, now with links and example sentences"
 msgstr "Vylepšené vyhledávání ve Wiktionary, nyní s odkazy a vzorovými větami"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:199
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:221
 msgid "Improved popover footnote extraction and formatting"
 msgstr "Vylepšené získávání a formátování poznámek pod čarou"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:200
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:222
 msgid "Added option to export annotations to BibTeX"
 msgstr "Přidána volba vyvádění poznámek do BibTeX"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:208
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:230
 msgid "Fixed table of contents navigation not working with some books"
 msgstr "Opravený pohyb v obsahu u některých knih nepracuje"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:209
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:231
 msgid "Fixed not being able to zoom images with Kindle books"
 msgstr "Opravena věc ohledně nemožnosti přiblížení obrázků v knihách Kindle"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:210
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:232
 msgid "Fixed not being able to open books with .epub3 filename extension"
 msgstr ""
 "Opraven stav, kdy nebylo možno otevírat knihy se souborovou příponou .epub3"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:211
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:233
 msgid "Fixed temporary directory not being cleaned after closing"
 msgstr "Opraven stav, kdy nebyl dočasný adresář po zavření vyčištěn"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:219
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:241
 msgid "Fixed F9 shortcut not working"
 msgstr "Opraven problém s nepracující klávesovou zkratkou F9"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:220
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:255
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:242
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:277
 msgid "Updated translations"
 msgstr "Aktualizovány překlady"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:228
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:250
 msgid "External resources and JavaScript are now blocked by default"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:229
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:251
 msgid "Basic text-to-speech support"
 msgstr "Základní podpora pro text na řeč"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:230
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:252
 msgid "Export annotations to HTML, plain text, or JSON"
 msgstr "Vyvést poznámky do HTML, prostého textu nebo JSON"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:231
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:253
 msgid "Support for viewing .mobi, .azw, and .azw3 files"
 msgstr "Podpora pro zobrazení souborů .mobi, .azw, a .azw3"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:239
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:261
 msgid "New alternative sidebar UI"
 msgstr "Nové další rozhraní postranního pruhu"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:240
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:262
 msgid "Lookup words in Wikipedia and offline dictionaries"
 msgstr "Vyhledat slova ve Wikipedii a ve slovnících mimo internet"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:241
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:263
 msgid "Translate passages with Google Translate"
 msgstr "Překlad pasáží pomocí Google Translate"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:242
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:264
 msgid "Configure default action when words are selected"
 msgstr "Nastavit výchozí činnost, kdy jsou vybrána slova"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:243
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:265
 msgid "Experimental popup footnote support"
 msgstr "Pokusná podpora pro vysunovací poznámky pod čarou"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:244
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:266
 msgid "Ability to find within only the current chapter"
 msgstr "Schopnost hledat jen v nynější kapitole"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:245
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:267
 msgid "Fixed CPU spikes when left open"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:246
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:268
 msgid "Fixed highlights not rendering at the correct positions"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:254
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:276
 msgid "Fixed crashing when opening files"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:263
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:285
 msgid "Customize page margins and brightness"
 msgstr "Přizpůsobit okraje stran a jas"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:264
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:286
 msgid "Tweak the theme colors, or add your own custom themes"
 msgstr "Ladit barvy vzhledu nebo přidat své vlastní vzhledy"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:265
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:287
 msgid "Ability to zoom and copy images"
 msgstr "Schopnost zvětšovat a kopírovat obrázky"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:266
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:288
 msgid "Option to auto-hide cursor"
 msgstr "Volba automatického skrývání ukazatele"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:267
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:289
 msgid "See reading time left by hovering over the reading progress slider"
 msgstr "Vidět zbývající dobu čtení po přejetí nad posuvníkem s postupem čtení"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:275
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:297
 msgid "Fixed some books not rendering sometimes"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:276
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:298
 msgid "Fixed images being too wide in some cases"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:285
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:307
 msgid "Option to switch between left and full justification"
 msgstr "Volba pro přepnutí mezi levým a zarovnáním do bloku"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:286
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:308
 msgid "New layout option: single-column paginated view"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:288
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:310
 msgid "Fixed:"
 msgstr "Opraveno:"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:290
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:312
 msgid ""
 "Generated locations are now stored in the cache directory rather than "
 "localStorage"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:298
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:320
 msgid "Allow font size adjustment when using publisher fonts"
 msgstr "Povolit přizpůsobení velikosti písma při používání písma vydavatele"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:299
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:321
 msgid ""
 "Fixed reading progress slider not appearing after localStorage quota is "
 "exceeded"
 msgstr ""
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:307
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:329
 msgid "Touchpad gestures and ability to scroll through pages"
 msgstr "Gesta pro dotykovou plochu a schopnost posunu skrze strany"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:308
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:330
 msgid "Fullscreen mode"
 msgstr "Celoobrazovkový režim"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:309
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:331
 msgid "Option to hide reading progress bar"
 msgstr "Volba pro skrytí posuvníku s postupem čtení"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:310
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:332
 msgid "Option to disable dictionary"
 msgstr "Volba pro zakázání slovníku"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:311
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:333
 msgid "Option to use publisher font"
 msgstr "Volba pro použití písma vydavatele"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:315
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:337
 msgid "Restoring reading progress is now smooth and jank-free"
 msgstr "Obnovení postupu čtení je nyní hladší a plynulejší"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:316
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:338
 msgid "Fixed custom styles not applying in some cases"
 msgstr "Opraveny vlastní styly, které se v některých případech nepoužily"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:322
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:344
 msgid "Fixed invalid AppData file"
 msgstr "Opraven neplatný soubor AppData"
 
-#: data/com.github.johnfactotum.Foliate.appdata.xml.in:327
+#: data/com.github.johnfactotum.Foliate.appdata.xml.in:349
 msgid "Initial release"
 msgstr "Počáteční vydání"
 
@@ -2620,9 +2329,8 @@ msgid ""
 "Whether to save generated locations to cache (the locations are needed for "
 "calculating percentages of locations in book)"
 msgstr ""
-"Zda uložit vytvořené polohy do vyrovnávací paměti (k vypočítání procenta"
-" poloh "
-"v knize jsou potřeba polohy)"
+"Zda uložit vytvořené polohy do vyrovnávací paměti (k vypočítání procenta "
+"poloh v knize jsou potřeba polohy)"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:29
 msgid "Cache covers"
@@ -2666,9 +2374,8 @@ msgid ""
 "if any, are available with the \"dcitd_\" and \"stardict_\" prefix added to "
 "the database ID"
 msgstr ""
-"Identifikátor výchozího slovníku. Slovníky z dictd a stardict, jsou-li jaké,"
-" jsou "
-"dostupné s předponou \"dcitd_\" a \"stardict_\" přidanou k ID databáze"
+"Identifikátor výchozího slovníku. Slovníky z dictd a stardict, jsou-li jaké, "
+"jsou dostupné s předponou \"dcitd_\" a \"stardict_\" přidanou k ID databáze"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:54
 msgid "Target language of translation"
@@ -2703,8 +2410,8 @@ msgid ""
 "DOM event type for viewing images; the special value \"middleclick\" is "
 "available for the middle click event"
 msgstr ""
-"Typ události DOM pro prohlížení obrázků; zvláštní hodnota \"middleclick\" "
-"je dostupná pro událost klepnutí prostředním tlačítkem myši"
+"Typ události DOM pro prohlížení obrázků; zvláštní hodnota \"middleclick\" je "
+"dostupná pro událost klepnutí prostředním tlačítkem myši"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:75
 msgid "Command to execute for text-to-speech"
@@ -2951,15 +2658,339 @@ msgid "How to view the library"
 msgstr "Jak zobrazit knihovnu"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:273
+#, fuzzy
+msgid "Library page"
+msgstr "Knihovna"
+
+#: data/com.github.johnfactotum.Foliate.gschema.xml:274
+msgid "Current library page (“library” or “catalog”)"
+msgstr ""
+
+#: data/com.github.johnfactotum.Foliate.gschema.xml:278
 msgid "Use Tracker"
 msgstr "Použít vyznačovač"
 
-#: data/com.github.johnfactotum.Foliate.gschema.xml:274
+#: data/com.github.johnfactotum.Foliate.gschema.xml:279
 msgid ""
 "If true, will try to use Tracker (the file indexer) to get file locations"
 msgstr ""
-"Je-li pravda, pokusí se použít vyznačovač (souborový rejstříkovač) k získání"
-" poloh v souboru"
+"Je-li pravda, pokusí se použít vyznačovač (souborový rejstříkovač) k získání "
+"poloh v souboru"
+
+#~ msgid "Open a Catalog…"
+#~ msgstr "Otevřít soupis…"
+
+#~ msgid "Afrikaans"
+#~ msgstr "Afrikánština"
+
+#~ msgid "Albanian"
+#~ msgstr "Albánština"
+
+#~ msgid "Amharic"
+#~ msgstr "Amharština"
+
+#~ msgid "Arabic"
+#~ msgstr "Arabština"
+
+#~ msgid "Armenian"
+#~ msgstr "Arménština"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "Ázerbájdžánština"
+
+#~ msgid "Basque"
+#~ msgstr "Baskičtina"
+
+#~ msgid "Belarusian"
+#~ msgstr "Běloruština"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengálština"
+
+#~ msgid "Bosnian"
+#~ msgstr "Bosenština"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Bulharština"
+
+#~ msgid "Catalan"
+#~ msgstr "Katalánština"
+
+#~ msgid "Cebuano"
+#~ msgstr "Cebuánština"
+
+#~ msgid "Chinese (Simplified)"
+#~ msgstr "Čínština (zjednodušená)"
+
+#~ msgid "Chinese (Traditional)"
+#~ msgstr "Čínština (tradiční)"
+
+#~ msgid "Corsican"
+#~ msgstr "Korsičtina"
+
+#~ msgid "Croatian"
+#~ msgstr "Chorvatština"
+
+#~ msgid "Czech"
+#~ msgstr "Čeština"
+
+#~ msgid "Danish"
+#~ msgstr "Dánština"
+
+#~ msgid "Dutch"
+#~ msgstr "Nizozemština"
+
+#~ msgid "English"
+#~ msgstr "Angličtina"
+
+#~ msgid "Esperanto"
+#~ msgstr "Esperantština"
+
+#~ msgid "Estonian"
+#~ msgstr "Estonština"
+
+#~ msgid "Finnish"
+#~ msgstr "Finština"
+
+#~ msgid "French"
+#~ msgstr "Francouzština"
+
+#~ msgid "Frisian"
+#~ msgstr "Frísština"
+
+#~ msgid "Galician"
+#~ msgstr "Galicijština"
+
+#~ msgid "Georgian"
+#~ msgstr "Grizínština"
+
+#~ msgid "German"
+#~ msgstr "Němčina"
+
+#~ msgid "Greek"
+#~ msgstr "Řečtina"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gujarátština"
+
+#~ msgid "Haitian Creole"
+#~ msgstr "Hajtská kreolština"
+
+#~ msgid "Hausa"
+#~ msgstr "Hausština"
+
+#~ msgid "Hawaiian"
+#~ msgstr "Havajština"
+
+#~ msgid "Hebrew"
+#~ msgstr "Hebrejština"
+
+#~ msgid "Hindi"
+#~ msgstr "Hindština"
+
+#~ msgid "Hmong"
+#~ msgstr "Hmongština"
+
+#~ msgid "Hungarian"
+#~ msgstr "Maďarština"
+
+#~ msgid "Icelandic"
+#~ msgstr "Islandština"
+
+#~ msgid "Igbo"
+#~ msgstr "Igboština"
+
+#~ msgid "Indonesian"
+#~ msgstr "Indonésština"
+
+#~ msgid "Irish"
+#~ msgstr "Irština"
+
+#~ msgid "Italian"
+#~ msgstr "Italština"
+
+#~ msgid "Japanese"
+#~ msgstr "Japonština"
+
+#~ msgid "Javanese"
+#~ msgstr "Jávanština"
+
+#~ msgid "Kannada"
+#~ msgstr "Kannadština"
+
+#~ msgid "Kazakh"
+#~ msgstr "Kazaština"
+
+#~ msgid "Khmer"
+#~ msgstr "Khmérština"
+
+#~ msgid "Korean"
+#~ msgstr "Korejština"
+
+#~ msgid "Kurdish"
+#~ msgstr "Kurdština"
+
+#~ msgid "Kyrgyz"
+#~ msgstr "Kyrgyzština"
+
+#~ msgid "Lao"
+#~ msgstr "Laosština"
+
+#~ msgid "Latin"
+#~ msgstr "Latina"
+
+#~ msgid "Latvian"
+#~ msgstr "Lotyština"
+
+#~ msgid "Lithuanian"
+#~ msgstr "Litevština"
+
+#~ msgid "Luxembourgish"
+#~ msgstr "Lucemburština"
+
+#~ msgid "Macedonian"
+#~ msgstr "Makedonština"
+
+#~ msgid "Malagasy"
+#~ msgstr "Malgaština"
+
+#~ msgid "Malay"
+#~ msgstr "Malajština"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malajlamština"
+
+#~ msgid "Maltese"
+#~ msgstr "Maltština"
+
+#~ msgid "Maori"
+#~ msgstr "Maorština"
+
+#~ msgid "Marathi"
+#~ msgstr "Maráthština"
+
+#~ msgid "Mongolian"
+#~ msgstr "Mongolština"
+
+#~ msgid "Myanmar (Burmese)"
+#~ msgstr "Barmština"
+
+#~ msgid "Nepali"
+#~ msgstr "Nepálština"
+
+#~ msgid "Norwegian"
+#~ msgstr "Norština"
+
+#~ msgid "Nyanja (Chichewa)"
+#~ msgstr "Nyanjaština (Chichewa)"
+
+#~ msgid "Pashto"
+#~ msgstr "Paštština (paštunština)"
+
+#~ msgid "Persian"
+#~ msgstr "Perština"
+
+#~ msgid "Polish"
+#~ msgstr "Polština"
+
+#~ msgid "Portuguese (Portugal, Brazil)"
+#~ msgstr "Portugalština (Portugalsko, Brazílie)"
+
+#~ msgid "Punjabi"
+#~ msgstr "Pandžábština"
+
+#~ msgid "Romanian"
+#~ msgstr "Rumunština"
+
+#~ msgid "Russian"
+#~ msgstr "Ruština"
+
+#~ msgid "Samoan"
+#~ msgstr "Samojština"
+
+#~ msgid "Scots Gaelic"
+#~ msgstr "Skotská gaelština"
+
+#~ msgid "Serbian"
+#~ msgstr "Srbština"
+
+#~ msgid "Sesotho"
+#~ msgstr "Sesothština"
+
+#~ msgid "Shona"
+#~ msgstr "Šonština"
+
+#~ msgid "Sindhi"
+#~ msgstr "Sindhština"
+
+#~ msgid "Sinhala (Sinhalese)"
+#~ msgstr "Sinhálština"
+
+#~ msgid "Slovak"
+#~ msgstr "Slovenština"
+
+#~ msgid "Slovenian"
+#~ msgstr "Slovinština"
+
+#~ msgid "Somali"
+#~ msgstr "Somálština"
+
+#~ msgid "Spanish"
+#~ msgstr "Španělština"
+
+#~ msgid "Sundanese"
+#~ msgstr "Sundština"
+
+#~ msgid "Swahili"
+#~ msgstr "Svahilština"
+
+#~ msgid "Swedish"
+#~ msgstr "Švédština"
+
+#~ msgid "Tagalog (Filipino)"
+#~ msgstr "Tagalština"
+
+#~ msgid "Tajik"
+#~ msgstr "Tádžičtina"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamilština"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugština"
+
+#~ msgid "Thai"
+#~ msgstr "Thajština"
+
+#~ msgid "Turkish"
+#~ msgstr "Turečtina"
+
+#~ msgid "Ukrainian"
+#~ msgstr "Ukrajinština"
+
+#~ msgid "Urdu"
+#~ msgstr "Urdština"
+
+#~ msgid "Uzbek"
+#~ msgstr "Uzbečtina"
+
+#~ msgid "Vietnamese"
+#~ msgstr "Větnamština"
+
+#~ msgid "Welsh"
+#~ msgstr "Velština"
+
+#~ msgid "Xhosa"
+#~ msgstr "Xhoština"
+
+#~ msgid "Yiddish"
+#~ msgstr "Jidiš"
+
+#~ msgid "Yoruba"
+#~ msgstr "Jorubština"
+
+#~ msgid "Zulu"
+#~ msgstr "Zulština"
 
 #~ msgid "Allow JavaScript and external resources"
 #~ msgstr "Povolit JavaScript a vnější zdroje"

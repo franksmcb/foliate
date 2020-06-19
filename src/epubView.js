@@ -149,6 +149,7 @@ var EpubViewData = GObject.registerClass({
             library.update(identifier, {
                 identifier,
                 metadata: this._storage.get('metadata', {}),
+                hasAnnotations: this._annotationsMap.size > 0,
                 progress: this._storage.get('progress', []),
                 modified: new Date()
             })
@@ -896,7 +897,7 @@ var EpubView = GObject.registerClass({
             }
             case 'selection': {
                 this.selection = payload
-                this.selection.text = this.selection.text.trim().replace(/\n/g, ' ')
+                this.selection.text = this.selection.text.trim()
                 const position = this.selection.position
 
                 // position needs to be adjusted for zoom level
@@ -1175,6 +1176,9 @@ var EpubView = GObject.registerClass({
     }
     speakNext() {
         this._run(`rendition.next().then(() => speak())`)
+    }
+    get isPaginated() {
+        return layouts[this.settings.layout].options.flow === 'paginated'
     }
     get widget() {
         return this._webView

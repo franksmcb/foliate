@@ -1,22 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
+# Interlingue translation of Foliate.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.johnfactotum.Foliate package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# OIS <mistresssilvara@hotmail.com>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.johnfactotum.Foliate\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-19 01:42+0800\n"
-"PO-Revision-Date: 2020-06-03 19:39+0200\n"
-"Last-Translator: Jonatan Nyberg <jonatan.nyberg.karl@gmail.com>\n"
+"PO-Revision-Date: 2020-06-17 19:00+0700\n"
+"Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
 "Language-Team: \n"
-"Language: sv\n"
+"Language: ie\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.12\n"
 
 #: data/com.github.johnfactotum.Foliate.desktop.in:3 src/library.js:786
 #: src/main.js:190 src/window.js:989
@@ -26,156 +26,161 @@ msgstr "Foliate"
 
 #: data/com.github.johnfactotum.Foliate.desktop.in:4
 msgid "eBook Viewer"
-msgstr "E-bokvisare"
+msgstr "Visor de eLibres"
 
 #: data/com.github.johnfactotum.Foliate.desktop.in:5
 msgid "View eBooks"
-msgstr "Visa e-böcker"
+msgstr "Leer eLibres"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/com.github.johnfactotum.Foliate.desktop.in:13
 msgid "Ebook;Book;EPUB;Viewer;Reader;"
-msgstr "E-bok;Bok;EPUB;Visare;Läsare;"
+msgstr "Ebook;Elibre;Libre;EPUB;Visor;Letor;"
 
 #: data/com.github.johnfactotum.Foliate.desktop.in:17
 #: src/ui/libraryWindow.ui:612 src/ui/mainMenu.ui:304
 msgid "Library"
-msgstr "Bibliotek"
+msgstr "Biblioteca"
 
 #: src/contents.js:222
 msgid "Remove current location"
-msgstr "Ta bort den aktuella platsen"
+msgstr "Remover li actual localisation"
 
 #: src/contents.js:225 src/ui/contentsStack.ui:204
 #: src/ui/shortcutsWindow.ui:128
 msgid "Bookmark current location"
-msgstr "Bokmärk aktuell plats"
+msgstr "Marcar li actual localisation"
 
 #: src/contents.js:268
 msgid "No results"
-msgstr "Inga resultat"
+msgstr "Null resultates"
 
 #: src/contents.js:269
 #, javascript-format
 msgid "%d result"
 msgid_plural "%d results"
-msgstr[0] "%d resultat"
-msgstr[1] "%d resultat"
+msgstr[0] "%d resultate"
+msgstr[1] "%d resultates"
 
 #: src/contents.js:280
 msgid "Searching…"
-msgstr "Söker…"
+msgstr "Sercha..."
 
 #: src/epubView.js:1016
 msgid "File not found."
-msgstr "Filen hittades inte."
+msgstr "File ne esset trovat."
 
 #: src/epubView.js:1027
+#, fuzzy
 msgid "Failed to load remote file."
-msgstr "Det gick inte att läsa in fjärrfil."
+msgstr "Ne successat cargar un lontan file."
 
 #: src/epubView.js:1063
+#, fuzzy
 msgid "Could not unpack Kindle file."
-msgstr "Det gick inte att packa upp Kindle-filen."
+msgstr "Li file ne posset esser renominat"
 
 #: src/epubView.js:1079
+#, fuzzy
 msgid "File type not supported."
-msgstr "Filtyp stöds inte."
+msgstr "Tip de file ne es suportat."
 
 #: src/export.js:35
 #, javascript-format
 msgid "<p>Annotations for</p><h1>%s</h1><h2>By %s</h2>"
-msgstr "<p>Kommentarer för</p><h1>%s</h1><h2>av %s</h2>"
+msgstr "<p>Anotationes por</p><h1>%s</h1><h2>de %s</h2>"
 
 #: src/export.js:37 src/export.js:51 src/export.js:63
 #, javascript-format
 msgid "%d Annotation"
 msgid_plural "%d Annotations"
-msgstr[0] "%d kommentar"
-msgstr[1] "%d kommentarer"
+msgstr[0] "%d anotation"
+msgstr[1] "%d anotationes"
 
 #: src/export.js:50
 #, javascript-format
 msgid "Annotations for “%s” by %s"
-msgstr "Kommentarer för \"%s\" av %s"
+msgstr "Anotationes por «%s» de %s"
 
 #: src/export.js:54
 msgid "Section: "
-msgstr "Avsnitt: "
+msgstr "Section: "
 
 #: src/export.js:55
+#, fuzzy
 msgid "Highlight: "
-msgstr "Markera: "
+msgstr "Marcar"
 
 #: src/export.js:56
 msgid "Text:"
-msgstr "Text:"
+msgstr "Textu:"
 
 #: src/export.js:57
 msgid "Note:"
-msgstr "Anteckning:"
+msgstr "Note:"
 
 #: src/export.js:62
 #, javascript-format
 msgid "Annotations for *%s* by %s"
-msgstr "Kommentarer för *%s* av %s"
+msgstr "Anotationes por *%s* de %s"
 
 #: src/export.js:96
 msgid "Quote: "
-msgstr "Citat: "
+msgstr "Citation: "
 
 #: src/export.js:96
 msgid " Note: "
-msgstr " Anteckning: "
+msgstr " Note: "
 
 #: src/export.js:104 src/export.js:186 src/ui/contentsStack.ui:80
 msgid "No annotations"
-msgstr "Inga kommentarer"
+msgstr "Null anotationes"
 
 #: src/export.js:105
 msgid "You don't have any annotations for this book."
-msgstr "Du har inga kommentarer för den här boken."
+msgstr "Vu ne have anotationes por ti-ci libre."
 
 #: src/export.js:106
+#, fuzzy
 msgid "Highlight some text to add annotations."
-msgstr "Markera lite text för att lägga till kommentarer."
+msgstr "Selecte alcun textu por adjunter anotation."
 
 #: src/export.js:128
 msgid "Save File"
-msgstr "Spara fil"
+msgstr "Gardar li file"
 
 #: src/export.js:135
 #, javascript-format
 msgid "Annotations for “%s”"
-msgstr "Kommentarer för \"%s\""
+msgstr "Anotationes por «%s»"
 
 #: src/export.js:166 src/utils.js:252
 msgid "All Files"
-msgstr "Alla filer"
+msgstr "Omni files"
 
 #: src/export.js:170
 msgid "JSON Files"
-msgstr "JSON-filer"
+msgstr "Files JSON"
 
 #: src/export.js:173 src/ui/importWindow.ui:6
 msgid "Import Annotations"
-msgstr "Importera kommentarer"
+msgstr "Importar anotationes"
 
 #: src/export.js:187
+#, fuzzy
 msgid "There’s nothing to import."
-msgstr "Det finns ingenting att importera."
+msgstr "Importar ex %s"
 
 #: src/export.js:228
+#, fuzzy
 msgid "Identifier mismatch"
-msgstr "Identifieringsfel"
+msgstr "%A{ identificator }"
 
 #: src/export.js:229
 msgid ""
 "The identifier of the imported file does not match the book’s. This might "
 "indicate that the annotations do not belong to this book."
 msgstr ""
-"Identifieraren för den importerade filen stämmer inte överens med bokens. "
-"Detta kan indikera att kommerntarerna inte tillhör den här boken."
 
 #: src/export.js:234 src/library.js:507 src/main.js:145 src/opds.js:159
 #: src/opds.js:875 src/window.js:563 src/ui/bookEditDialog.ui:10
@@ -183,175 +188,176 @@ msgstr ""
 #: src/ui/importWindow.ui:10 src/ui/libraryWindow.ui:601
 #: src/ui/themeWindow.ui:10 src/ui/ttsDialog.ui:10
 msgid "Cancel"
-msgstr "Avbryt"
+msgstr "Anullar"
 
 #: src/export.js:235
 msgid "Import Anyway"
-msgstr "Importera ändå"
+msgstr "Importar sin egard"
 
 #: src/export.js:245 src/opds.js:1000 src/opds.js:1068 src/window.js:1024
 msgid "Error"
-msgstr "Fel"
+msgstr "Errore"
 
 #: src/export.js:246
 msgid "Could not import annotations."
-msgstr "Det gick inte att importera kommentarer."
+msgstr "Ne successat importar anotationes."
 
 #: src/library.js:151 src/window.js:642 src/ui/bookBoxMenu.ui:13
 #: src/ui/mainMenu.ui:613
 msgid "About This Book"
-msgstr "Om denna bok"
+msgstr "Pri ti-ci libre"
 
 #: src/library.js:184
 msgid "Choose File"
-msgstr "Välj fil"
+msgstr "Selecter un file"
 
 #: src/library.js:317 src/library.js:335
 msgid "Load more"
-msgstr "Läs in mer"
+msgstr "Cargar plu"
 
 #: src/library.js:479
 msgid "File location unkown"
-msgstr "Filplats okänd"
+msgstr "Localisation del file es ínconosset"
 
 #: src/library.js:480
+#, fuzzy
 msgid "Choose the location of this file to open it."
-msgstr "Välj platsen för den här filen för att öppna den."
+msgstr "Selecte un localisation"
 
 #: src/library.js:500
 #, javascript-format
 msgid "Are you sure you want to remove this book?"
 msgid_plural "Are you sure you want to remove the %d selected books?"
-msgstr[0] "Är du säker på att du vill ta bort den här boken?"
-msgstr[1] "Är du säker på att du vill ta bort de %d valda böckerna?"
+msgstr[0] "Esque vu vole remover ti-ci libre?"
+msgstr[1] "Esque vu vole remover li %d selectet libres?"
 
 #: src/library.js:502
 msgid "Reading progress, annotations, and bookmarks will be permanently lost."
 msgstr ""
-"Läsningens framsteg, kommentarer och bokmärken kommer att förloras permanent."
 
 #: src/library.js:508 src/ui/annotationBox.ui:63 src/ui/annotationRow.ui:53
 #: src/ui/bookBoxMenu.ui:44 src/ui/bookmarkRow.ui:44
 #: src/ui/libraryWindow.ui:581
 msgid "Remove"
-msgstr "Ta bort"
+msgstr "Remover"
 
 #: src/library.js:626
 #, javascript-format
 msgid "%d selected"
 msgid_plural "%d selected"
-msgstr[0] "%d vald"
-msgstr[1] "%d valda"
+msgstr[0] "%d selectet"
+msgstr[1] "%d selectet"
 
 #: src/library.js:744
 msgid "Failed to add book"
 msgid_plural "Failed to add books"
-msgstr[0] "Det gick inte att lägga till bok"
-msgstr[1] "Det gick inte att lägga till böcker"
+msgstr[0] "Ne successat adjunter un libre"
+msgstr[1] "Ne successat adjunter libres"
 
 #: src/library.js:746
 msgid "Could not add the following file:"
 msgid_plural "Could not add the following files:"
-msgstr[0] "Det gick inte att lägga till följande fil:"
-msgstr[1] "Det gick inte att lägga till följande filer:"
+msgstr[0] "Ne successat adjunter li sequent file:"
+msgstr[1] "Ne successat adjunter li sequent files:"
 
 #: src/library.js:819
 msgid "All"
-msgstr "Alla"
+msgstr "Omni"
 
 #: src/library.js:822 src/ui/catalogWindow.ui:39
 msgid "Title"
-msgstr "Titel"
+msgstr "Titul"
 
 #: src/library.js:823
 msgid "Author"
-msgstr "Författare"
+msgstr "Autor"
 
 #: src/library.js:824 src/properties.js:77
 msgid "Tags"
-msgstr "Taggar"
+msgstr "Tags"
 
 #: src/library.js:825
 msgid "Description"
-msgstr "Beskrivning"
+msgstr "Descrition"
 
 #: src/library.js:826 src/properties.js:81
 msgid "Publisher"
-msgstr "Förlag"
+msgstr "Publicator"
 
 #: src/library.js:827 src/properties.js:101 src/ui/ttsDialog.ui:284
 msgid "Language"
-msgstr "Språk"
+msgstr "Lingue"
 
 #: src/library.js:864
 msgid "Add Files"
-msgstr "Lägga till filer"
+msgstr "Adjunter files"
 
 #: src/lookup.js:106
 msgid "Search on Wikipedia"
-msgstr "Sök i Wikipedia"
+msgstr "Serchar in Wikipedia"
 
 #: src/lookup.js:228
 msgid "Source: "
-msgstr "Källa: "
+msgstr "Orígine: "
 
 #: src/lookup.js:230
 msgid "Wiktionary"
-msgstr "Wiktionary"
+msgstr "Wiktionarium"
 
 #: src/lookup.js:313
 msgid "Wiktionary (English)"
-msgstr "Wiktionary (engelska)"
+msgstr "Wiktionary (anglese)"
 
 #: src/lookup.js:386
 msgid "Search on Wiktionary"
-msgstr "Sök i Wiktionary"
+msgstr "Serchar in Wiktionarium"
 
 #: src/lookup.js:409
 msgid "Translation by Google Translate"
-msgstr "Översättning av Google Translate"
+msgstr "Traductet med Google Translate"
 
 #: src/main.js:119 src/window.js:657
 msgid "Open File"
-msgstr "Öppna fil"
+msgstr "Aperter un file"
 
 #: src/main.js:140
 msgid "Open Catalog"
-msgstr "Öppna katalog"
+msgstr "Aperter un catalog"
 
 #: src/main.js:146 src/ui/catalogRow.ui:50
 msgid "Open"
-msgstr "Öppna"
+msgstr "Aperter"
 
 #: src/main.js:150
 msgid "OPDS Catalog URL:"
-msgstr "OPDS katalogwebbadress:"
+msgstr "URL de catalog OPDS:"
 
 #. Translators: put your names here, one name per line
 #. they will be shown in the "About" dialog
 #: src/main.js:189
 msgid "translator-credits"
-msgstr "Jonatan Nyberg"
+msgstr "OIS <mistresssilvara@hotmail.com>, 2020"
 
 #: src/main.js:191 data/com.github.johnfactotum.Foliate.appdata.xml.in:7
 msgid "A simple and modern eBook viewer"
-msgstr "En enkel och modern e-bokvisare"
+msgstr "Un simplic e modern visor de eLibres"
 
 #: src/main.js:216
 msgid "Open library window"
-msgstr "Öppna biblioteksfönstret"
+msgstr "Aperter li fenestre del biblioteca"
 
 #: src/main.js:220
 msgid "Add files to the library"
-msgstr "Lägg till filer i biblioteket"
+msgstr "Adjunter files al biblioteca"
 
 #: src/main.js:224
 msgid "Show version"
-msgstr "Visa version"
+msgstr "Monstrar li version"
 
 #: src/main.js:228
+#, fuzzy
 msgid "Show verbose debugging information"
-msgstr "Visa felsökningsinformation"
+msgstr "Monstrar li information del version"
 
 #: src/opds.js:144
 msgid "Authentication Required"
@@ -374,7 +380,7 @@ msgstr ""
 #: src/opds.js:171
 #, fuzzy
 msgid "Username"
-msgstr "Kapitelnamn"
+msgstr "Nómine de capitul"
 
 #: src/opds.js:175
 msgid "Password"
@@ -388,110 +394,111 @@ msgstr ", "
 
 #: src/opds.js:255
 msgid "Download"
-msgstr "Hämta"
+msgstr "Descargar"
 
 #: src/opds.js:257
 msgid "Buy"
-msgstr "Köp"
+msgstr "Comprar"
 
 #: src/opds.js:258
 msgid "Free"
-msgstr "Gratis"
+msgstr "Gratuit"
 
 #: src/opds.js:259
 msgid "Sample"
-msgstr "Prov"
+msgstr "Exemplar"
 
 #: src/opds.js:260
 msgid "Borrow"
-msgstr "Låna"
+msgstr "Pruntar"
 
 #: src/opds.js:261
 msgid "Subscribe"
-msgstr "Prenumerera"
+msgstr "Abonnar"
 
 #: src/opds.js:278
 msgid "Protected by DRM"
-msgstr "Skyddad av DRM"
+msgstr "Protectet med DRM"
 
 #: src/opds.js:296
 msgid " (DRM)"
 msgstr " (DRM)"
 
 #: src/opds.js:362
+#, fuzzy
 msgid "Unable to load OPDS feed"
-msgstr "Det går inte att läsa in OPDS-flöde"
+msgstr "Ne posset cargar li localisation"
 
 #: src/opds.js:367 src/ui/libraryWindow.ui:69 src/ui/mainMenu.ui:632
 #: src/ui/menuBar.ui:18 src/ui/shortcutsWindow.ui:93
 msgid "Reload"
-msgstr "Uppdatera"
+msgstr "Recargar"
 
 #: src/opds.js:771 src/ui/catalogWindow.ui:6
 msgid "OPDS Catalog"
-msgstr "OPDS-katalog"
+msgstr "Catalog OPDS"
 
 #: src/opds.js:869 src/ui/catalogWindow.ui:53
 msgid "OPDS URL"
-msgstr "OPDS-webbadress"
+msgstr "URL de OPDS"
 
 #: src/opds.js:876
 #, fuzzy
 msgid "Go"
-msgstr "_Gå"
+msgstr "_Ear"
 
 #: src/opds.js:896 src/opds.js:921 src/window.js:1303
 #: src/ui/libraryWindow.ui:359
 msgid "Loading…"
-msgstr "Läser in…"
+msgstr "Carga..."
 
 #: src/opds.js:964
 msgid "First"
-msgstr "Första"
+msgstr "Prim"
 
 #: src/opds.js:965
 msgid "Previous"
-msgstr "Tidigare"
+msgstr "Precedent"
 
 #: src/opds.js:966
 msgid "Next"
-msgstr "Nästa"
+msgstr "Sequent"
 
 #: src/opds.js:967
 msgid "Last"
-msgstr "Sista"
+msgstr "Ultim"
 
 #: src/opds.js:1015
 msgid "Related"
-msgstr "Relaterad"
+msgstr "Relatent"
 
 #: src/opds.js:1016
 msgid "Section"
-msgstr "Avsnitt"
+msgstr "Section"
 
 #: src/opds.js:1017
 msgid "Subsection"
-msgstr "Delavsnitt"
+msgstr "Subsection"
 
 #: src/opds.js:1018
 msgid "New"
-msgstr "Ny"
+msgstr "Nov"
 
 #: src/opds.js:1019
 msgid "Popular"
-msgstr "Populär"
+msgstr "Populari"
 
 #: src/opds.js:1020
 msgid "Featured"
-msgstr "Presenterade"
+msgstr "Promoet"
 
 #: src/opds.js:1021
 msgid "Recommended"
-msgstr "Rekommenderad"
+msgstr "Recomandat"
 
 #: src/opds.js:1055
 msgid "Filter"
-msgstr "Filter"
+msgstr "Filtre"
 
 #: src/properties.js:78
 msgid " • "
@@ -499,34 +506,33 @@ msgstr " • "
 
 #: src/properties.js:87
 msgid "Publication Date"
-msgstr "Publiceringsdatum"
+msgstr "Date de publication"
 
 #: src/properties.js:94
 msgid "Modified Date"
-msgstr "Ändrat datum"
+msgstr "Date de modification"
 
 #: src/properties.js:106
 msgid "File Size"
-msgstr "Filstorlek"
+msgstr "Grandore de file"
 
 #: src/properties.js:110
 msgid "Format"
-msgstr "Format"
+msgstr "Formate"
 
 #: src/properties.js:116
 msgid "Identifier"
-msgstr "Identifierare"
+msgstr "Identificator"
 
 #: src/properties.js:130
 msgid ""
 "This book has no identifier. This is the MD5 hash generated from the file."
 msgstr ""
-"Den här boken har ingen identifierare. Detta är MD5-hash som genereras från "
-"filen."
+"Li libre ne have un identificator. Ti-ci es li hash MD5 generat ex li file."
 
 #: src/properties.js:141
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "Jure editorial"
 
 #: src/properties.js:155
 msgid "Amazon"
@@ -538,7 +544,7 @@ msgstr "Goodreads"
 
 #: src/properties.js:163
 msgid "Google Books"
-msgstr "Google Böcker"
+msgstr "Google Books"
 
 #: src/properties.js:167
 msgid "LibraryThing"
@@ -546,7 +552,7 @@ msgstr "LibraryThing"
 
 #: src/properties.js:171
 msgid "Open Library"
-msgstr "Öppna bibliotek"
+msgstr "Open Library"
 
 #: src/properties.js:175
 msgid "WorldCat"
@@ -554,11 +560,11 @@ msgstr "WorldCat"
 
 #: src/properties.js:214
 msgid "Find on…"
-msgstr "Hitta på…"
+msgstr "Trovar sur..."
 
 #: src/theme.js:23
 msgid "Light"
-msgstr "Ljust"
+msgstr "Lucid"
 
 #: src/theme.js:27
 msgid "Sepia"
@@ -566,52 +572,53 @@ msgstr "Sepia"
 
 #: src/theme.js:31
 msgid "Gray"
-msgstr "Grått"
+msgstr "Gris"
 
 #: src/theme.js:35
 msgid "Dark"
-msgstr "Mörkt"
+msgstr "Obscur"
 
 #: src/theme.js:39 src/ui/imageViewer.ui:56 src/ui/shortcutsWindow.ui:382
 #: src/ui/themeWindow.ui:145
 #: data/com.github.johnfactotum.Foliate.gschema.xml:172
 msgid "Invert"
-msgstr "Invertera"
+msgstr "Inverter"
 
 #: src/theme.js:43
 msgid "Solarized Light"
-msgstr "Soliserat ljust"
+msgstr "Solarisat clar"
 
 #: src/theme.js:47
 msgid "Solarized Dark"
-msgstr "Soliserad mörkt"
+msgstr "Solarisat obscur"
 
 #: src/theme.js:51
 msgid "Gruvbox Light"
-msgstr "Gruvbox ljust"
+msgstr "Gruvbox lucid"
 
 #: src/theme.js:55
 msgid "Gruvbox Dark"
-msgstr "Gruvbox mörkt"
+msgstr "Gruvbox obscur"
 
 #: src/theme.js:59
 msgid "Nord"
-msgstr "Nord"
+msgstr "Nordic"
 
 #. Translatros: these are sentences from "The North Wind and the Sun",
 #. used for testing text-to-speech
 #: src/tts.js:225
 msgid "The North Wind and the Sun were disputing which was the stronger,"
-msgstr "Nordvinden och solen bestred vilken som var starkare,"
+msgstr ""
 
 #: src/tts.js:226
 msgid "when a traveler came along wrapped in a warm cloak."
-msgstr "när en resenär kom med insvept i en varm kappa."
+msgstr ""
 
 #. Translators: this is the language code of the test sentences
 #: src/tts.js:228
+#, fuzzy
 msgid "en"
-msgstr "sv"
+msgstr "en"
 
 #: src/utils.js:150
 #, javascript-format
@@ -628,158 +635,163 @@ msgstr ""
 #, javascript-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] "%d minut"
-msgstr[1] "%d minuter"
+msgstr[0] "%d minute"
+msgstr[1] "%d minutes"
 
 #: src/utils.js:219
 #, javascript-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] "%d timme"
-msgstr[1] "%d timmar"
+msgstr[0] "%d hor"
+msgstr[1] "%d hores"
 
 #: src/utils.js:254
 msgid "E-book Files"
-msgstr "E-bokfiler"
+msgstr "Files de e-libres"
 
 #: src/window.js:123 src/window.js:807
+#, fuzzy
 msgid "Leave fullscreen"
-msgstr "Lämna helskärmsläge"
+msgstr "Surtir plen-ecran"
 
 #: src/window.js:126 src/ui/mainMenu.ui:91
 #: data/com.github.johnfactotum.Foliate.gschema.xml:230
 msgid "Fullscreen"
-msgstr "Helskärmsläge"
+msgstr "Plen-ecran"
 
 #: src/window.js:216 src/window.js:217
 #, javascript-format
 msgid "of %d"
-msgstr "av %d"
+msgstr "ex %d"
 
 #: src/window.js:337
 #, javascript-format
 msgid "%d of %d"
-msgstr "%d av %d"
+msgstr "%d ex %d"
 
 #: src/window.js:557
 msgid "This file or format does not work well with annotations"
-msgstr "Den här filen eller formatet fungerar inte bra med kommentarer"
+msgstr "Ti file o formate ne es completmen compatibil con anotationes"
 
 #: src/window.js:558
 msgid "Your annotations might stop working properly at any time."
-msgstr "Dina kommentarer kan sluta fungera korrekt när som helst."
+msgstr ""
 
 #: src/window.js:564
 msgid "Continue Anyway"
-msgstr "Fortsätt ändå"
+msgstr "Continuar sin egard"
 
 #: src/window.js:786
 msgid "Contents"
-msgstr "Innehåll"
+msgstr "Contenete"
 
 #: src/window.js:790 data/com.github.johnfactotum.Foliate.gschema.xml:240
 msgid "Show sidebar"
-msgstr "Visa sidofält"
+msgstr "Monstrar li panel láteral"
 
 #: src/window.js:801 src/ui/selectionPopover.ui:47
 msgid "Find"
-msgstr "Hitta"
+msgstr "Trovar"
 
 #: src/window.js:802 src/ui/libraryWindow.ui:205 src/ui/libraryWindow.ui:300
 msgid "Menu"
-msgstr "Meny"
+msgstr "Menú"
 
 #: src/window.js:1089
 #, javascript-format
 msgid "Image from “%s”"
-msgstr "Bild från \"%s\""
+msgstr "Image ex «%s»"
 
 #: src/window.js:1089
 msgid "Image"
-msgstr "Bild"
+msgstr "Image"
 
 #: src/ui/annotationBox.ui:35
+#, fuzzy
 msgid "Change highlight color"
-msgstr "Ändra markeringsfärg"
+msgstr "Tira un color sur un objecte por applicar it"
 
 #: src/ui/annotationBox.ui:98
 msgid "Choose custom color"
-msgstr "Välj anpassad färg"
+msgstr "Selecter un color personalisat"
 
 #: src/ui/bookBoxChild.ui:29 src/ui/bookBoxRow.ui:76
+#, fuzzy
 msgid "Remote file"
-msgstr "Fjärrfil"
+msgstr "Ne successat cargar un lontan file."
 
 #: src/ui/bookBoxMenu.ui:25 src/ui/mainMenu.ui:651 src/ui/menuBar.ui:34
 msgid "Export Annotations…"
-msgstr "Exportera kommentarer…"
+msgstr "Exportar anotationes..."
 
 #: src/ui/bookBoxMenu.ui:37 src/ui/bookEditDialog.ui:6 src/ui/catalogRow.ui:60
 #: src/ui/themeRow.ui:26
 msgid "Edit"
-msgstr "Redigera"
+msgstr "Modificar"
 
 #: src/ui/bookEditDialog.ui:17 src/ui/catalogWindow.ui:17
 #: src/ui/themeWindow.ui:17
 msgid "Save"
-msgstr "Spara"
+msgstr "Gardar"
 
 #: src/ui/bookEditDialog.ui:46
 msgid "File URL:"
-msgstr "Filwebbadress:"
+msgstr "URL del file:"
 
 #: src/ui/bookEditDialog.ui:62
 msgid "Browse…"
-msgstr "Bläddra…"
+msgstr "Trovar..."
 
 #: src/ui/bookEditDialog.ui:72
 msgid "Remove Book"
-msgstr "Ta bort bok"
+msgstr "Remover li libre"
 
 #: src/ui/catalogWindow.ui:68
+#, fuzzy
 msgid "Preview URL"
-msgstr "Förhandsgranska webbadress"
+msgstr "_URL"
 
 #: src/ui/catalogWindow.ui:77
+#, fuzzy
 msgid "Optional"
-msgstr "Valfri"
+msgstr "optional"
 
 #: src/ui/catalogWindow.ui:93
 msgid "Remove Catalog"
-msgstr "Ta bort katalog"
+msgstr "Remover li catalog"
 
 #: src/ui/contentsStack.ui:39
 msgid "Table of Contents"
-msgstr "Innehållsförteckning"
+msgstr "Contenete"
 
 #: src/ui/contentsStack.ui:51
 msgid "Search annotations"
-msgstr "Sök kommentarer"
+msgstr "Serchar anotationes"
 
 #: src/ui/contentsStack.ui:92
 msgid "Select some text to add annotations."
-msgstr "Välj lite text för att lägga till kommentarer."
+msgstr "Selecte alcun textu por adjunter anotation."
 
 #: src/ui/contentsStack.ui:124
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:109
 msgid "Annotations"
-msgstr "Kommentarer"
+msgstr "Anotationes"
 
 #: src/ui/contentsStack.ui:159
 msgid "No bookmarks"
-msgstr "Inga bokmärken"
+msgstr "Null marca-págines"
 
 #: src/ui/contentsStack.ui:171
 msgid "Add some bookmarks to see them here."
-msgstr "Lägg till några bokmärken för att se dem här."
+msgstr "In prim adjunte alcun marca-págines."
 
 #: src/ui/contentsStack.ui:216
 msgid "Bookmarks"
-msgstr "Bokmärken"
+msgstr "Marca-págines"
 
 #: src/ui/dictionaryBox.ui:64
 msgid "No definitions found"
-msgstr "Inga definitioner hittades"
+msgstr "Null definitiones trovat"
 
 #: src/ui/exportWindow.ui:11
 msgid "BibTeX"
@@ -799,136 +811,135 @@ msgstr "Markdown"
 
 #: src/ui/exportWindow.ui:27
 msgid "Plain Text"
-msgstr "Klartext"
+msgstr "Simplic textu"
 
 #: src/ui/exportWindow.ui:34
 msgid "Export Annotations"
-msgstr "Exportera kommentarer"
+msgstr "Exportar anotationes"
 
 #: src/ui/exportWindow.ui:45
 msgid "Export"
-msgstr "Exportera"
+msgstr "Exportar"
 
 #: src/ui/exportWindow.ui:67
 msgid "Choose export format:"
-msgstr "Välj exportformat:"
+msgstr "Selecte li formate de exportation:"
 
 #: src/ui/exportWindow.ui:104
 msgid "Choose “JSON” if you plan on importing annotations back to Foliate."
-msgstr ""
-"Välj \"JSON\" om du planerar att importera kommentarer tillbaka till Foliate."
+msgstr "Selecte «JSON» si vu intente importar les a Foliate in li futur."
 
 #: src/ui/findBox.ui:16
 msgid "All chapters"
-msgstr "Alla kapitel"
+msgstr "Omni capitules"
 
 #: src/ui/findBox.ui:22
 msgid "Current chapter"
-msgstr "Aktuellt kapitel"
+msgstr "Li actual capitul"
 
 #: src/ui/footnotePopover.ui:36 src/ui/mainMenu.ui:553 src/ui/menuBar.ui:149
 msgid "Footnote Preview"
-msgstr "Förhandsvisning av fotnot"
+msgstr "Prevision de ped-notes"
 
 #: src/ui/footnotePopover.ui:46 src/ui/shortcutsWindow.ui:40
 #: src/ui/shortcutsWindow.ui:159 src/ui/shortcutsWindow.ui:342
 #: src/ui/wikipediaBox.ui:107
 #: data/com.github.johnfactotum.Foliate.gschema.xml:268
 msgid "View"
-msgstr "Visa"
+msgstr "Vise"
 
 #: src/ui/imageViewer.ui:31 src/ui/menuBar.ui:60 src/ui/preferenceWindow.ui:59
 #: src/ui/selectionPopover.ui:19 src/ui/shortcutsWindow.ui:311
 msgid "Copy"
-msgstr "Kopiera"
+msgstr "Copiar"
 
 #: src/ui/imageViewer.ui:44 src/ui/shortcutsWindow.ui:318
 msgid "Save as"
-msgstr "Spara som"
+msgstr "Gardar quam"
 
 #: src/ui/imageViewer.ui:126 src/ui/mainMenu.ui:50
 #: src/ui/shortcutsWindow.ui:171 src/ui/shortcutsWindow.ui:291
 #: src/ui/shortcutsWindow.ui:354
 msgid "Zoom out"
-msgstr "Zooma ut"
+msgstr "Diminuer"
 
 #: src/ui/imageViewer.ui:139 src/ui/mainMenu.ui:64
+#, fuzzy
 msgid "Restore zoom"
-msgstr "Återställ zoom"
+msgstr "Scale predefinit"
 
 #: src/ui/imageViewer.ui:152 src/ui/mainMenu.ui:73
 #: src/ui/shortcutsWindow.ui:163 src/ui/shortcutsWindow.ui:284
 #: src/ui/shortcutsWindow.ui:346
 msgid "Zoom in"
-msgstr "Zooma in"
+msgstr "Agrandar"
 
 #: src/ui/imageViewer.ui:184 src/ui/shortcutsWindow.ui:368
 msgid "Rotate 90° counter-clockwise"
-msgstr "Rotera 90° moturs"
+msgstr "Rotar a levul por 90°"
 
 #: src/ui/imageViewer.ui:197 src/ui/shortcutsWindow.ui:375
 msgid "Rotate 90° clockwise"
-msgstr "Rotera 90° medurs"
+msgstr "Rotar a dextri por 90°"
 
 #: src/ui/importWindow.ui:17
 msgid "Import"
-msgstr "Importera"
+msgstr "Importar"
 
 #: src/ui/importWindow.ui:34
+#, fuzzy
 msgid "These annotations will be added:"
-msgstr "Dessa kommentarer läggs till:"
+msgstr "Adjuntet"
 
 #: src/ui/importWindow.ui:64
 msgid ""
 "The imported annotations will NOT overwrite the existing ones when they "
 "highlight the same passages."
 msgstr ""
-"De importerade kommentarerna kommer INTE att skriva över de befintliga när "
-"de markerar samma passager."
 
 #: src/ui/libraryWindow.ui:7
 msgid "Open Book…"
-msgstr "Öppna bok…"
+msgstr "Aperter un libre..."
 
 #: src/ui/libraryWindow.ui:11
 msgid "Open Catalog…"
-msgstr "Öppna katalog…"
+msgstr "Aperter un catalog..."
 
 #: src/ui/libraryWindow.ui:17
 msgid "Add Books…"
-msgstr "Lägg till böcker…"
+msgstr "Adjunter libres..."
 
 #: src/ui/libraryWindow.ui:21 src/ui/libraryWindow.ui:683
 msgid "Add Catalog…"
-msgstr "Lägg till katalog…"
+msgstr "Adjunter un catalog..."
 
 #: src/ui/libraryWindow.ui:26 src/ui/mainMenu.ui:316 src/ui/menuBar.ui:78
 #: src/ui/preferenceWindow.ui:118
 msgid "Preferences"
-msgstr "Inställningar"
+msgstr "Preferenties"
 
 #: src/ui/libraryWindow.ui:30 src/ui/mainMenu.ui:323 src/ui/menuBar.ui:223
 msgid "Keyboard Shortcuts"
-msgstr "Kortkommandon"
+msgstr "Rapid-tastes"
 
 #: src/ui/libraryWindow.ui:34 src/ui/mainMenu.ui:330 src/ui/menuBar.ui:227
 msgid "About Foliate"
-msgstr "Om Foliate"
+msgstr "Pri Foliate"
 
 #: src/ui/libraryWindow.ui:55
 #, fuzzy
 msgid "Go to start page"
-msgstr "Gå till början"
+msgstr "Ear al inicie"
 
 #: src/ui/libraryWindow.ui:83
 #, fuzzy
 msgid "Add this feed to catalogs"
-msgstr "Lägg till katalog"
+msgstr "Adjunter un catalog"
 
 #: src/ui/libraryWindow.ui:104
 #, fuzzy
 msgid "Location…"
-msgstr "Plats"
+msgstr "Localisation"
 
 #: src/ui/libraryWindow.ui:116
 msgid "Go Back to Library"
@@ -937,97 +948,99 @@ msgstr ""
 #: src/ui/libraryWindow.ui:123
 #, fuzzy
 msgid "Go Back to Catalog"
-msgstr "Inga kataloger"
+msgstr "Null catalogs"
 
 #: src/ui/libraryWindow.ui:149
 msgid "Add books"
-msgstr "Lägg till böcker"
+msgstr "Adjunter libres"
 
 #: src/ui/libraryWindow.ui:166
 msgid "Add catalog"
-msgstr "Lägg till katalog"
+msgstr "Adjunter un catalog"
 
 #: src/ui/libraryWindow.ui:229 src/ui/libraryWindow.ui:316
 #: src/ui/shortcutsWindow.ui:17
 msgid "Search"
-msgstr "Sök"
+msgstr "Serchar"
 
 #: src/ui/libraryWindow.ui:243
 msgid "Toggle view"
-msgstr "Växla vy"
+msgstr "Alterar li vise"
 
 #: src/ui/libraryWindow.ui:286
 msgid "Go back"
-msgstr "Gå tillbaka"
+msgstr "Ear retro"
 
 #: src/ui/libraryWindow.ui:378
+#, fuzzy
 msgid "Stop"
-msgstr "Stopp"
+msgstr "Stoppar"
 
 #: src/ui/libraryWindow.ui:481
 msgid "No books yet"
-msgstr "Inga böcker ännu"
+msgstr "Hay ancor null libres"
 
 #: src/ui/libraryWindow.ui:493 src/ui/mainOverlay.ui:60
+#, fuzzy
 msgid "Open a book to start reading."
-msgstr "Öppna en bok för att börja läsa."
+msgstr "Ne successat aperter %s por letion"
 
 #: src/ui/libraryWindow.ui:507 src/ui/mainOverlay.ui:73
 msgid "Open File…"
-msgstr "Öppna fil…"
+msgstr "Aperter un file..."
 
 #: src/ui/libraryWindow.ui:515
 msgid "Browse Catalogs"
-msgstr "Bläddra i kataloger"
+msgstr "Navigar catalogs"
 
 #: src/ui/libraryWindow.ui:547
 msgid "No results found"
-msgstr "Inga resultat hittades"
+msgstr "Null resultates trovat"
 
 #: src/ui/libraryWindow.ui:559
 msgid "Try a different search."
-msgstr "Prova en annan sökning."
+msgstr "Prova un altri sercha."
 
 #: src/ui/libraryWindow.ui:656
 msgid "No catalogs"
-msgstr "Inga kataloger"
+msgstr "Null catalogs"
 
 #: src/ui/libraryWindow.ui:668
 msgid "You can browse, search, and download content from OPDS catalogs."
-msgstr "Du kan bläddra, söka och hämta innehåll från OPDS-kataloger."
+msgstr ""
 
 #: src/ui/libraryWindow.ui:692
 msgid "Learn More"
-msgstr "Läs mer"
+msgstr "Plu information"
 
 #: src/ui/libraryWindow.ui:708
 msgid "Catalogs"
-msgstr "Kataloger"
+msgstr "Catalogs"
 
 #: src/ui/mainMenu.ui:115 data/com.github.johnfactotum.Foliate.gschema.xml:177
 msgid "Brightness"
-msgstr "Ljusstyrka"
+msgstr "Luciditá"
 
 #: src/ui/mainMenu.ui:148 data/com.github.johnfactotum.Foliate.gschema.xml:122
 #: data/com.github.johnfactotum.Foliate.gschema.xml:123
 msgid "Font"
-msgstr "Typsnitt"
+msgstr "Fonde"
 
 #: src/ui/mainMenu.ui:162 data/com.github.johnfactotum.Foliate.gschema.xml:127
 msgid "Spacing"
-msgstr "Avstånd"
+msgstr "Interspacie"
 
 #: src/ui/mainMenu.ui:176
 msgid "Margins"
-msgstr "Marginaler"
+msgstr "Márgines"
 
 #: src/ui/mainMenu.ui:231
 msgid "Width"
-msgstr "Bredd"
+msgstr "Largore"
 
 #: src/ui/mainMenu.ui:232 data/com.github.johnfactotum.Foliate.gschema.xml:138
 msgid "Maximum page width"
-msgstr "Maximal sidbredd"
+msgstr "Max largore de págine"
 
 #: src/ui/mainMenu.ui:266 src/ui/mainMenu.ui:343
 msgid "Theme"
@@ -1035,211 +1048,216 @@ msgstr "Tema"
 
 #: src/ui/mainMenu.ui:273 src/ui/mainMenu.ui:409 src/ui/preferenceWindow.ui:525
 msgid "Advanced"
-msgstr "Avancerat"
+msgstr "Avansat"
 
 #: src/ui/mainMenu.ui:285 src/ui/mainMenu.ui:603 src/ui/shortcutsWindow.ui:124
 msgid "Book"
-msgstr "Bok"
+msgstr "Libre"
 
 #: src/ui/mainMenu.ui:297 src/ui/menuBar.ui:8
 msgid "Open…"
-msgstr "Öppna…"
+msgstr "Aperter..."
 
 #: src/ui/mainMenu.ui:383
 msgid "Add Custom Theme…"
-msgstr "Lägg till anpassat tema…"
+msgstr "Adjuncter un personal tema..."
 
 #: src/ui/mainMenu.ui:429 src/ui/menuBar.ui:108
 #: data/com.github.johnfactotum.Foliate.gschema.xml:197
 msgid "Layout"
-msgstr "Layout"
+msgstr "Arangeament"
 
 #: src/ui/mainMenu.ui:447 src/ui/menuBar.ui:111
 msgid "Automatic"
-msgstr "Automatisk"
+msgstr "Automatic"
 
 #: src/ui/mainMenu.ui:455 src/ui/menuBar.ui:116
 msgid "Single Column"
-msgstr "En kolumn"
+msgstr "Singul columne"
 
 #: src/ui/mainMenu.ui:463 src/ui/menuBar.ui:121
 msgid "Scrolled"
-msgstr "Rullad"
+msgstr "Rulat"
 
 #: src/ui/mainMenu.ui:471 src/ui/menuBar.ui:126
 msgid "Continuous"
-msgstr "Kontinuerlig"
+msgstr "Continuosi"
 
 #: src/ui/mainMenu.ui:488
 msgid "Text"
-msgstr "Text"
+msgstr "Textu"
 
 #: src/ui/mainMenu.ui:505 src/ui/menuBar.ui:135
 msgid "Use Publisher Font"
-msgstr "Använd förlagstypsnitt"
+msgstr "Usar li fonde del publicator"
 
 #: src/ui/mainMenu.ui:512 src/ui/menuBar.ui:139
+#, fuzzy
 msgid "Full Justification"
-msgstr "Fullständig justering"
+msgstr "Alineament de subtitules"
 
 #: src/ui/mainMenu.ui:519 src/ui/menuBar.ui:143
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:306
 msgid "Auto-hyphenation"
-msgstr "Automatisk avstavning"
+msgstr "Separation síllabic"
 
 #: src/ui/mainMenu.ui:536 src/ui/ttsDialog.ui:114
 msgid "Other"
-msgstr "Andra"
+msgstr "Altri"
 
 #: src/ui/mainMenu.ui:560 src/ui/menuBar.ui:153
 msgid "Auto-hide Cursor"
-msgstr "Dölj automatiskt markör"
+msgstr "Auto-celar li apuntator"
 
 #: src/ui/mainMenu.ui:567 src/ui/menuBar.ui:157
 msgid "Realistic Shadows"
-msgstr "Realistiska skuggor"
+msgstr "Ombres realistic"
 
 #: src/ui/mainMenu.ui:579
+#, fuzzy
 msgid "Allow JavaScript"
-msgstr "Tillåt JavaScript"
+msgstr "JavaScript"
 
 #: src/ui/mainMenu.ui:580 src/ui/menuBar.ui:163
+#, fuzzy
 msgid "Allow Unsafe Content"
-msgstr "Tillåt osäkert innehåll"
+msgstr "Permisser:"
 
 #: src/ui/mainMenu.ui:587 src/ui/menuBar.ui:167
+#, fuzzy
 msgid "Enable Developer Tools"
-msgstr "Aktivera utvecklingsverktyg"
+msgstr "Instrumentarium de developator"
 
 #: src/ui/mainMenu.ui:625 src/ui/menuBar.ui:14
 msgid "Open a Copy"
-msgstr "Öppna en kopia"
+msgstr "Aperter un copie"
 
 #: src/ui/mainMenu.ui:639 src/ui/menuBar.ui:22
 msgid "Clear Cache"
-msgstr "Rensa cache"
+msgstr "Vacuar li cache"
 
 #: src/ui/mainMenu.ui:658 src/ui/menuBar.ui:40
 msgid "Import Annotations…"
-msgstr "Importera kommentarer…"
+msgstr "Importar anotationes..."
 
 #: src/ui/mainOverlay.ui:48
 msgid "No books open"
-msgstr "Inga böcker öppna"
+msgstr "Null apertet libres"
 
 #: src/ui/mainOverlay.ui:88
 msgid "Recent Files"
-msgstr "Senaste filer"
+msgstr "Recent files"
 
 #: src/ui/mainOverlay.ui:129
 msgid "Could not open file"
-msgstr "Det gick inte att öppna filen"
+msgstr "Ne successat aperter li file"
 
 #: src/ui/mainOverlay.ui:150
 msgid "Open Another File…"
-msgstr "Öppna en annan fil…"
+msgstr "Aperter un altri file..."
 
 #: src/ui/menuBar.ui:5
 msgid "_File"
-msgstr "_Arkiv"
+msgstr "_File"
 
 #: src/ui/menuBar.ui:28
 msgid "Properties"
-msgstr "Egenskaper"
+msgstr "Proprietás"
 
 #: src/ui/menuBar.ui:46
 msgid "Close Window"
-msgstr "Stäng fönstret"
+msgstr "Cluder li fenestre"
 
 #: src/ui/menuBar.ui:50 src/ui/shortcutsWindow.ui:31
 #: src/ui/shortcutsWindow.ui:114 src/ui/shortcutsWindow.ui:332
 msgid "Quit"
-msgstr "Avsluta"
+msgstr "Surtir"
 
 #: src/ui/menuBar.ui:57
 msgid "_Edit"
-msgstr "_Redigera"
+msgstr "_Redacter"
 
 #: src/ui/menuBar.ui:66
 msgid "Bookmark Current Location"
-msgstr "Bokmärk aktuell plats"
+msgstr "Marcar li actual localisation"
 
 #: src/ui/menuBar.ui:72 src/ui/ttsDialog.ui:6
 msgid "Text-to-Speech"
-msgstr "Text-till-tal"
+msgstr "Parlation"
 
 #: src/ui/menuBar.ui:85
 msgid "_View"
-msgstr "_Visa"
+msgstr "_Vise"
 
 #: src/ui/menuBar.ui:88
+#, fuzzy
 msgid "Toggle Fullscreen"
-msgstr "Växla helskärmsläge"
+msgstr "Plen-ecran"
 
 #: src/ui/menuBar.ui:94
 msgid "Zoom In"
-msgstr "Zooma in"
+msgstr "Agrandar"
 
 #: src/ui/menuBar.ui:98
 msgid "Restore Zoom"
-msgstr "Återställ zoom"
+msgstr "Scale predefinit"
 
 #: src/ui/menuBar.ui:102
 msgid "Zoom Out"
-msgstr "Zooma ut"
+msgstr "Diminuer"
 
 #: src/ui/menuBar.ui:174
 msgid "_Go"
-msgstr "_Gå"
+msgstr "_Ear"
 
 #: src/ui/menuBar.ui:177
 msgid "Go Back"
-msgstr "Gå tillbaka"
+msgstr "Ear retro"
 
 #: src/ui/menuBar.ui:183
 msgid "Next Page"
-msgstr "Nästa sida"
+msgstr "Sequent págine"
 
 #: src/ui/menuBar.ui:187
 msgid "Previous Page"
-msgstr "Föregående sida"
+msgstr "Precedent págine"
 
 #: src/ui/menuBar.ui:193
 msgid "Next Chapter"
-msgstr "Nästa kapitel"
+msgstr "Sequent capitul"
 
 #: src/ui/menuBar.ui:197
 msgid "Previous Chapter"
-msgstr "Föregående kapitel"
+msgstr "Precedent capitul"
 
 #: src/ui/menuBar.ui:203
 msgid "Beginning"
-msgstr "Början"
+msgstr "Comense"
 
 #: src/ui/menuBar.ui:207
 msgid "End"
-msgstr "Slutet"
+msgstr "Fin"
 
 #: src/ui/menuBar.ui:213 src/ui/navBar.ui:134 src/ui/navBar.ui:313
 #: src/ui/preferenceWindow.ui:19
 msgid "Location"
-msgstr "Plats"
+msgstr "Localisation"
 
 #: src/ui/menuBar.ui:220
 msgid "_Help"
-msgstr "_Hjälp"
+msgstr "Au_xilie"
 
 #: src/ui/navBar.ui:27 src/ui/preferenceWindow.ui:35
 msgid "Time left in book"
-msgstr "Tid kvar i bok"
+msgstr "Témpor restant in li libre"
 
 #: src/ui/navBar.ui:41 src/ui/preferenceWindow.ui:31
 msgid "Time left in chapter"
-msgstr "Tid kvar i kapitel"
+msgstr "Témpor restant in li capitul"
 
 #: src/ui/navBar.ui:95 src/ui/preferenceWindow.ui:23
 msgid "Chapter"
-msgstr "Kapitel"
+msgstr "Capitul"
 
 #: src/ui/navBar.ui:173
 msgid "CFI"
@@ -1247,332 +1265,350 @@ msgstr "CFI"
 
 #: src/ui/navBar.ui:174
 msgid "EPUB Canonical Fragment Identifier"
-msgstr "EPUB Canonical Fragment Identifier"
+msgstr "EPUB CFI"
 
 #: src/ui/navBar.ui:213
 msgid "Go to beginning of book"
-msgstr "Gå till början av boken"
+msgstr "Ear al inicie del libre"
 
 #: src/ui/navBar.ui:227
 msgid "Go to previous chapter"
-msgstr "Gå till föregående kapitel"
+msgstr "Ear al precedent capitul"
 
 #: src/ui/navBar.ui:241
 msgid "Go to next chapter"
-msgstr "Gå till nästa kapitel"
+msgstr "Ear al sequent capitul"
 
 #: src/ui/navBar.ui:255
 msgid "Go to end of book"
-msgstr "Gå till slutet av boken"
+msgstr "Ear al fin del libre"
 
 #: src/ui/navBar.ui:284 src/ui/shortcutsWindow.ui:241
 #: src/ui/shortcutsWindow.ui:277
 msgid "Go to previous page"
-msgstr "Gå till föregående sida"
+msgstr "Ear al precedent págine"
 
 #: src/ui/navBar.ui:298 src/ui/shortcutsWindow.ui:248
 msgid "Go back to previous location"
-msgstr "Gå tillbaka till föregående plats"
+msgstr "Retornar al precedent localisation"
 
 #: src/ui/navBar.ui:387 src/ui/shortcutsWindow.ui:234
 #: src/ui/shortcutsWindow.ui:270
 msgid "Go to next page"
-msgstr "Gå till nästa sida"
+msgstr "Ear al sequent págine"
 
 #: src/ui/navBar.ui:402
 msgid "Text-to-speech"
-msgstr "Text-till-tal"
+msgstr "Parlation"
 
 #: src/ui/preferenceWindow.ui:11
 msgid "Nothing"
-msgstr "Ingenting"
+msgstr "Necós"
 
 #: src/ui/preferenceWindow.ui:15
 msgid "Percentage"
-msgstr "Procent"
+msgstr "Percentage"
 
 #: src/ui/preferenceWindow.ui:27
 msgid "Chapter name"
-msgstr "Kapitelnamn"
+msgstr "Nómine de capitul"
 
 #: src/ui/preferenceWindow.ui:39
 msgid "Clock"
-msgstr "Klocka"
+msgstr "Horloge"
 
 #: src/ui/preferenceWindow.ui:51
 msgid "Do nothing"
-msgstr "Gör ingenting"
+msgstr "Far necós"
 
 #: src/ui/preferenceWindow.ui:55
 msgid "Show menu"
-msgstr "Visa meny"
+msgstr "Monstrar li menú"
 
 #: src/ui/preferenceWindow.ui:63 src/ui/selectionPopover.ui:33
 msgid "Highlight"
-msgstr "Markera"
+msgstr "Marcar"
 
 #: src/ui/preferenceWindow.ui:67
 msgid "Look up in dictionary"
-msgstr "Slå upp i ordbok"
+msgstr "Serchar in li dictionarium"
 
 #: src/ui/preferenceWindow.ui:71
 msgid "Look up in Wikipedia"
-msgstr "Slå upp i Wikipedia"
+msgstr "Serchar in Wikipedia"
 
 #: src/ui/preferenceWindow.ui:75 src/ui/selectionPopover.ui:93
 msgid "Translate"
-msgstr "Översätt"
+msgstr "Traducter"
 
 #: src/ui/preferenceWindow.ui:79 src/ui/shortcutsWindow.ui:135
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:18
 msgid "Find in book"
-msgstr "Hitta i boken"
+msgstr "Trovar in li libre"
 
 #: src/ui/preferenceWindow.ui:83 src/ui/selectionPopover.ui:59
 #: src/ui/ttsDialog.ui:165
 msgid "Speak"
-msgstr "Tala"
+msgstr "Dir"
 
 #: src/ui/preferenceWindow.ui:95
 msgid "Disabled"
-msgstr "Inaktiverad"
+msgstr "Depermisset"
 
 #: src/ui/preferenceWindow.ui:99
 msgid "Single click"
-msgstr "Enkelklick"
+msgstr "Singul clic"
 
 #: src/ui/preferenceWindow.ui:103
 msgid "Double click"
-msgstr "Dubbelklick"
+msgstr "Duplic clic"
 
 #: src/ui/preferenceWindow.ui:107
 msgid "Middle click"
-msgstr "Mellanklick"
+msgstr "Medial clic"
 
 #: src/ui/preferenceWindow.ui:111
 msgid "Right click"
-msgstr "Högerklick"
+msgstr "Dextri clic"
 
 #: src/ui/preferenceWindow.ui:142 src/ui/shortcutsWindow.ui:13
 #: src/ui/shortcutsWindow.ui:307
 msgid "General"
-msgstr "Allmänt"
+msgstr "General"
 
 #: src/ui/preferenceWindow.ui:157
 msgid "Open last opened file on startup"
-msgstr "Öppna senast öppnade fil vid start"
+msgstr "Aperter li ultim file al inicie"
 
 #: src/ui/preferenceWindow.ui:176
 msgid "Reading"
-msgstr "Läsning"
+msgstr "Letion"
 
 #: src/ui/preferenceWindow.ui:191
 #: data/com.github.johnfactotum.Foliate.gschema.xml:104
+#, fuzzy
 msgid "Turn page on tap"
-msgstr "Vänd sida vid tryck"
+msgstr "_Activar"
 
 #: src/ui/preferenceWindow.ui:214
 #: data/com.github.johnfactotum.Foliate.gschema.xml:94
+#, fuzzy
 msgid "Left footer"
-msgstr "Vänster sidfot"
+msgstr "A levul de A"
 
 #: src/ui/preferenceWindow.ui:248
 #: data/com.github.johnfactotum.Foliate.gschema.xml:99
+#, fuzzy
 msgid "Right footer"
-msgstr "Höger sidfot"
+msgstr "A _dextri"
 
 #: src/ui/preferenceWindow.ui:282
 msgid "When a word is selected"
-msgstr "När ett ord är markerat"
+msgstr "Si un parol es selectet"
 
 #: src/ui/preferenceWindow.ui:316
 msgid "When multiple words are selected"
-msgstr "När flera ord är markerade"
+msgstr "Si multiplic paroles es selectet"
 
 #: src/ui/preferenceWindow.ui:350
 msgid "Open images on"
-msgstr "Öppna bilder på"
+msgstr "Aperter images pos un"
 
 #: src/ui/preferenceWindow.ui:385
 #: data/com.github.johnfactotum.Foliate.gschema.xml:74
 msgid "Text-to-speech command"
-msgstr "Text-till-tal-kommando"
+msgstr "Comande de parlation"
 
 #: src/ui/preferenceWindow.ui:401
 msgid "Configure…"
-msgstr "Konfigurera…"
+msgstr "Configurar..."
 
 #: src/ui/preferenceWindow.ui:413
 msgid "Interface"
-msgstr "Gränssnitt"
+msgstr "Interfacie"
 
 #: src/ui/preferenceWindow.ui:428
 msgid "Auto-hide header bar"
-msgstr "Dölj rubrikfältet automatiskt"
+msgstr "Autocelar li barra de titul"
 
 #: src/ui/preferenceWindow.ui:462
 #: data/com.github.johnfactotum.Foliate.gschema.xml:79
 msgid "Use sidebar"
-msgstr "Använd sidofält"
+msgstr "Usar li panel láteral"
 
 #: src/ui/preferenceWindow.ui:490
+#, fuzzy
 msgid "Use traditional titlebar (experimental)"
-msgstr "Använd traditionell titelrad (experimentell)"
+msgstr "Usar superposition (EXPERIMENTAL)"
 
 #: src/ui/preferenceWindow.ui:498 src/ui/preferenceWindow.ui:553
 #: src/ui/preferenceWindow.ui:595
+#, fuzzy
 msgid "Requires restart"
-msgstr "Kräver omstart"
+msgstr "Grandores de files de SI (1K = 1000, besona relansa)"
 
 #: src/ui/preferenceWindow.ui:545
 msgid "Use Tracker to track file locations"
-msgstr "Använd Tracker för att spåra filplatser"
+msgstr "Usar Tracker por controlar localisationes de files"
 
 #: src/ui/preferenceWindow.ui:587
+#, fuzzy
 msgid "Save file locations"
-msgstr "Lagra filplatser"
+msgstr "_Salvar ad-in file..."
 
 #: src/ui/preferenceWindow.ui:625
 #: data/com.github.johnfactotum.Foliate.gschema.xml:24
+#, fuzzy
 msgid "Cache locations"
-msgstr "Cacheplatser"
+msgstr "Cache"
 
 #: src/ui/preferenceWindow.ui:649
+#, fuzzy
 msgid "Cache book covers"
-msgstr "Spara bokomslag"
+msgstr "Cachear covrimentes"
 
 #: src/ui/selectionPopover.ui:79
+#, fuzzy
 msgid "Look Up in Dictionary"
-msgstr "Slå upp i ordbok"
+msgstr "Serchar in li dictionarium"
 
 #: src/ui/selectionPopover.ui:86
+#, fuzzy
 msgid "Look Up in Wikipedia"
-msgstr "Slå upp i Wikipedia"
+msgstr "Serchar in Wikipedia"
 
 #: src/ui/selectionPopover.ui:105
 msgid "Speak from Here"
-msgstr "Tala härifrån"
+msgstr "Dir de ci"
 
 #: src/ui/shortcutsWindow.ui:9
 msgid "Library Shortcuts"
-msgstr "Kortkommandon för bibliotek"
+msgstr "Rapid-tastes de biblioteca"
 
 #: src/ui/shortcutsWindow.ui:24 src/ui/shortcutsWindow.ui:107
 #: src/ui/shortcutsWindow.ui:325
 msgid "Close current window"
-msgstr "Stäng det aktuella fönstret"
+msgstr "Cluder li actual fenestre"
 
 #: src/ui/shortcutsWindow.ui:44 src/ui/shortcutsWindow.ui:220
+#, fuzzy
 msgid "Show primary menu"
-msgstr "Visa primärmeny"
+msgstr "Monstrar icones sur li primari monitor"
 
 #: src/ui/shortcutsWindow.ui:51
 msgid "List view"
-msgstr "Listvy"
+msgstr "Vise de liste"
 
 #: src/ui/shortcutsWindow.ui:58
 msgid "Grid view"
-msgstr "Rutnätsvy"
+msgstr "Vise de grille"
 
 #: src/ui/shortcutsWindow.ui:71
 msgid "E-book Viewer Shortcuts"
-msgstr "Kortkommandon för e-bokvisaren"
+msgstr "Rapid-tastes del letor"
 
 #: src/ui/shortcutsWindow.ui:75
 msgid "File"
-msgstr "Fil"
+msgstr "File"
 
 #: src/ui/shortcutsWindow.ui:79
 msgid "Open file"
-msgstr "Öppna fil"
+msgstr "Aperter un file"
 
 #: src/ui/shortcutsWindow.ui:86
 msgid "Open a copy"
-msgstr "Öppna en kopia"
+msgstr "Aperter un copie"
 
 #: src/ui/shortcutsWindow.ui:100
 msgid "Clear cache"
-msgstr "Rensa cache"
+msgstr "Vacuar li cache"
 
 #: src/ui/shortcutsWindow.ui:142
 msgid "View book info"
-msgstr "Visa bokinfo"
+msgstr "Vider information pri li libre"
 
 #: src/ui/shortcutsWindow.ui:149
+#, fuzzy
 msgid "Start/stop text-to-speech"
-msgstr "Starta/stoppa text-till-tal"
+msgstr "Comande de parlation"
 
 #: src/ui/shortcutsWindow.ui:178 src/ui/shortcutsWindow.ui:361
+#, fuzzy
 msgid "Restore zoom level"
-msgstr "Återställ zoomnivån"
+msgstr "Scale predefinit"
 
 #: src/ui/shortcutsWindow.ui:185
+#, fuzzy
 msgid "Toggle fullscreen"
-msgstr "Växla helskärmsläge"
+msgstr "(Des)activar mode plen-ecran"
 
 #: src/ui/shortcutsWindow.ui:192
+#, fuzzy
 msgid "Show contents"
-msgstr "Visa innehåll"
+msgstr "Monstrar li contenete de págine in colores invertet"
 
 #: src/ui/shortcutsWindow.ui:199
+#, fuzzy
 msgid "Show table of contents"
-msgstr "Visa innehållsförteckning"
+msgstr "Contenete"
 
 #: src/ui/shortcutsWindow.ui:206
+#, fuzzy
 msgid "Show annotations"
-msgstr "Visa kommentarer"
+msgstr "Null anotationes"
 
 #: src/ui/shortcutsWindow.ui:213
+#, fuzzy
 msgid "Show bookmarks"
-msgstr "Visa bokmärken"
+msgstr "Monstrar marca-págines"
 
 #: src/ui/shortcutsWindow.ui:230
 msgid "Navigation"
-msgstr "Navigering"
+msgstr "Navigation"
 
 #: src/ui/shortcutsWindow.ui:256
 msgid "Go to location"
-msgstr "Gå till platsen"
+msgstr "Ear a location"
 
 #: src/ui/shortcutsWindow.ui:266
 msgid "Touchpad Gestures"
-msgstr "Pekplattgester"
+msgstr "Gestes de panel tactil"
 
 #: src/ui/shortcutsWindow.ui:303
 msgid "Image Viewer Shortcuts"
-msgstr "Kortkommandon för bildvisaren"
+msgstr "Rapid-tastes del visor de images"
 
 #: src/ui/themeWindow.ui:6
 msgid "Custom Theme"
-msgstr "Anpassat tema"
+msgstr "Personal tema"
 
 #: src/ui/themeWindow.ui:39
 msgid "Theme Name"
-msgstr "Temanamn"
+msgstr "Nómine del tema"
 
 #: src/ui/themeWindow.ui:64
 msgid "Background"
-msgstr "Bakgrund"
+msgstr "Funde"
 
 #: src/ui/themeWindow.ui:78
 msgid "Text Color"
-msgstr "Textfärg"
+msgstr "Color del textu"
 
 #: src/ui/themeWindow.ui:92
 msgid "Link Color"
-msgstr "Länkfärg"
+msgstr "Color del ligament"
 
 #: src/ui/themeWindow.ui:159
 msgid "Dark Mode"
-msgstr "Mörkt läge"
+msgstr "Mode obscur"
 
 #: src/ui/themeWindow.ui:200
 msgid "Remove Theme"
-msgstr "Ta bort tema"
+msgstr "Remover li tema"
 
 #: src/ui/translationBox.ui:53
 msgid "Cannot retrieve translation"
-msgstr "Kan inte hämta översättning"
+msgstr "Ne successat obtener un traduction"
 
 #: src/ui/ttsDialog.ui:17
 msgid "OK"
@@ -1580,11 +1616,11 @@ msgstr "OK"
 
 #: src/ui/ttsDialog.ui:46
 msgid "Text-to-Speech Command"
-msgstr "Text-till-tal-kommando"
+msgstr "Comande de parlation"
 
 #: src/ui/ttsDialog.ui:57
 msgid "Make sure the selected text-to-speech program is correctly installed."
-msgstr "Se till att det valda text-till-tal-programmet är korrekt installerat."
+msgstr ""
 
 #: src/ui/ttsDialog.ui:63
 msgid "eSpeak NG"
@@ -1592,7 +1628,7 @@ msgstr "eSpeak NG"
 
 #: src/ui/ttsDialog.ui:80 src/ui/ttsDialog.ui:106 src/ui/ttsDialog.ui:269
 msgid "Reset"
-msgstr "Återställ"
+msgstr "Reverter"
 
 #: src/ui/ttsDialog.ui:88
 msgid "Festival"
@@ -1604,17 +1640,15 @@ msgid ""
 "the language code of the book, or use <tt>$FOLIATE_TTS_LANG_LOWER</tt> for "
 "the all lower case code.</small>"
 msgstr ""
-"<small>Miljövariabeln <tt>$FOLIATE_TTS_LANG</tt> är tillgängligt för bokens "
-"språkkod eller för användning <tt>$FOLIATE_TTS_LANG_LOWER</tt> för all kod i "
-"små bokstäver.</small>"
 
 #: src/ui/ttsDialog.ui:156
+#, fuzzy
 msgid "Test Your Configuration"
-msgstr "Testa din konfiguration"
+msgstr "Provar"
 
 #: src/ui/ttsDialog.ui:178
 msgid "The program should speak the following test sentences in order:"
-msgstr "Programmet ska tala följande testmeningar i ordning:"
+msgstr ""
 
 #: src/ui/ttsDialog.ui:191
 msgid "1"
@@ -1625,8 +1659,9 @@ msgid "2"
 msgstr "2"
 
 #: src/ui/wikipediaBox.ui:53
+#, fuzzy
 msgid "No entry found"
-msgstr "Ingen post hittades"
+msgstr "Ne esset trovat"
 
 #: src/ui/wikipediaBox.ui:80
 msgid "Wikipedia"
@@ -1634,35 +1669,38 @@ msgstr "Wikipedia"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:10
 msgid "Foliate is a simple and modern GTK eBook viewer."
-msgstr "Foliate är en enkel och modern GTK e-bokvisare."
+msgstr "Foliate es un simplic e modern visor de eLibres basat sur GTK."
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:11
 msgid "Features include:"
-msgstr "Funktioner inkluderar:"
+msgstr "Su caracteristicas include:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:13
+#, fuzzy
 msgid "Two-page view and scrolled view"
-msgstr "Tvåsidig vy och rullad vy"
+msgstr "Vider documentes con mult págines"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:14
+#, fuzzy
 msgid "Customize font and line-spacing"
-msgstr "Anpassa typsnitt och radavstånd"
+msgstr "Interspacie:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:15
 msgid "Light, sepia, dark, and invert mode"
-msgstr "Ljust-, sepia-, mörkt- och inverterat läge"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:16
 msgid "Reading progress slider with chapter marks"
-msgstr "Läsförloppsreglage med kapitelmärken"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:17
 msgid "Bookmarks and annotations"
-msgstr "Bokmärken och kommentarer"
+msgstr "Marca-págines e anotationes"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:19
+#, fuzzy
 msgid "Quick dictionary lookup"
-msgstr "Snabb ordboksuppslagning"
+msgstr "Serchar in un dictionarium"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:22
 msgid "John Factotum"
@@ -1671,7 +1709,7 @@ msgstr "John Factotum"
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:49
 #, fuzzy
 msgid "OPDS catalogs:"
-msgstr "OPDS-katalog"
+msgstr "Catalog OPDS"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:51
 msgid "Catalogs are now opened in the main library window"
@@ -1680,22 +1718,22 @@ msgstr ""
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:52
 #, fuzzy
 msgid "View current location"
-msgstr "Ta bort den aktuella platsen"
+msgstr "Remover li actual localisation"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:53
 #, fuzzy
 msgid "Go to catalog start page"
-msgstr "Gå till början"
+msgstr "Ear al inicie"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:54
 #, fuzzy
 msgid "Reload catalog"
-msgstr "Lägg till katalog"
+msgstr "Adjunter un catalog"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:55
 #, fuzzy
 msgid "Add current feed to catalogs"
-msgstr "Lägg till katalog"
+msgstr "Adjunter un catalog"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:56
 msgid "HTTP authentication support"
@@ -1704,7 +1742,7 @@ msgstr ""
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:58
 #, fuzzy
 msgid "Other changes:"
-msgstr "Stora förändringar:"
+msgstr "Ruption de lineas"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:60
 msgid ""
@@ -1730,7 +1768,7 @@ msgstr ""
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:65
 #, fuzzy
 msgid "Export annotations from the library view"
-msgstr "Exportera kommentarer till Markdown"
+msgstr "Exportar anotationes..."
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:71
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:217
@@ -1741,7 +1779,7 @@ msgstr "Exportera kommentarer till Markdown"
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:283
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:318
 msgid "Changes:"
-msgstr "Ändringar:"
+msgstr "Modificationes:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:73
 msgid "Fixed blurry book covers on HiDPI"
@@ -1752,29 +1790,31 @@ msgid "Fixed OPDS links to Standard Ebooks and Project Gutenberg"
 msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:75
-#, fuzzy
 msgid "Fixed wrong view icon on startup"
-msgstr "Åtgärdat felversionsnummer"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:81
 msgid "Library:"
-msgstr "Bibliotek:"
+msgstr "Biblioteca:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:83
 msgid "A library view showing recent books and reading progress"
-msgstr "En biblioteksvy som visar senaste böcker och läsningens framsteg"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:84
+#, fuzzy
 msgid "Search books by metadata"
-msgstr "Sök i böcker efter metadata"
+msgstr "Metadata"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:85
+#, fuzzy
 msgid "E-book discovery with OPDS"
-msgstr "E-bokupptäckt med OPDS"
+msgstr "Files de e-libres"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:87
+#, fuzzy
 msgid "New supported formats:"
-msgstr "Nya format som stöds:"
+msgstr "Suportat formates"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:89
 msgid "FictionBook (.fb2, .fb2.zip)"
@@ -1782,126 +1822,127 @@ msgstr "FictionBook (.fb2, .fb2.zip)"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:90
 msgid "Comic book archive (.cbr, .cbz, .cbt, .cb7)"
-msgstr "Serietidningsarkiv (.cbr, .cbz, .cbt, .cb7)"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:91
 msgid "Plain text (.txt)"
-msgstr "Klartext (.txt)"
+msgstr "Simplic textu (.txt)"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:92
+#, fuzzy
 msgid "Unpacked EPUB files"
-msgstr "Uppackade EPUB-filer"
+msgstr "Ne es un document ePub"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:94
+#, fuzzy
 msgid "Layout:"
-msgstr "Layout:"
+msgstr "_Arangeament"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:96
+#, fuzzy
 msgid "Option to set maximum page width"
-msgstr "Alternativ för att ställa in maximal sidbredd"
+msgstr "Max largore de págine"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:97
 msgid ""
 "The \"Automatic\" layout will now show four columns when the page width is "
 "wide"
-msgstr "Layouten \"Automatisk\" visar nu fyra kolumner när sidbredden är bred"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:99
+#, fuzzy
 msgid "Image viewer:"
-msgstr "Bildvisare:"
+msgstr "image;visor;vider;"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:101
 msgid ""
 "Improved image viewer, with new shortcuts and the ability to rotate and "
 "invert images"
 msgstr ""
-"Förbättrad bildvisare, med nya kortkommandon och förmågan att rotera och "
-"invertera bilder"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:102
 msgid ""
 "Option to disable image viewer, or to open images on double, middle, or "
 "right click"
 msgstr ""
-"Alternativ för att inaktivera bildvisaren eller att öppna bilder med "
-"dubbel-, mitten- eller högerklick"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:104
+#, fuzzy
 msgid "Text-to-speech:"
-msgstr "Text-till-tal:"
+msgstr "Parlation"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:106
 msgid "Improved text-to-speech configuration UI"
-msgstr "Förbättrat användargränssnitt för konfiguration av text till tal"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:107
 msgid "Ability to set text-to-speech voice based on book language"
-msgstr "Möjlighet att ställa in text-till-tal-röst baserat på bokspråk"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:111
+#, fuzzy
 msgid "Import annotations from JSON"
-msgstr "Importera kommentarer från JSON"
+msgstr "Selecter un file JSON por importation"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:112
+#, fuzzy
 msgid "Search in annotations"
-msgstr "Sök i kommentarer"
+msgstr "Serchar anotationes"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:113
 msgid "Annotations are now sorted in the same order as they appear in the book"
-msgstr "Kommentarer sorteras nu i samma ordning som de visas i boken"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:115
 msgid "Security:"
-msgstr "Säkerhet:"
+msgstr "Securitá:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:117
 msgid ""
 "\"Allow Unsafe Content\" now only enables JavaScript; external content will "
 "no longer be loaded"
 msgstr ""
-"\"Tillåt osäkert innehåll\" aktiverar nu bara JavaScript; externt innehåll "
-"kommer inte längre att läsas in"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:118
 msgid "WebKit processes are now sandboxed"
-msgstr "WebKit-processer är nu satta i sandlådaläge"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:120
+#, fuzzy
 msgid "Other featues and fixes:"
-msgstr "Andra funktioner och korrigeringar:"
+msgstr "Correctiones:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:122
 msgid "Improved support for vertical and right-to-left books"
-msgstr "Förbättrat stöd för vertikala och höger till vänster böcker"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:123
+#, fuzzy
 msgid "Support for StarDict dictionaries"
-msgstr "Stöd för StarDict-ordböcker"
+msgstr "Dictionariums"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:124
 msgid "Fixed current location not preserved when resizing"
-msgstr "Åtgärdade att aktuell plats inte bevaras vid storleksändring"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:125
 msgid "Fixed auto-hiding header bar under some themes"
-msgstr "Åtgärdade automatisk döljande av rubrikfält under vissa teman"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:126
 msgid "Command-line options for showing version and adding books to library"
 msgstr ""
-"Kommandoradsflaggor för att visa version och lägga till böcker i biblioteket"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:127
+#, fuzzy
 msgid "Option to clear or disable cache"
-msgstr "Alternativ för att rensa eller inaktivera cache"
+msgstr "Vacuar li cache"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:128
 msgid ""
 "When an HTML page contains invalid self-closing anchor tags, it is now "
 "parsed as XHTML"
 msgstr ""
-"När en HTML-sida innehåller ogiltiga självstängande ankartaggar, har den nu "
-"analyserats som XHTML"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:134
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:150
@@ -1909,79 +1950,75 @@ msgstr ""
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:295
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:335
 msgid "Fixes:"
-msgstr "Åtgärder:"
+msgstr "Correctiones:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:136
+#, fuzzy
 msgid "Fixed wrong version number"
-msgstr "Åtgärdat felversionsnummer"
+msgstr "  -v, --version\tmonstra li numeró del version\n"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:137
 msgid ""
 "Fixed dictionary, translation, and Wikipedia not working in the Snap package"
 msgstr ""
-"Åtgärdade att ordbok, översättning och Wikipedia inte fungerar i Snap-paketet"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:143
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:304
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:327
 msgid "New features:"
-msgstr "Nya funktioner:"
+msgstr "Nov caracteristicas:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:145
+#, fuzzy
 msgid "New and improved icon"
-msgstr "Ny och förbättrad ikon"
+msgstr "Lansante li redactor VI Improvat"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:146
 msgid "Option to disable turn page on tap"
-msgstr "Alternativ att inaktivera vänd sida vid tryck"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:147
 msgid "A menu on the welcome screen for opening recent files"
-msgstr "En meny på välkomstskärmen för att öppna nya filer"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:148
 msgid "Restored shortcuts for showing ToC, annotations, and bookmarks"
 msgstr ""
-"Återställda kortkommandon för att visa innehållsföreteckning, kommentarer "
-"och bokmärken"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:152
+#, fuzzy
 msgid "Fixed application not translated"
-msgstr "Åtgärdat att applikationen inte översatts"
+msgstr "Traductet de:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:158
 msgid "Interface:"
-msgstr "Gränssnitt:"
+msgstr "Interfacie:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:160
 msgid "A redesigned interface that works better for smaller screens"
-msgstr "Ett nytt gränssnitt som fungerar bättre för mindre skärmar"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:161
 msgid "Improved fullscreen mode with an overlaid headerbar"
-msgstr "Förbättrad helskärmsläge med en överlagrad rubrikrad"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:162
 msgid ""
 "The headerbar and the progress bar now auto-hide, for a distraction-free "
 "reading experience"
 msgstr ""
-"Rubrikraden och förloppsindikatorn döljer sig nu automatiskt för en "
-"distraktionsfri läsupplevelse"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:163
 msgid ""
 "Various location information, as well as a clock, can now be displayed in "
 "the footer"
-msgstr "Olika platsinformation samt en klocka kan nu visas i sidfoten"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:164
 msgid ""
 "A new location popover (Ctrl + L) that shows reading time estimates and "
 "allows skipping to locations"
 msgstr ""
-"En ny flytande platsruta (Ctrl + L) som visar lästidsuppskattningar och gör "
-"det möjligt att hoppa till platser"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:165
 msgid ""
@@ -1989,407 +2026,411 @@ msgid ""
 "left or right part of the view; tap on the middle to toggle header bar and "
 "progress bar"
 msgstr ""
-"E-läsare stilnavigering: gå till föregående eller nästa sida genom att "
-"trycka på vänster eller höger del av vyn; tryck på mitten för att växla "
-"rubrikraden och förloppsindikatorn"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:166
 msgid "Annotations, bookmarks, and find results now show chapter titles"
-msgstr "Kommentarer, bokmärken och hitta resultat visar nu kapiteltitlar"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:167
 msgid "When looking up words in dictionaries, the query can now be edited"
-msgstr "När du slår upp ord i ordböcker kan förfrågan nu redigeras"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:168
 msgid "New shortcut for viewing metadata (Ctrl + I) and preferences (Ctrl + ,)"
 msgstr ""
-"Nytt kortkommando för visning av metadata (Ctrl + I) och inställningar (Ctrl "
-"+ ,)"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:169
 msgid ""
 "A new traditional menubar, which may be displayed depending on the desktop "
 "environment"
-msgstr "En ny traditionell menyrad, som kan visas beroende på skrivbordsmiljön"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:170
 msgid ""
 "Option to use a traditional titlebar and menubar instead of a headerbar "
 "(experimental)"
 msgstr ""
-"Alternativ att använda en traditionell titelrad och menyrad istället för en "
-"rubrikrad (experimentell)"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:172
 msgid "Reading:"
-msgstr "Läser:"
+msgstr "Letion:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:174
+#, fuzzy
 msgid "Continuous scrolling layout"
-msgstr "Kontinuerlig rullningslayout"
+msgstr "Rulament"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:175
 msgid ""
 "Option to show decorative shadows that mimic the appearance of a real book"
 msgstr ""
-"Alternativ att visa dekorativa skuggor som härmar utseendet på en riktig bok"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:176
+#, fuzzy
 msgid "Ability to zoom in and zoom out"
-msgstr "Möjlighet att zooma in och zooma ut"
+msgstr "Diminuer li págine"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:177
 msgid "Improved image viewer with \"save as\" option"
-msgstr "Förbättrad bildvisare med alternativet \"spara som\""
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:178
 msgid "Open copies of a book in new windows (Ctrl + N)"
-msgstr "Öppna kopior av en bok i nya fönster (Ctrl + N)"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:179
+#, fuzzy
 msgid "Reload book (Ctrl + R)"
-msgstr "Läs om boken (Ctrl + R)"
+msgstr "Radica [Ctrl+R]"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:180
 msgid "New built-in themes: Gray, Solarized, Gruvbox, Nord"
-msgstr "Nya inbyggda teman: Grå, Solarized, Gruvbox, Nord"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:182
 msgid "Text selection:"
-msgstr "Textmarkering:"
+msgstr "Selection de textu:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:184
 msgid "Ability to select text across pages"
-msgstr "Möjlighet att välja text mellan sidor"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:185
+#, fuzzy
 msgid "Find selected text in book"
-msgstr "Hitta vald text i book"
+msgstr "Trovar in li libre"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:186
 msgid "Speak selected text or from the selected locatio"
-msgstr "Säg markerad text eller från den valda platsen"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:188
 msgid "Annotations:"
-msgstr "Kommentarer:"
+msgstr "Anotationes:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:190
+#, fuzzy
 msgid "Spellcheck notes"
-msgstr "Stavekontrollanteckningar"
+msgstr "Ortografie"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:191
+#, fuzzy
 msgid "Export annotations to Markdown"
-msgstr "Exportera kommentarer till Markdown"
+msgstr "Exportar anotationes..."
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:192
+#, fuzzy
 msgid "Options to use custom colors for highlights"
-msgstr "Alternativ för att använda anpassade färger för markeringar"
+msgstr "Usar colores personalisat"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:194
+#, fuzzy
 msgid "For publishers and developers:"
-msgstr "För utgivare och utvecklare:"
+msgstr "Developatores"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:196
 msgid ""
 "Support for Apple Books theme attribute, which allows books to detect themes "
 "without JavaScript"
 msgstr ""
-"Stöd för Apple Books-temaattribut, som gör det möjligt för böcker att "
-"upptäcka teman utan JavaScript"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:197
 msgid "WebKit's developer tools can be enabled"
-msgstr "WebKits utvecklarverktyg kan aktiveras"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:199
+#, fuzzy
 msgid "Breaking changes:"
-msgstr "Stora förändringar:"
+msgstr "Ruption de lineas"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:201
 msgid "The settings schemas has been reorganized"
-msgstr "Inställningsschema har omorganiserats"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:202
 msgid "The format for custom themes has changed"
-msgstr "Formatet för anpassade teman har ändrats"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:203
 msgid "Locations are now 1024 characters in size"
-msgstr "Platserna är nu 1024 tecken i storlek"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:205
+#, fuzzy
 msgid "Bug fixes:"
-msgstr "Åtgärdade fel:"
+msgstr "Correctiones:"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:207
 msgid "Fixed not restoring exact last location"
-msgstr "Åtgärdat att exakt sista plats inte återställs"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:208
 msgid "Fixed navigation not working with scrolled layout"
 msgstr ""
-"Åtgärdat att innehållsförteckningsnavigering inte fungerar med "
-"rullningslayout"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:209
 msgid "Fixed font size not changing when the book uses absolute-size keywords"
 msgstr ""
-"Åtgärdat att teckenstorleken inte ändras när boken använder nyckelord i "
-"absolut storlek"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:210
 msgid "Fixed text cut off at margin edge"
-msgstr "Åtgärdat att texten avskärs i marginalkanten"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:211
 msgid "Fixed unable to open books with \"#\" or \"?\" in the file name"
-msgstr "Åtgärdat att inte kunna öppna böcker med \"#\" eller \"?\" i filnamnet"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:219
 msgid ""
 "Fixed Flatpak version not being able to open .mobi, .azw, and .azw3 files"
 msgstr ""
-"Åtgärdat att Flatpak-versionen inte kan öppna .mobi-, .azw- och .azw3-filer"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:220
 msgid "Improved Wiktionary lookup, now with links and example sentences"
-msgstr "Förbättrad Wiktionary-uppslagning, nu med länkar och exempelmeningar"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:221
 msgid "Improved popover footnote extraction and formatting"
-msgstr "Förbättrad fotnotsextraktion och -formatering i flytande ruta"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:222
 msgid "Added option to export annotations to BibTeX"
-msgstr "Tillagt alternativ för att exportera kommentarer till BibTeX"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:230
 msgid "Fixed table of contents navigation not working with some books"
 msgstr ""
-"Åtgärdat att innehållsförteckningsnavigering inte fungerar med vissa böcker"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:231
 msgid "Fixed not being able to zoom images with Kindle books"
-msgstr "Åtgärdat att inte kunna zooma bilder med Kindle-böcker"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:232
 msgid "Fixed not being able to open books with .epub3 filename extension"
-msgstr "Åtgärdat att inte kunna öppna böcker med .epub3-filnamnstillägg"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:233
 msgid "Fixed temporary directory not being cleaned after closing"
-msgstr "Åtgärdat att tillfällig katalog inte rensas efter stängning"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:241
 msgid "Fixed F9 shortcut not working"
-msgstr "Åtgärdat att F9-kortkommandot inte fungerar"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:242
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:277
 msgid "Updated translations"
-msgstr "Uppdaterade översättningar"
+msgstr "Actualisat traductiones"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:250
 msgid "External resources and JavaScript are now blocked by default"
-msgstr "Externa resurser och JavaScript blockeras nu som standard"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:251
+#, fuzzy
 msgid "Basic text-to-speech support"
-msgstr "Grundläggande text-till-tal-stöd"
+msgstr "Comande de parlation"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:252
 msgid "Export annotations to HTML, plain text, or JSON"
-msgstr "Exportera kommentarer till HTML, vanlig text eller JSON"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:253
 msgid "Support for viewing .mobi, .azw, and .azw3 files"
-msgstr "Stöd för visning av .mobi-, .azw- och .azw3-filer"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:261
 msgid "New alternative sidebar UI"
-msgstr "Nytt alternativt sidofältsanvändargränssnitt"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:262
 msgid "Lookup words in Wikipedia and offline dictionaries"
-msgstr "Slå upp ord i Wikipedia och frånkopplade ordböcker"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:263
+#, fuzzy
 msgid "Translate passages with Google Translate"
-msgstr "Översätt passager med Google Translate"
+msgstr "Traductet med Google Translate"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:264
 msgid "Configure default action when words are selected"
-msgstr "Konfigurera standardåtgärd när ord är markerade"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:265
 msgid "Experimental popup footnote support"
-msgstr "Experimentellt popup-fotnot stöd"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:266
 msgid "Ability to find within only the current chapter"
-msgstr "Förmåga att hitta inom endast det aktuella kapitlet"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:267
 msgid "Fixed CPU spikes when left open"
-msgstr "Åtgärdat CPU-toppar när lämnad öppen"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:268
 msgid "Fixed highlights not rendering at the correct positions"
-msgstr "Åtgärdat att markeringar inte visas på rätt positioner"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:276
+#, fuzzy
 msgid "Fixed crashing when opening files"
-msgstr "Åtgärdat kraschar när man öppnar filer"
+msgstr "Substituer li playlist per apertet files"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:285
 msgid "Customize page margins and brightness"
-msgstr "Anpassa sidmarginaler och ljusstyrka"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:286
 msgid "Tweak the theme colors, or add your own custom themes"
-msgstr "Justera temafärger, eller lägga till dina egna teman"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:287
 msgid "Ability to zoom and copy images"
-msgstr "Möjlighet att zooma och kopiera bilder"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:288
+#, fuzzy
 msgid "Option to auto-hide cursor"
-msgstr "Alternativ att automatiskt dölja markören"
+msgstr "Auto-celar li apuntator"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:289
 msgid "See reading time left by hovering over the reading progress slider"
-msgstr "Se lästid kvar genom att sväva över reglaget för läsförlopp"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:297
 msgid "Fixed some books not rendering sometimes"
-msgstr "Åtgärdat att vissa böcker inte återges ibland"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:298
 msgid "Fixed images being too wide in some cases"
-msgstr "Åtgärdat att bilder är för breda i vissa fall"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:307
 msgid "Option to switch between left and full justification"
-msgstr "Alternativ att växla mellan vänster och fullständig justering"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:308
 msgid "New layout option: single-column paginated view"
-msgstr "Nytt layoutalternativ: siddelad vy med en kolumn"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:310
+#, fuzzy
 msgid "Fixed:"
-msgstr "Åtgärdat:"
+msgstr "_Fixed"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:312
 msgid ""
 "Generated locations are now stored in the cache directory rather than "
 "localStorage"
-msgstr "Genererade platser lagras nu i cachekatalogen snarare än localStorage"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:320
 msgid "Allow font size adjustment when using publisher fonts"
-msgstr "Tillåt justering av teckenstorlek när du använder förlagstypsnitt"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:321
 msgid ""
 "Fixed reading progress slider not appearing after localStorage quota is "
 "exceeded"
 msgstr ""
-"Åtgärdat att läsförloppsreglaget inte visas efter att localStorage-kvot "
-"överskrids"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:329
 msgid "Touchpad gestures and ability to scroll through pages"
-msgstr "Pekplattgester och förmåga att bläddra igenom sidor"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:330
+#, fuzzy
 msgid "Fullscreen mode"
-msgstr "Helskärmsläge"
+msgstr "Activar li mode plen-ecran per un duplic clic"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:331
 msgid "Option to hide reading progress bar"
-msgstr "Alternativ att dölja läsförloppsindikatorn"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:332
+#, fuzzy
 msgid "Option to disable dictionary"
-msgstr "Alternativ att inaktivera ordbok"
+msgstr "Depermisser"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:333
+#, fuzzy
 msgid "Option to use publisher font"
-msgstr "Alternativ att använda förlagstypsnitt"
+msgstr "Usar li fonde del publicator"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:337
 msgid "Restoring reading progress is now smooth and jank-free"
-msgstr "Att återställa läsningsförlopp är nu smidigt och problemfritt"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:338
 msgid "Fixed custom styles not applying in some cases"
-msgstr "Åtgärdat att anpassade stilar inte tillämpas i vissa fall"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:344
+#, fuzzy
 msgid "Fixed invalid AppData file"
-msgstr "Åtgärdat ogiltig AppData-fil"
+msgstr "Li nómine de file es ínvalid"
 
 #: data/com.github.johnfactotum.Foliate.appdata.xml.in:349
+#, fuzzy
 msgid "Initial release"
-msgstr "Första utgåvan"
+msgstr "Inicial publication."
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:19
+#, fuzzy
 msgid "Store URIs"
-msgstr "Lagra URI:er"
+msgstr "URIs total"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:20
+#, fuzzy
 msgid "Whether to save file URIs"
-msgstr "Om du vill spara fil-URI:er"
+msgstr "Salvar _quam..."
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:25
 msgid ""
 "Whether to save generated locations to cache (the locations are needed for "
 "calculating percentages of locations in book)"
 msgstr ""
-"Huruvida man ska spara genererade platser i cache (platserna behövs för att "
-"beräkna procent av platser i boken)"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:29
 msgid "Cache covers"
-msgstr "Cacheomslag"
+msgstr "Cachear covrimentes"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:30
 msgid "Whether to save book covers to cache"
-msgstr "Huruvida man ska spara bokomslag i cache"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:34
-#, fuzzy
 msgid "Cover size"
-msgstr "Sidfältets storlek"
+msgstr "Dimension del covriment"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:35
-#, fuzzy
 msgid "Width of cached book cover images"
-msgstr "Spara bokomslag"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:39
+#, fuzzy
 msgid "Restore last file opened"
-msgstr "Återställ senast öppnade fil"
+msgstr "Aperter li ultim file al inicie"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:40
+#, fuzzy
 msgid "Whether to automatically restore the last file"
-msgstr "Huruvida du ska återställa den senaste filen automatiskt"
+msgstr "Automaticmen recargar li document si li file es modificat."
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:44
+#, fuzzy
 msgid "Default highlight color"
-msgstr "Standardmarkeringsfärg"
+msgstr "Color de fonde predefinit"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:45
+#, fuzzy
 msgid "Default highlight color for annotations"
-msgstr "Standardmarkeringsfärg för kommentarer"
+msgstr "Usar li predefinit color del sistema"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:49
 msgid "Dictionary"
-msgstr "Ordbok"
+msgstr "Dictionarium"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:50
 msgid ""
@@ -2397,82 +2438,79 @@ msgid ""
 "if any, are available with the \"dcitd_\" and \"stardict_\" prefix added to "
 "the database ID"
 msgstr ""
-"Identifierare för standardordboken. Ordböcker från dictd och stardict, om "
-"några, finns tillgängliga med prefixet \"dcitd_\" och \"stardict_\" som "
-"läggs till i databas-ID:t"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:54
+#, fuzzy
 msgid "Target language of translation"
-msgstr "Målspråk för översättning"
+msgstr "Li lingue del traduction:"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:55
+#, fuzzy
 msgid "Target language for translations"
-msgstr "Målspråk för översättningar"
+msgstr "Destination"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:59
 msgid "Default action when selecting a word"
-msgstr "Standardåtgärd när du markerar ett ord"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:60
 msgid "Default action to perform when selecting a single word"
-msgstr "Standardåtgärd att utföra när du markerar ett enda ord"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:64
 msgid "Default action when selecting multiple words"
-msgstr "Standardåtgärd när du markerar flera ord"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:65
 msgid "Default action to perform when selecting multiple words"
-msgstr "Standardåtgärd att utföra när du markerar flera ord"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:69
+#, fuzzy
 msgid "Event for opening image viewer"
-msgstr "Händelse för att öppna bildvisaren"
+msgstr "Apertente li image «%s»"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:70
 msgid ""
 "DOM event type for viewing images; the special value \"middleclick\" is "
 "available for the middle click event"
 msgstr ""
-"DOM-händelsetyp för visning av bilder; specialvärdet \"mellanklick\" är "
-"tillgängligt för mellanklickhändelsen"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:75
+#, fuzzy
 msgid "Command to execute for text-to-speech"
-msgstr "Kommando att utföra för text-till-tal"
+msgstr "Comande de parlation"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:80
 msgid "If true, a side pane will be used instead of popovers"
 msgstr ""
-"Om det är sant kommer en sidoruta att användas istället för flytande rutor"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:84
 msgid "Use menubar"
-msgstr "Använd menyrad"
+msgstr "Usar li panel de menú"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:85
 msgid "If true, use traditional titlebars and menubars"
-msgstr "Om det är sant används traditionella titelrader och menyrader"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:89
+#, fuzzy
 msgid "Auto-hide headerbar"
-msgstr "Dölj rubrikrad automatiskt"
+msgstr "Autocelar li barra de titul"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:90
 msgid ""
 "Whether to hide the headerbar automatically (this is setting has no effect "
 "if skeuomorphism or sidebar is enabled)"
 msgstr ""
-"Huruvida man rubrikraden automatiskt (den här inställningen har ingen effekt "
-"om skeuomorfism eller sidofältet är aktiverat)"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:95
 msgid "Information to be displayed on the left footer"
-msgstr "Information som ska visas på vänster sidfot"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:100
 msgid "Information to be displayed on the right footer"
-msgstr "Information som ska visas på höger sidfot"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:105
 msgid ""
@@ -2480,86 +2518,88 @@ msgid ""
 "right part of the view; tap on the middle to toggle header bar and progress "
 "bar"
 msgstr ""
-"Om det är sant kan du gå till föregående eller nästa sida genom att trycka "
-"på vänster eller höger del av vyn; tryck på mitten för att växla rubrikraden "
-"och förloppsindikatorn"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:112
 msgid "Prefer dark GTK theme"
-msgstr "Föredra mörkt GTK-tema"
+msgstr "Preferer li tema GTK obscur"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:113
 msgid "If true, the dark variant of a GTK theme, if available, will be used"
 msgstr ""
-"Om det är sant kommer den mörka varianten av ett GTK-tema, om det finns, att "
-"användas"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:117
 #: data/com.github.johnfactotum.Foliate.gschema.xml:118
+#, fuzzy
 msgid "Zoom level"
-msgstr "Zoomnivå"
+msgstr "Adjustar li scale del actual vise"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:128
 msgid "Line-height"
-msgstr "Radhöjd"
+msgstr "Altore de lineas"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:132
 msgid "Margin"
-msgstr "Marginal"
+msgstr "Márgine"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:133
+#, fuzzy
 msgid "Page margin in percentage"
-msgstr "Sidmarginal i procent"
+msgstr "Márgine"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:137
 msgid "Max width"
-msgstr "Maximal bredd"
+msgstr "Max largore"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:142
+#, fuzzy
 msgid "Use publisher font"
-msgstr "Använd förlagstypsnitt"
+msgstr "Usar li fonde del publicator"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:143
+#, fuzzy
 msgid "If true, custom font is disabled"
-msgstr "Om det är sant är anpassat teckensnitt inaktiverat"
+msgstr "Personalisat dimension de _fonde:"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:147
+#, fuzzy
 msgid "Justify text"
-msgstr "Justera text"
+msgstr "_Textu:"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:148
+#, fuzzy
 msgid "If true, text will be justified"
-msgstr "Om det är sant kommer texten att justeras"
+msgstr "True Type"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:152
 msgid "Hyphenation"
-msgstr "Avstavning"
+msgstr "Separation síllabic"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:153
+#, fuzzy
 msgid "If true, auto-hyphenation is enabled"
-msgstr "Om det är sant är automatisk bindestreck aktiverad"
+msgstr "Separation síllabic"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:157
 msgid "Foreground color"
-msgstr "Förgrundsfärg"
+msgstr "Color del avanplan"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:158
 msgid "Text color"
-msgstr "Textfärg"
+msgstr "Color del textu"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:162
 #: data/com.github.johnfactotum.Foliate.gschema.xml:163
 msgid "Background color"
-msgstr "Bakgrundsfärg"
+msgstr "Color del funde"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:167
 #: data/com.github.johnfactotum.Foliate.gschema.xml:168
 msgid "Link color"
-msgstr "Länkfärg"
+msgstr "Color de ligament"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:173
 msgid "Invert page"
-msgstr "Invertera sida"
+msgstr "Inverter li págine"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:178
 msgid ""
@@ -2567,125 +2607,138 @@ msgid ""
 "of 0 will make the page completely black, while a value of 1 leaves the "
 "brightness unchanged"
 msgstr ""
-"Ett värde under 1 mörknar sidan, medan ett värde över 1 lyser det. Ett värde "
-"på 0 gör sidan helt svart medan ett värde på 1 lämnar ljusstyrkan oförändrad"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:182
 msgid "Footnote preview"
-msgstr "Förhandsvisning av fotnot"
+msgstr "Prevision de ped-notes"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:183
 msgid "If true, will attempt to display footnotes in a popover"
-msgstr "Om det är sant kommer fotnoter att försöka visas i en flytande ruta"
+msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:187
+#, fuzzy
 msgid "Allow unsafe content"
-msgstr "Tillåt osäkert innehåll"
+msgstr "Permisser:"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:188
+#, fuzzy
 msgid "If true, allow JavaScript"
-msgstr "Om sant, tillåt JavaScript"
+msgstr "JavaScript"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:192
+#, fuzzy
 msgid "Enable developer tools"
-msgstr "Aktivera utvecklingsverktyg"
+msgstr "Instrumentarium de developator"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:193
+#, fuzzy
 msgid "If true, developer tools are enabled"
-msgstr "Om det är sant är utvecklarverktyg aktiverade"
+msgstr "Instrumentarium de developator"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:198
 msgid "Page layout"
-msgstr "Sidlayout"
+msgstr "Formate de págine"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:202
 msgid "Skeuomorphism"
-msgstr "Skeuomorfism"
+msgstr "Skeuomorfisme"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:203
 msgid ""
 "If true, the book is decoratively presented in a way that resembles physical "
 "books"
 msgstr ""
-"Om det är sant presenteras boken dekorativt på ett sätt som liknar fysiska "
-"böcker"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:207
+#, fuzzy
 msgid "Auto-hide cursor"
-msgstr "Dölj markör automatiskt"
+msgstr "Auto-celar li apuntator"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:208
+#, fuzzy
 msgid "Whether to hide the cursor automatically"
-msgstr "Huruvida markören ska döljas automatiskt"
+msgstr "Automaticmen celar li panel:"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:215
 #: data/com.github.johnfactotum.Foliate.gschema.xml:253
 msgid "Window width"
-msgstr "Fönsterbredd"
+msgstr "Largore del fenestre"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:216
+#, fuzzy
 msgid "Width of the window"
-msgstr "Bredden på fönstret"
+msgstr "Largore del fenestre"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:220
 #: data/com.github.johnfactotum.Foliate.gschema.xml:258
 msgid "Window height"
-msgstr "Fönsterhöjd"
+msgstr "Altore del fenestre"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:221
 msgid "Height of the window"
-msgstr "Höjden på fönstret"
+msgstr "Altore del fenestre"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:225
 #: data/com.github.johnfactotum.Foliate.gschema.xml:263
 msgid "Maximized"
-msgstr "Maximerad"
+msgstr "Maximisat"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:226
+#, fuzzy
 msgid "Whether the window is maximized"
-msgstr "Huruvida fönstret är maximerat"
+msgstr "Statu maximisat del fenestre"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:231
+#, fuzzy
 msgid "Whether the window is fullscreen"
-msgstr "Huruvida fönstret är helskärm"
+msgstr "Plen-&ecran"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:235
 #: data/com.github.johnfactotum.Foliate.gschema.xml:236
+#, fuzzy
 msgid "Last file opened"
-msgstr "Senast öppnade fil"
+msgstr "Aperter li ultim file al inicie"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:241
+#, fuzzy
 msgid "Whether the sidebar is shown"
-msgstr "Huruvida sidofältet visas"
+msgstr "Monstrar li panel láteral."
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:245
+#, fuzzy
 msgid "Sidebar size"
-msgstr "Sidfältets storlek"
+msgstr "Panel _láteral"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:246
+#, fuzzy
 msgid "Sidebar width"
-msgstr "Sidofältets bredd"
+msgstr "Panel _láteral"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:254
+#, fuzzy
 msgid "Width of the library window"
-msgstr "Bredd på biblioteksfönstret"
+msgstr "Aperter li fenestre del biblioteca"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:259
+#, fuzzy
 msgid "Height of the library window"
-msgstr "Höjd på biblioteksfönstret"
+msgstr "Aperter li fenestre del biblioteca"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:264
+#, fuzzy
 msgid "Whether the library window is maximized"
-msgstr "Huruvida biblioteksfönstret är maximerat"
+msgstr "Statu maximisat del fenestre"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:269
+#, fuzzy
 msgid "How to view the library"
-msgstr "Hur du vill se biblioteket"
+msgstr "&Vise"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:273
 #, fuzzy
 msgid "Library page"
-msgstr "Bibliotek"
+msgstr "Biblioteca"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:274
 msgid "Current library page (“library” or “catalog”)"
@@ -2693,348 +2746,278 @@ msgstr ""
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:278
 msgid "Use Tracker"
-msgstr "Använd Tracker"
+msgstr "Usar Tracker"
 
 #: data/com.github.johnfactotum.Foliate.gschema.xml:279
 msgid ""
 "If true, will try to use Tracker (the file indexer) to get file locations"
 msgstr ""
-"Om det är sant, försöker använda Tracker (filindexer) för att få filplatser"
 
 #~ msgid "Open a Catalog…"
-#~ msgstr "Öppna en katalog…"
+#~ msgstr "Aperter un catalog..."
 
+#, fuzzy
 #~ msgid "Afrikaans"
 #~ msgstr "Afrikaans"
 
 #~ msgid "Albanian"
-#~ msgstr "Albanska"
+#~ msgstr "Albanian"
 
 #~ msgid "Amharic"
-#~ msgstr "Amhariska"
+#~ msgstr "Amharic"
 
 #~ msgid "Arabic"
-#~ msgstr "Arabiska"
+#~ msgstr "Arabic"
 
 #~ msgid "Armenian"
-#~ msgstr "Armeniska"
+#~ msgstr "Armenian"
 
-#~ msgid "Azerbaijani"
-#~ msgstr "Azerbajdzjanska"
-
-#~ msgid "Basque"
-#~ msgstr "Baskiska"
-
-#~ msgid "Belarusian"
-#~ msgstr "Vitryska"
-
+#, fuzzy
 #~ msgid "Bengali"
-#~ msgstr "Bengaliska"
-
-#~ msgid "Bosnian"
-#~ msgstr "Bosniska"
+#~ msgstr "Bengali"
 
 #~ msgid "Bulgarian"
-#~ msgstr "Bulgariska"
+#~ msgstr "Bulgarian"
 
 #~ msgid "Catalan"
-#~ msgstr "Katalanska"
-
-#~ msgid "Cebuano"
-#~ msgstr "Cebuano"
+#~ msgstr "Catalonian"
 
 #~ msgid "Chinese (Simplified)"
-#~ msgstr "Kinesiska (förenklad)"
+#~ msgstr "Chinesi (simplificat)"
 
 #~ msgid "Chinese (Traditional)"
-#~ msgstr "Kinesiska (Traditionell)"
+#~ msgstr "Chinesi (traditional)"
 
+#, fuzzy
 #~ msgid "Corsican"
-#~ msgstr "Korsikanska"
+#~ msgstr "Corsican"
 
+#, fuzzy
 #~ msgid "Croatian"
-#~ msgstr "Kroatiska"
+#~ msgstr "Croatian"
 
 #~ msgid "Czech"
-#~ msgstr "Tjeckiska"
+#~ msgstr "Tchec"
 
 #~ msgid "Danish"
-#~ msgstr "Danska"
+#~ msgstr "Danese"
 
 #~ msgid "Dutch"
-#~ msgstr "Nederländska"
+#~ msgstr "Hollandese"
 
 #~ msgid "English"
-#~ msgstr "Engelska"
+#~ msgstr "Anglese"
 
 #~ msgid "Esperanto"
 #~ msgstr "Esperanto"
 
 #~ msgid "Estonian"
-#~ msgstr "Estniska"
+#~ msgstr "Estonian"
 
+#, fuzzy
 #~ msgid "Finnish"
-#~ msgstr "Finska"
+#~ msgstr "Finlandese"
 
+#, fuzzy
 #~ msgid "French"
-#~ msgstr "Franska"
+#~ msgstr "Francese"
 
+#, fuzzy
 #~ msgid "Frisian"
-#~ msgstr "Frisiska"
+#~ msgstr "Frisian"
 
-#~ msgid "Galician"
-#~ msgstr "Galiciska"
-
+#, fuzzy
 #~ msgid "Georgian"
-#~ msgstr "Georgiska"
+#~ msgstr "Georgian"
 
 #~ msgid "German"
-#~ msgstr "Tyska"
+#~ msgstr "German"
 
 #~ msgid "Greek"
-#~ msgstr "Grekiska"
+#~ msgstr "Grec"
 
+#, fuzzy
 #~ msgid "Gujarati"
 #~ msgstr "Gujarati"
 
-#~ msgid "Haitian Creole"
-#~ msgstr "Haitisk kreol"
-
-#~ msgid "Hausa"
-#~ msgstr "Hausa"
-
-#~ msgid "Hawaiian"
-#~ msgstr "Hawaiiska"
-
 #~ msgid "Hebrew"
-#~ msgstr "Hebreiska"
+#~ msgstr "Hebreic"
 
+#, fuzzy
 #~ msgid "Hindi"
 #~ msgstr "Hindi"
 
-#~ msgid "Hmong"
-#~ msgstr "Hmong"
-
+#, fuzzy
 #~ msgid "Hungarian"
-#~ msgstr "Ungerska"
+#~ msgstr "Hungarian"
 
 #~ msgid "Icelandic"
-#~ msgstr "Isländska"
+#~ msgstr "Islandese"
 
-#~ msgid "Igbo"
-#~ msgstr "Igbo"
-
+#, fuzzy
 #~ msgid "Indonesian"
-#~ msgstr "Indonesiska"
+#~ msgstr "Indonesian"
 
 #~ msgid "Irish"
-#~ msgstr "Iriska"
+#~ msgstr "Irlandese"
 
 #~ msgid "Italian"
-#~ msgstr "Italienska"
+#~ msgstr "Italian"
 
 #~ msgid "Japanese"
-#~ msgstr "Japanska"
+#~ msgstr "Japanese"
 
+#, fuzzy
 #~ msgid "Javanese"
-#~ msgstr "Javanesiska"
+#~ msgstr "Javanese"
 
+#, fuzzy
 #~ msgid "Kannada"
 #~ msgstr "Kannada"
 
+#, fuzzy
 #~ msgid "Kazakh"
-#~ msgstr "Kazakiska"
+#~ msgstr "Kazakh"
 
+#, fuzzy
 #~ msgid "Khmer"
 #~ msgstr "Khmer"
 
 #~ msgid "Korean"
-#~ msgstr "Koreanska"
+#~ msgstr "Korean"
 
 #~ msgid "Kurdish"
-#~ msgstr "Kurdiska"
-
-#~ msgid "Kyrgyz"
-#~ msgstr "Kirgiziska"
+#~ msgstr "Kurdic"
 
 #~ msgid "Lao"
 #~ msgstr "Lao"
 
+#, fuzzy
 #~ msgid "Latin"
 #~ msgstr "Latin"
 
 #~ msgid "Latvian"
-#~ msgstr "Lettiska"
+#~ msgstr "Latvian"
 
 #~ msgid "Lithuanian"
-#~ msgstr "Litauiska"
+#~ msgstr "Lituanian"
 
-#~ msgid "Luxembourgish"
-#~ msgstr "Luxemburgiska"
-
+#, fuzzy
 #~ msgid "Macedonian"
-#~ msgstr "Makedonska"
+#~ msgstr "Macedonian"
 
-#~ msgid "Malagasy"
-#~ msgstr "Madagaskiska"
-
+#, fuzzy
 #~ msgid "Malay"
-#~ msgstr "Malaysiska"
+#~ msgstr "Malay"
 
-#~ msgid "Malayalam"
-#~ msgstr "Malayalam"
-
+#, fuzzy
 #~ msgid "Maltese"
-#~ msgstr "Maltesiska"
+#~ msgstr "Maltese"
 
 #~ msgid "Maori"
 #~ msgstr "Maori"
 
-#~ msgid "Marathi"
-#~ msgstr "Marathi"
-
 #~ msgid "Mongolian"
-#~ msgstr "Mongoliska"
+#~ msgstr "Mongolian"
 
+#, fuzzy
 #~ msgid "Myanmar (Burmese)"
-#~ msgstr "Myanmar (Burmesiska)"
+#~ msgstr "Burmese"
 
-#~ msgid "Nepali"
-#~ msgstr "Nepalesiska"
-
-#~ msgid "Norwegian"
-#~ msgstr "Norska"
-
-#~ msgid "Nyanja (Chichewa)"
-#~ msgstr "Chichewa"
-
-#~ msgid "Pashto"
-#~ msgstr "Pashto"
-
+#, fuzzy
 #~ msgid "Persian"
-#~ msgstr "Persiska"
+#~ msgstr "Persian"
 
 #~ msgid "Polish"
-#~ msgstr "Polska"
+#~ msgstr "Polonese"
 
 #~ msgid "Portuguese (Portugal, Brazil)"
-#~ msgstr "Portugisiska (Portugal, Brasilien)"
-
-#~ msgid "Punjabi"
-#~ msgstr "Punjabi"
+#~ msgstr "Portugues (Brasil)"
 
 #~ msgid "Romanian"
-#~ msgstr "Rumänska"
+#~ msgstr "Rumanian"
 
 #~ msgid "Russian"
-#~ msgstr "Ryska"
+#~ msgstr "Russ"
 
 #~ msgid "Samoan"
-#~ msgstr "Samoanska"
-
-#~ msgid "Scots Gaelic"
-#~ msgstr "Skotsk gäliska"
+#~ msgstr "Samoan"
 
 #~ msgid "Serbian"
-#~ msgstr "Serbiska"
+#~ msgstr "Serbian"
 
-#~ msgid "Sesotho"
-#~ msgstr "Sesotho"
-
-#~ msgid "Shona"
-#~ msgstr "Shona"
-
-#~ msgid "Sindhi"
-#~ msgstr "Sindhi"
-
+#, fuzzy
 #~ msgid "Sinhala (Sinhalese)"
-#~ msgstr "Singalesiska"
+#~ msgstr "Sinhalese"
 
 #~ msgid "Slovak"
-#~ msgstr "Slovakiska"
+#~ msgstr "Slovac"
 
 #~ msgid "Slovenian"
-#~ msgstr "Slovenska"
-
-#~ msgid "Somali"
-#~ msgstr "Somaliska"
+#~ msgstr "Slovenian"
 
 #~ msgid "Spanish"
-#~ msgstr "Spanska"
+#~ msgstr "Hispan"
 
 #~ msgid "Sundanese"
-#~ msgstr "Sundanesiska"
+#~ msgstr "Sundanese"
 
+#, fuzzy
 #~ msgid "Swahili"
 #~ msgstr "Swahili"
 
 #~ msgid "Swedish"
-#~ msgstr "Svenska"
+#~ msgstr "Svedese"
 
+#, fuzzy
 #~ msgid "Tagalog (Filipino)"
-#~ msgstr "Tagalog (Filipino)"
+#~ msgstr "Tagalog"
 
+#, fuzzy
 #~ msgid "Tajik"
-#~ msgstr "Tadzjikiska"
+#~ msgstr "Tajikan"
 
+#, fuzzy
 #~ msgid "Tamil"
 #~ msgstr "Tamil"
 
+#, fuzzy
 #~ msgid "Telugu"
 #~ msgstr "Telugu"
 
+#, fuzzy
 #~ msgid "Thai"
-#~ msgstr "Thailändska"
+#~ msgstr "Thai"
 
+#, fuzzy
 #~ msgid "Turkish"
-#~ msgstr "Turkiska"
+#~ msgstr "Turcian"
 
+#, fuzzy
 #~ msgid "Ukrainian"
-#~ msgstr "Ukrainska"
+#~ msgstr "Ucrainan"
 
+#, fuzzy
 #~ msgid "Urdu"
 #~ msgstr "Urdu"
 
+#, fuzzy
 #~ msgid "Uzbek"
-#~ msgstr "Uzbekiska"
+#~ msgstr "Uzbec"
 
 #~ msgid "Vietnamese"
-#~ msgstr "Vietnamesiska"
+#~ msgstr "Vietnamese"
 
-#~ msgid "Welsh"
-#~ msgstr "Walesiska"
-
+#, fuzzy
 #~ msgid "Xhosa"
 #~ msgstr "Xhosa"
 
 #~ msgid "Yiddish"
-#~ msgstr "Jiddisch"
+#~ msgstr "Judeic"
 
+#, fuzzy
 #~ msgid "Yoruba"
 #~ msgstr "Yoruba"
 
 #~ msgid "Zulu"
 #~ msgstr "Zulu"
-
-#~ msgid "Allow JavaScript and external resources"
-#~ msgstr "Tillåt JavaScript och externa resurser"
-
-#~ msgid ""
-#~ "If true, Content Security Policy is disabled, which will allow JavaScript "
-#~ "and external resources to load"
-#~ msgstr ""
-#~ "Om det är sant är innehållssäkerhetspolicy inaktiverad, vilket gör att "
-#~ "JavaScript och externa resurser kan läsas in"
-
-#, fuzzy
-#~ msgid "Cache locations in book"
-#~ msgstr "Tid kvar i bok"
-
-#~ msgid "com.github.johnfactotum.Foliate"
-#~ msgstr "com.github.johnfactotum.Foliate"
-
-#~ msgid "Something's wrong"
-#~ msgstr "Något är fel"
-
-#~ msgid "The file cannot be opened."
-#~ msgstr "Filen kan inte öppnas."

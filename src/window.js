@@ -669,20 +669,6 @@ const makeActions = self => ({
     },
     'export-annotations': () => {
         const data = self._epub.data
-        if (!data.annotations || !data.annotations.length) {
-            const msg = new Gtk.MessageDialog({
-                text: _('No annotations'),
-                secondary_text: _("You don't have any annotations for this book.")
-                    + '\n' + _('Highlight some text to add annotations.'),
-                message_type: Gtk.MessageType.INFO,
-                buttons: [Gtk.ButtonsType.OK],
-                modal: true,
-                transient_for: self
-            })
-            msg.run()
-            msg.destroy()
-            return
-        }
         exportAnnotations(self, data, self._epub.metadata, cfi =>
             self._epub.getSectionFromCfi(cfi).then(x => x.label))
             .catch(e => logError(e))
@@ -1007,21 +993,28 @@ var Window = GObject.registerClass({
         this._epub.open(file)
     }
     _connectEpub() {
-        this._epub.connect('click', (_, width, position) => {
+        this._epub.connect('click', (epub, width, position) => {
             const turnPageOnTap = settings.get_boolean('turn-page-on-tap')
             if (!turnPageOnTap) return
-            const rtl = this._epub.metadata.direction === 'rtl'
-            const place = position / width
             if (this._highlightMenu && this._highlightMenu.visible) return
-            else if (place > 2/3) return rtl ? this._epub.prev() : this._epub.next()
-            else if (place < 1/3) return rtl ? this._epub.next() : this._epub.prev()
-            else {
+
+            const toggleControls = () => {
                 const visible = this._mainOverlay.toggleNavBar()
                 if (this._fullscreen)
                     this._fullscreenOverlay.alwaysReveal(visible)
                 else if (this._autoHideHeaderBar)
                     this._autoHideHeaderBar.alwaysReveal(visible)
             }
+            if (!epub.isPaginated) return toggleControls()
+
+            const rtl = epub.metadata.direction === 'rtl'
+            const goRight = () => rtl ? epub.prev() : epub.next()
+            const goLeft = () => rtl ? epub.next() : epub.prev()
+
+            const place = position / width
+            if (place > 2/3) goRight()
+            else if (place < 1/3) goLeft()
+            else toggleControls()
         })
         this._epub.connect('book-displayed', () => this.loading = false)
         this._epub.connect('book-loading', () => {
@@ -1036,6 +1029,7 @@ var Window = GObject.registerClass({
         })
         this._epub.connect('data-ready', () => {
             this.lookup_action('export-annotations').enabled = true
+            this.lookup_action('import-annotations').enabled = true
             this.lookup_action('selection-highlight').enabled = true
         })
         this._epub.connect('should-reload', () => {
@@ -1304,6 +1298,7 @@ var Window = GObject.registerClass({
         if (state) {
             this.lookup_action('properties').enabled = false
             this.lookup_action('export-annotations').enabled = false
+            this.lookup_action('import-annotations').enabled = false
             this.lookup_action('selection-highlight').enabled = false
             this._setTitle(_('Loading…'))
         }

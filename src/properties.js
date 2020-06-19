@@ -14,7 +14,9 @@
  */
 
 const { GObject, Gtk, Gio, Gdk } = imports.gi
-const { scalePixbuf, makeLinksButton } = imports.utils
+const {
+    scalePixbuf, makeLinksButton, getLanguageDisplayName, formatDate
+} = imports.utils
 
 const PropertyBox = GObject.registerClass({
     GTypeName: 'FoliatePropertyBox',
@@ -79,18 +81,27 @@ var PropertiesBox = GObject.registerClass({
             property_name: _('Publisher'),
             property_value: publisher
         }), false, true, 0)
-        if (pubdate) this._propertiesBox.pack_start(new PropertyBox({
-            property_name: _('Publication Date'),
-            property_value: pubdate
-        }), false, true, 0)
-        if (modified_date) this._propertiesBox.pack_start(new PropertyBox({
-            property_name: _('Modified Date'),
-            property_value: modified_date
-        }), false, true, 0)
-        if (language) this._propertiesBox.pack_start(new PropertyBox({
-            property_name: _('Language'),
-            property_value: language
-        }), false, true, 0)
+        if (pubdate) {
+            const dateString = formatDate(pubdate)
+            this._propertiesBox.pack_start(new PropertyBox({
+                property_name: _('Publication Date'),
+                property_value: dateString
+            }), false, true, 0)
+        }
+        if (modified_date) {
+            const dateString = formatDate(modified_date, true)
+            this._propertiesBox.pack_start(new PropertyBox({
+                property_name: _('Modified Date'),
+                property_value: dateString
+            }), false, true, 0)
+        }
+        if (language) {
+            const name = getLanguageDisplayName(language, true)
+            if (name) this._propertiesBox.pack_start(new PropertyBox({
+                property_name: _('Language'),
+                property_value: name
+            }), false, true, 0)
+        }
         if (extent) this._propertiesBox.pack_start(new PropertyBox({
             property_name: _('File Size'),
             property_value: extent

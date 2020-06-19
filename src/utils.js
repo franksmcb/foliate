@@ -41,6 +41,7 @@ var debounce = (f, wait, immediate) => {
 const { Gtk, Gio, GLib, GObject, Gdk, GdkPixbuf } = imports.gi
 const ByteArray = imports.byteArray
 const ngettext = imports.gettext.ngettext
+const { iso_639_2_path, iso_3166_1_path } = imports.isoCodes
 
 let verbose = false
 var setVerbose = value => verbose = value
@@ -74,13 +75,141 @@ var markupEscape = text => text ? GLib.markup_escape_text(text, -1) : ''
 
 var regexEscape = str => str ? str.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&') : ''
 
-var glibcLocaleToJsLocale = x => x === 'C' ? 'en' : x.split('.')[0].replace('_', '-')
-var locales = GLib.get_language_names().map(glibcLocaleToJsLocale)
+var readJSON = file => {
+    try {
+        const [success, data, /*tag*/] = file.load_contents(null)
+        if (success) return JSON.parse(data instanceof Uint8Array
+            ? ByteArray.toString(data) : data.toString())
+        else throw new Error()
+    } catch (e) {
+        return {}
+    }
+}
+
+var glibcLocaleToBCP47 = x => x === 'C' ? 'en' : x.split('.')[0].replace('_', '-')
+var locales = GLib.get_language_names().map(glibcLocaleToBCP47)
 try {
     const settings = new Gio.Settings({ schema_id: 'org.gnome.system.locale' })
-    const locale = glibcLocaleToJsLocale(settings.get_string('region'))
+    const locale = glibcLocaleToBCP47(settings.get_string('region'))
     if (locale) locales = locale
 } catch (e) {}
+
+var languageNames = new Map()
+var alpha_3_to_alpha_2 = new Map()
+var regionNames = new Map()
+const iso_639_2 = readJSON(Gio.File.new_for_path(iso_639_2_path))
+const iso_3166_1 = readJSON(Gio.File.new_for_path(iso_3166_1_path))
+const hasIso_639_2 = '639-2' in iso_639_2
+const hasIso_3166_1 = '3166-1' in iso_3166_1
+if (hasIso_639_2) for (const obj of iso_639_2['639-2']) {
+    if (!obj) continue
+    const { alpha_2, alpha_3, name } = obj
+    if (alpha_2) languageNames.set(alpha_2, name)
+    if (alpha_3) languageNames.set(alpha_3, name)
+    if (alpha_2 && alpha_3) alpha_3_to_alpha_2.set(alpha_3, alpha_2)
+}
+if (hasIso_3166_1) for (const obj of iso_3166_1['3166-1']) {
+    if (!obj) continue
+    const { alpha_2, alpha_3, name, common_name } = obj
+    const n = common_name || name
+    if (alpha_2) regionNames.set(alpha_2, n)
+    if (alpha_3) regionNames.set(alpha_3, n)
+}
+var isRegionCode = str => str === str.toUpperCase()
+const regionEmojiOffset = 127397
+var getRegionEmoji = code => {
+    if (!code || code.length !== 2) return
+    return String.fromCodePoint(...Array.from(code.toUpperCase())
+        .map(x => regionEmojiOffset + x.charCodeAt()))
+}
+// get langauge names
+// should perhaps use `Intl.DisplayNames()` instead once it becomes available
+var getLanguageDisplayName = (code, showEmoji) => {
+    try {
+        code = Intl.getCanonicalLocales(code)[0]
+    } catch (e) {
+        return code
+    }
+    if (!hasIso_639_2) return code
+    const [language, ...rest] = code.split('-')
+    const languageName = languageNames.get(language)
+    const languageDisplayName = languageName
+        ? GLib.dgettext('iso_639-2', languageName)
+        : language
+
+    const region = rest.find(isRegionCode)
+    const regionName = region ? regionNames.get(region) : null
+    const regionDisplayName = regionName
+        ? GLib.dgettext('iso_3166-1', regionName)
+        : region
+
+    const emoji = showEmoji ? getRegionEmoji(region) : ''
+
+    return regionDisplayName
+        ? (emoji ? emoji + ' ' : '')
+            + _('%s (%s)').format(languageDisplayName, regionDisplayName)
+        : languageDisplayName
+}
+// convert alpha-3 to alpha-2 if possible
+var getAlpha2 = code => {
+    try {
+        code = Intl.getCanonicalLocales(code)[0]
+    } catch (e) {
+        return
+    }
+    const lang = code.split('-')[0]
+    if (lang.length === 2) return lang
+    return alpha_3_to_alpha_2.get(lang) || lang
+}
+
+var formatPrice = ({ currencycode, value }) => {
+    try {
+        return new Intl.NumberFormat(locales,
+            { style: 'currency', currency: currencycode }).format(value)
+    } catch (e) {
+        return (currencycode ? currencycode + ' ' : '') + value
+    }
+}
+
+// Translators: here "BCE" is for "before common era"
+const formatBCE = (str, isBCE) => isBCE ? _('%s BCE').format(str) : str
+
+var formatDate = (string, showTime) => {
+    let isBCE = false
+    if (string.startsWith('-')) {
+        // Intl does not format BCE dates
+        // so we treat it as a CE date and add "BCE" ourselves later
+        isBCE = true
+        string = string.split('-')[1]
+    }
+
+    const split = string.split('-').filter(x => x)
+    const yearOnly = split.length === 1
+    const yearMonthOnly = split.length === 2
+
+    const date = yearOnly
+        // this is needed because dates like `new Date("100")` is invalid
+        ? new Date(Date.UTC(split[0]))
+        : new Date(string)
+
+    if (isNaN(date)) return formatBCE(string, isBCE)
+
+    const options = yearOnly
+        ? { year: 'numeric' }
+        : yearMonthOnly
+            ? { year: 'numeric', month: 'long' }
+            : showTime
+                ? { year: 'numeric', month: 'long', day: 'numeric',
+                    hour: 'numeric', minute: 'numeric' }
+                : { year: 'numeric', month: 'long', day: 'numeric' }
+
+    try {
+        const dateString = new Intl.DateTimeFormat(locales, options).format(date)
+        return formatBCE(dateString, isBCE)
+    } catch (e) {
+        return formatBCE(string, isBCE)
+    }
+}
 
 var formatMinutes = n => {
     n = Math.round(n)
@@ -182,17 +311,6 @@ var recursivelyDeleteDir = dir => {
         else if (type == Gio.FileType.DIRECTORY) recursivelyDeleteDir(child)
     }
     dir.delete(null)
-}
-
-var readJSON = file => {
-    try {
-        const [success, data, /*tag*/] = file.load_contents(null)
-        if (success) return JSON.parse(data instanceof Uint8Array
-            ? ByteArray.toString(data) : data.toString())
-        else throw new Error()
-    } catch (e) {
-        return {}
-    }
 }
 
 var Storage = GObject.registerClass({
