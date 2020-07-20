@@ -37,6 +37,8 @@ try {
 const webContext = WebKit2.WebContext.get_default()
 webContext.set_sandbox_enabled(true)
 
+Gtk.Window.set_default_icon_name(pkg.name)
+
 const { fileFilters } = imports.utils
 const { Window } = imports.window
 const { LibraryWindow } = imports.library
@@ -49,9 +51,11 @@ const windowState = new Gio.Settings({ schema_id: pkg.name + '.window-state' })
 const viewSettings = new Gio.Settings({ schema_id: pkg.name + '.view' })
 const librarySettings = new Gio.Settings({ schema_id: pkg.name + '.library' })
 
-const getLibraryWindow = app =>
+const getLibraryWindow = (app = Gio.Application.get_default()) =>
     app.get_windows().find(window => window instanceof LibraryWindow)
     || new LibraryWindow({ application: app })
+
+window.getLibraryWindow = getLibraryWindow
 
 const makeActions = app => ({
     'new-theme': () => {
@@ -87,6 +91,18 @@ const makeActions = app => ({
         settings.bind('store-uris', $('storeUris'), 'state', flag)
         settings.bind('cache-locations', $('cacheLocations'), 'state', flag)
         settings.bind('cache-covers', $('cacheCovers'), 'state', flag)
+
+        const opdsAction = librarySettings.get_string('opds-action')
+        const $opdsAction = str => $('opds_' + str)
+        $opdsAction(opdsAction).active = true
+        ;['auto', 'ask'].forEach(x => {
+            const button = $opdsAction(x)
+            button.connect('toggled', () => {
+                if (button.active) librarySettings.set_string('opds-action', x)
+            })
+        })
+        $('opdsAutoDir').label = GLib.build_filenamev(
+            [GLib.get_user_data_dir(), pkg.name, 'books'])
 
         const updateAHBox = () => {
             const available =
@@ -173,10 +189,13 @@ const makeActions = app => ({
     'library': () => {
         const existingLibraryWindow =
             app.get_windows().find(window => window instanceof LibraryWindow)
+        const activeWindow = app.active_window
 
-        if (existingLibraryWindow) existingLibraryWindow.present()
-        else {
-            app.active_window.close()
+        if (existingLibraryWindow) {
+            if (activeWindow.modal) activeWindow.close()
+            existingLibraryWindow.present()
+        } else {
+            activeWindow.close()
             new LibraryWindow({ application: app }).present()
         }
     },
@@ -314,6 +333,9 @@ function main(argv) {
             ['lib.main-menu', ['F10']],
             ['lib.search', ['<ctrl>f']],
             ['lib.close', ['<ctrl>w']],
+            ['lib.opds-back', ['<alt>Left']],
+            ['opds.reload', ['<ctrl>r']],
+            ['opds.location', ['<ctrl>l']],
 
             ['win.close', ['<ctrl>w']],
             ['win.reload', ['<ctrl>r']],
@@ -359,6 +381,14 @@ function main(argv) {
 
         const cssProvider = new Gtk.CssProvider()
         cssProvider.load_from_data(`
+            /* remove flowboxchild padding so things align better
+               when mixing flowbox and other widgets;
+               why does Adwaita has flowboxchild padding, anyway?
+               there's already row-/column-spacing, plus you can set margin */
+            flowboxchild {
+                padding: 0;
+            }
+
             /* set min-width to 1px,
                so we can have variable width progress bars a la Kindle */
             progress, trough {
@@ -398,8 +428,8 @@ function main(argv) {
             }
 
             .foliate-emblem {
-                color: white;
-                background: gray;
+                background: @theme_fg_color;
+                color: @theme_bg_color;
                 border-radius: 100%;
                 padding: 6px;
                 opacity: 0.9;
@@ -414,6 +444,25 @@ function main(argv) {
             .foliate-select {
                 color: #fff;
                 background: rgba(0, 0, 0, 0.4);
+            }
+
+            .foliate-title-main {
+                font-size: 1.18em;
+                font-weight: bold;
+            }
+            .foliate-title-subtitle {
+                font-size: 1.13em;
+                font-weight: 300;
+            }
+            .foliate-title-collection {
+                font-size: smaller;
+            }
+            .foliate-authority-label {
+                font-size: smaller;
+                font-weight: bold;
+                border: 1px solid;
+                border-radius: 5px;
+                padding: 0 5px;
             }
         `)
         Gtk.StyleContext.add_provider_for_screen(

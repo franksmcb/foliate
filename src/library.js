@@ -13,11 +13,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-const { GObject, Gio, Gtk, Gdk, GdkPixbuf, cairo } = imports.gi
+const { GObject, Gio, Gtk, Gdk, GdkPixbuf } = imports.gi
 const ngettext = imports.gettext.ngettext
 const {
-    Obj, readJSON, fileFilters, sepHeaderFunc, formatPercent, markupEscape,
-    scalePixbuf, shuffle, hslToRgb, colorFromString, isLight
+    Obj, readJSON, fileFilters, sepHeaderFunc, formatPercent, markupEscape, shuffle
 } = imports.utils
 const { PropertiesWindow } = imports.properties
 const { Window } = imports.window
@@ -39,58 +38,6 @@ if (settings.get_boolean('use-tracker')) {
         trackerConnection = Tracker.SparqlConnection.get(null)
     } catch(e) {}
 }
-
-const BookImage =  GObject.registerClass({
-    GTypeName: 'FoliateBookImage',
-    Template: 'resource:///com/github/johnfactotum/Foliate/ui/bookImage.ui',
-    InternalChildren: [
-        'image', 'imageTitle', 'imageCreator', 'imageBox',
-    ]
-}, class BookImage extends Gtk.Overlay {
-    loadCover(metadata) {
-        const { identifier } = metadata
-        const coverPath = EpubViewData.coverPath(identifier)
-        try {
-            // TODO: loading the file synchronously is probably bad
-            const pixbuf = GdkPixbuf.Pixbuf.new_from_file(coverPath)
-            this.load(pixbuf)
-        } catch (e) {
-            this.generate(metadata)
-        }
-    }
-    generate(metadata) {
-        const { title, creator, publisher } = metadata
-        this._imageTitle.label = title || ''
-        this._imageCreator.label = creator || ''
-        const width = 120
-        const height = 180
-        const surface = new cairo.ImageSurface(cairo.Format.ARGB32, width, height)
-        const context = new cairo.Context(surface)
-        const bg = colorFromString(title + creator + publisher)
-        const [r, g, b] = hslToRgb(...bg)
-        context.setSourceRGBA(r, g, b, 1)
-        context.paint()
-        const pixbuf = Gdk.pixbuf_get_from_surface(surface, 0, 0, width, height)
-        this.load(pixbuf)
-        const className = isLight(r, g, b)
-            ? 'foliate-book-image-light' : 'foliate-book-image-dark'
-        this._imageBox.get_style_context().add_class(className)
-        this._imageBox.show()
-    }
-    load(pixbuf) {
-        // if thumbnail is too small,the experience is going to be bad
-        // might as well just show generated cover
-        // TODO: a slightly better way is to pack the tiny thumbnail inside the generated cover
-        if (pixbuf.get_width() < 48) throw new Error('thumbnail too small')
-
-        const factor = this.get_scale_factor()
-        const surface = Gdk.cairo_surface_create_from_pixbuf(
-            scalePixbuf(pixbuf, factor), factor, null)
-
-        this._image.set_from_surface(surface)
-        this._image.get_style_context().add_class('foliate-book-image')
-    }
-})
 
 const BookBoxMenu =  GObject.registerClass({
     GTypeName: 'FoliateBookBoxMenu',
@@ -152,6 +99,7 @@ const makeLibraryChild = (params, widget) => {
                 transient_for: this.get_toplevel(),
                 use_header_bar: true
             }, metadata, cover)
+            window.packFindBookOnButton()
             window.show()
         }
         exportAnnotations() {
@@ -591,8 +539,12 @@ var LibraryWindow =  GObject.registerClass({
             this._stack.bind_property('visible-child-name', stack, 'visible-child-name', flag))
 
         this._opdsBrowser.bind_property('title', this._opdsHeaderBar, 'title', flag)
+        this._opdsBrowser.bind_property('subtitle', this._opdsHeaderBar, 'subtitle', flag)
         this._mainStack.connect('notify::visible-child', stack => {
-            if (stack.visible_child_name === 'library') this._opdsBrowser.reset()
+            if (stack.visible_child_name === 'library') {
+                this._opdsBrowser.reset()
+                this._opdsSearchBar.search_mode_enabled = false
+            }
             this._updateTitle()
         })
         this._opdsBrowser.connect('notify::title', () => this._updateTitle())
@@ -646,6 +598,7 @@ var LibraryWindow =  GObject.registerClass({
             'list-view': () => this.set_property('active-view', 'list'),
             'search': () => {
                 const button = this._mainStack.visible_child_name === 'opds'
+                    && this._opdsBrowser.searchable
                     ? this._opdsSearchButton
                     : this._stack.visible_child_name === 'library'
                         ? this._searchButton
@@ -715,7 +668,7 @@ var LibraryWindow =  GObject.registerClass({
             this._searchBar.search_mode_enabled = false)
 
         this.connect('key-press-event', (__, event) => {
-            if (this._mainStack.visible_child_name === 'opds')
+            if (this._mainStack.visible_child_name === 'opds' && this._opdsBrowser.searchable)
                 return this._opdsSearchBar.handle_event(event)
             else if (this._stack.visible_child_name === 'library')
                 return this._searchBar.handle_event(event)
@@ -789,7 +742,6 @@ var LibraryWindow =  GObject.registerClass({
     _updateOpdsSearch() {
         const searchable = this._opdsBrowser.searchable
         if (!searchable) this._opdsSearchButton.active = false
-        this._opdsSearchButton.sensitive = searchable
         this._opdsSearchButton.visible = searchable
     }
     _buildDragDrop(widget) {
@@ -907,7 +859,7 @@ var LibraryWindow =  GObject.registerClass({
                     visible: true,
                     propagate_natural_height: true
                 })
-                const max_entries = 4
+                const max_entries = Math.min(12, entries.length)
                 const opdsbox = new OpdsAcquisitionBox({
                     visible: true,
                     max_entries,
